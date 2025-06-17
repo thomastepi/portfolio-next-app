@@ -46,7 +46,7 @@ Welcome to my **personal portfolio website**, designed to showcase:
 ## 📁 Folder Structure Overview
 
 This project uses the **Next.js App Router** (no `pages/` directory):
-
+```
 public/
 │
 ├── robots.txt # SEO: Crawling instructions
@@ -75,7 +75,7 @@ src/
 ├── utils/ # Utility/helper functions
 ├── middleware.js # Next.js middleware (i18n routing, redirects, etc.)
 └── theme.js # Chakra UI theme configuration
-
+```
 
 ---
 
