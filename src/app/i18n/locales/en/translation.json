@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "title": "Thomas Tepi - Web Developer Portfolio",
+    "description": "Portfolio of Thomas Tepi, showcasing web development projects, skills, and experience as a React.js and Node.js developer."
+  },
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "aboutMe": "About",
+    "contactMe": "Contact",
+    "resume": "Resume"
+  },
+
+  "landing": {
+    "greeting": "Hello, I am Thomas!",
+    "title": "Full Stack Developer | Advocate for Sustainable Agriculture",
+    "subTitle": "Building digital solutions that empower local communities and drive environmental sustainability.",
+    "btnText": "Get in touch"
+  },
+
+  "alert": {
+    "successHeader": "All good!",
+    "errorHeader": "Oops!"
+  },
+
+  "contactMe": {
+    "heading": "Let's Connect",
+    "intro": "Have a question, project idea, or just want to say hello? I’d love to hear from you. Fill out the form and I’ll get back to you as soon as possible.",
+    "required": "*",
+    "optional": "(Optional)",
+    "labels": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "type": "What's this about?",
+      "message": "Your Message"
+    },
+    "placeholders": {
+      "select": "-- Select --",
+      "hireMe": "Project collaboration",
+      "feedback": "Feedback",
+      "other": "Just saying hello"
+    },
+    "buttons": {
+      "send": "Send"
+    },
+    "alerts": {
+      "success": "Thanks for your submission {{name}}, I will get back to you shortly!",
+      "error": "Something went wrong, please try again later!"
+    },
+    "validation": {
+      "requiredName": "Name is required.",
+      "minName": "Name must be at least 2 characters.",
+      "maxName": "Name cannot exceed 100 characters.",
+      "invalidName": "Name can only contain letters, spaces, apostrophes, and hyphens.",
+
+      "requiredEmail": "Email is required.",
+      "invalidEmail": "Enter a valid email address.",
+
+      "invalidType": "Invalid inquiry type.",
+
+      "requiredComment": "Message is required.",
+      "minComment": "Message must be at least 25 characters.",
+      "maxComment": "Message cannot exceed 1000 characters.",
+      "invalidCharacters": "Message contains invalid characters.",
+      "serverError": "Internal server error. Please try again later.",
+      "networkError": "Network error. Please check your internet connection.",
+      "timeoutError": "Request timed out. Please try again later."
+    },
+    "privacyDisclaimer": "By submitting this form, you agree that your provided information will be stored securely and used solely for responding to your inquiry, as outlined in my"
+  },
+
+  "aboutMe": {
+    "heading": "About Me",
+    "paragraph1": "As a passionate Full Stack Developer and Open Source Contributor, I specialize in React, Node.js, and modern web development frameworks. My journey has been dedicated to building user-centric and scalable solutions, with contributions to projects like",
+    "paragraph2": "I thrive in feature development, refining UI/UX interactions, and writing clear, maintainable code that enhances project functionality and accessibility. Beyond coding, I am also an advocate for sustainable technology and community-driven solutions.",
+    "paragraph3": "My experience bridges technical expertise with real-world impact, whether it's developing seamless digital experiences or supporting initiatives that empower communities. With a strong foundation in collaboration and problem-solving, I am committed to crafting technology that makes a difference - both in the digital space and beyond."
+  },
+
+  "techStack": {
+    "techStackTitle": "Tech Stack",
+    "techStackSubtitle": "Here are some of the technologies I have experience with:",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools"
+  },
+
+  "projects": {
+    "heading": "My Work",
+    "sawyerCamp": {
+      "title": "Sawyer-Camp Farmers CIG",
+      "description": "Developed and launched a website for Sawyer Camp Farmers Common Initiative Group, empowering local farmers in Cameroon by showcasing their products and sustainable farming practices. Implemented user-friendly design and seamless navigation to enhance user experience and engagement."
+    },
+    "resumeBuilder": {
+      "title": "AI Resume Builder",
+      "description": "An innovative AI-powered resume builder, provides a secure platform for users to log in, update their profiles, and create professional resumes. With the option to choose from existing templates or generate a personalized one using advanced AI algorithms, ResumeCraft ensures that resumes are tailored to each user's unique profile."
+    },
+    "bookMart": {
+      "title": "BookMart",
+      "description": "A secure and user-friendly book management application that allows users to log in securely and perform essential CRUD (Create, Read, Update, Delete) operations on their book inventory. With an intuitive interface, users can easily add new books, update existing entries, and remove items they no longer need."
+    },
+    "beautySpa": {
+      "title": "Annette's Beauty & SPA",
+      "description": "Transformed Annette's online presence with a user-friendly website. Clients can explore a curated gallery of styles and services, effortlessly book appointments, and discover Annette's offerings. Pamper loved ones with secure gift card purchases (powered by Stripe). This comprehensive platform enhances the overall customer experience."
+    }
+  },
+
+  "card": {
+    "githubTooltip": "GitHub",
+    "websiteTooltip": "Website",
+    "isExpanded": "Show less",
+    "isCollapsed": "Read more",
+    "techStack": "Tech Stack Used"
+  },
+
+  "error": {
+    "title": "Page Not Found",
+    "text": "Sorry, the page you are looking for does not exist.",
+    "btnText": "Go back home"
+  },
+
+  "consent": {
+    "message": "I use cookies to analyze traffic and improve your browsing experience.",
+    "span": "By clicking 'Allow' or continuing to use this site, you agree to their use.",
+    "policyButtonText": "Learn more",
+    "acceptBtn": "Allow",
+    "preferenceBtn": "Modify Preferences",
+    "manage": "Cookie Preferences"
+  },
+
+  "preferencesModal": {
+    "title": "Cookie Preferences",
+    "essentialLabel": "Essential Cookies (required)",
+    "analyticsLabel": "Performance Cookies",
+    "essentialDescription": "Required for the website to function properly and cannot be disabled (e.g. saving your cookie consent choice).",
+    "analyticsDescription": "Used to collect anonymous data to improve your experience (e.g. detecting your device type or screen size).",
+    "saveButton": "Save Preferences"
+  },
+
+  "privacyPolicy": {
+    "metadata":  {
+      "title": "Privacy Policy | Thomas Tepi",
+      "description": "This Privacy Policy outlines how I collect, use, and protect your information when you visit my website and associated projects."
+    },
+    "title": "Privacy Policy",
+    "effectiveDate": "Effective Date: January 31, 2025",
+    "introduction": {
+      "title": "Introduction",
+      "text": "This Privacy Policy describes how I collect, use, and disclose your information when you use this website and any of my associated projects under the `thomastepi.com` domain, including subdomains such as `resumecraft.thomastepi.com`. By using `www.thomastepi.com` or any of its subdomains, you agree to the terms outlined in this Privacy Policy."
+    },
+    "informationCollected": {
+      "title": "Information I Collect",
+      "subtitle": "**Google Analytics (Main Portfolio Site Only)**",
+      "description": "Google Analytics is **only implemented on the main portfolio site (`www.thomastepi.com`)** to collect **anonymized traffic data**, but only if you accept cookies.",
+      "subtext": "Collected data may include:",
+      "list": [
+        "Device Information (browser type, operating system, device category)",
+        "Approximate geographic location (country, region, and city level **only**)",
+        "Website Interactions (pages visited, time spent, clicks, scrolling behavior)",
+        "Traffic Sources (referral links, search engines, direct visits)"
+      ],
+      "trackingParams": "**Tracking Parameters in URLs**",
+      "trackingParamsList": [
+        "When clicking a project link from `www.thomastepi.com`, Google Analytics **may append tracking parameters** to the URL.",
+        "These parameters **help measure referral traffic** and **maintain session tracking** between the main site and subdomains.",
+        "**Subdomains do NOT process or store this tracking data.**",
+        "The parameters do not affect the functionality of subdomains."
+      ],
+      "usage": "This data helps me analyze visitor interactions, improve website performance, and enhance user experience across different devices.",
+      "identifiableInfo": "**No personally identifiable information (PII) is collected or stored**. Your IP address is anonymized, and data is retained for a limited period."
+    },
+
+    "scope": {
+      "title": "Scope",
+      "subtitle": "This Privacy Policy applies to:",
+      "list": [
+        "**Main Portfolio Site:** `www.thomastepi.com`",
+        "**Resume Builder App:** `resumecraft.thomastepi.com`",
+        "**Sawyer Camp Farmers:** `sawyercamp.thomastepi.com`",
+        "**Annette's Beauty & SPA:** `annette.thomastepi.com`",
+        "**Book Mart:** `bookmart.thomastepi.com`"
+      ],
+      "text": "Each subdomain may collect **different types of data** based on its functionality, but all data handling follows the principles outlined here."
+    },
+
+    "cookies": {
+      "title": "Cookies & Local Storage",
+      "description": "The following types of cookies may be used across my projects:",
+      "list": [
+        "**Google Analytics Cookies:** Used to track anonymized visitor activity.",
+        "**LocalStorage Data:** Used to store user preferences such as dark/light mode and language selection."
+      ],
+      "disableNotice": "You can disable cookies via your browser settings, though this may affect the user experience.",
+      "retention": "Your cookie consent choice is retained for **90 days**. After this period, you will be prompted to review your preferences again."
+    },
+    "contactForm": {
+      "title": "Contact Forms & User Data",
+      "subtitle": "Some projects under `thomastepi.com` may have their own contact or sign-up forms.",
+      "description": "When you submit a message or register an account on any subdomain, the following data may be collected:",
+      "list": [
+        "**Name** (to personalize responses)",
+        "**Email Address** (for login or contact purposes)",
+        "**Inquiry Type** (to categorize messages)",
+        "**Message Content** (to process your request)",
+        "**Account Information** (if you create an account)"
+      ],
+      "storage": "This information is stored securely in a database and used only for the intended purpose. It is not shared with third parties.",
+      "retention": "Your message is retained for 6 months to ensure follow-ups can be processed. You may request deletion at any time."
+    },
+    "guestUsers": {
+      "title": "Guest Users & Limited Data Collection",
+      "description": "Some projects (such as `resumecraft.thomastepi.com`) allow users to **explore as a guest**.",
+      "subtext": "Guest users:",
+      "list": [
+        "Are **not required to register**.",
+        "Do **not have personal data stored** unless they manually enter it."
+      ],
+      "text": "If you sign up for an account later, only **data you provide willingly** will be stored."
+    },
+    "yourChoices": {
+      "title": "Your Choices",
+      "description": "You can opt out of Google Analytics tracking by installing the official Google Analytics Opt-out Browser Add-on:",
+      "optOutLink": "Google Analytics Opt-out Add-on"
+    },
+    "dataRetention": {
+      "title": "Data Retention",
+      "description": [
+        "**Google Analytics Data:** Retained for **14 months**.",
+        "**Contact Form Submissions:** Retained for **6 months** for follow-ups.",
+        "**User Accounts (if applicable):** Stored securely for as long as you have an account."
+      ],
+      "text": "You can request **data deletion** at any time by contacting me."
+    },
+    "dataSecurity": {
+      "title": "Data Security",
+      "description": "I take reasonable steps to protect data collected through this website from unauthorized access, alteration, or destruction. However, no website or internet transmission is completely secure."
+    },
+    "policyChanges": {
+      "title": "Changes to This Privacy Policy",
+      "description": "This Privacy Policy may be updated periodically. Any changes will be posted on this page, and the effective date will be updated accordingly."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "If you have any questions about this Privacy Policy, feel free to reach out:",
+      "email": "email@thomastepi.com"
+    },
+    "additionalInfo": {
+      "title": "Additional Information",
+      "description": "For more details about how Google Analytics collects and processes data, refer to:",
+      "privacyLink": "Google’s Privacy Policy"
+    },
+    "attributions": {
+      "title": "Attributions & Credits",
+      "description": "This website uses icons from Flaticon. Below are the credits for the icons used:",
+      "quebecIcon": "Quebec icons created by Md Tanvirul Haque - Flaticon",
+      "canadaIcon": "Canada icons created by rizal2109 - Flaticon"
+    },
+    "lastUpdated": "Last Updated: March 11, 2025"
+  }
+}

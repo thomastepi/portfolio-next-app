@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Thomas Tepi – Personal Portfolio Website
 
-## Getting Started
+![Portfolio Screenshot](https://ik.imagekit.io/thormars/portfolio/portfolio.png)
 
-First, run the development server:
+Welcome to my **personal portfolio website**, designed to showcase:
+- My **professional background** and résumé
+- A selection of **projects** I’ve built and contributed to
+- Links to my **GitHub, LinkedIn**, and other platforms
+- A **contact form** to easily get in touch
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Live Demo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🔗 [Visit My Portfolio](https://www.thomastepi.com)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚙️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** React.js, Next.js (App Router)
+- **Styling/UI:** Chakra UI, Framer Motion
+- **Forms & Validation:** Formik + Yup
+- **State Management:** Context API
+- **Internationalization:** i18next (English & French)
+- **Analytics:** Google Analytics + Cookie Consent Banner
+- **Hosting:** Render (Frontend) + Heroku (Backend)
+- **Domain:** Custom domain via GoDaddy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Features
 
-## Deploy on Vercel
+- **Modern & Responsive Design** (mobile-first, desktop-ready)
+- **Dark Mode / Light Mode Toggle**
+- **Language Switcher (EN / FR)**
+- **Projects Showcase** with GitHub & live demo links
+- **Google Analytics Integration**
+- **Contact Form** with email notifications
+- **Résumé Download** in PDF format
+- **Privacy Policy Page**
+- **SEO Optimized** with dynamic meta tags and multilingual support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Folder Structure Overview
+
+This project uses the **Next.js App Router** (no `pages/` directory):
+
+public/
+│
+├── robots.txt # SEO: Crawling instructions
+└── sitemap.xml # SEO: Sitemap for search engines
+
+src/
+│
+├── app/ # Next.js App Router directory
+│ ├── [lng]/ # Language segment (e.g., /en, /fr)
+│ │ ├── page.js # Homepage per locale
+│ │ ├── layout.js # Root layout per locale
+│ │ └── privacy-policy/
+│ │ ├── page.js # Locale-based Privacy Policy page
+│ │ └── layout.js
+│ ├── i18n/ # i18next settings and translations
+│ ├── globals.css # Global styles
+│ └── not-found.js # Custom 404 page
+│
+├── assets/ # Static assets (images, icons, etc.)
+├── components/ # Reusable UI components
+├── config/ # App-level configuration (e.g., i18n, analytics)
+├── context/ # React Context providers
+├── data/ # Static JSON/JS data (projects, metadata, etc.)
+├── hooks/ # Custom React hooks
+├── scenes/ # Page-level UI sections (optional: consider renaming to 'sections/')
+├── utils/ # Utility/helper functions
+├── middleware.js # Next.js middleware (i18n routing, redirects, etc.)
+└── theme.js # Chakra UI theme configuration
+
+
+---
+
+## 🛣️ Roadmap
+
+- [ ] Add blog section using dynamic routes
+- [ ] Implement project category filtering
+- [ ] Enhance accessibility
+- [ ] Improve SEO Lighthouse score
+- [ ] Integrate newsletter form (Mailchimp)
+
+---
+
+## 📫 Contact
+
+Have feedback?
+
+📧 [Email](mailto:contact@thomastepi.com)  
+💼 [LinkedIn](https://www.linkedin.com/in/thomastepi)  
+💻 [GitHub](https://github.com/thomastepi)
