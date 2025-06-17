@@ -12,7 +12,7 @@ acceptLanguage.languages(languages);
 export const config = {
   // Avoid matching for static files, API routes, etc.
   matcher: [
-    "/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest).*)",
+    "/((?!api|_next/static|_next/image|assets|favicon.ico|robots.txt|sitemap.xml|sw.js|site.webmanifest).*)",
   ],
 };
 
