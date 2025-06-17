@@ -20,8 +20,9 @@ export default function NotFound() {
           Page Not Found / Page introuvable
         </Heading>
         <Text textAlign="center" mt={4} mb={6}>
-          Sorry, the page you are looking for does not exist. / Désolé, la page
-          que vous recherchez n'existe pas.
+          {
+            "Sorry, the page you are looking for does not exist. / Désolé, la page que vous recherchez n'existe pas."
+          }
         </Text>
         <Button as={Link} href="/" colorScheme="teal" variant="link">
           Home / Accueil
