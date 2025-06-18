@@ -24,7 +24,7 @@ Welcome to my **personal portfolio website**, designed to showcase:
 - **State Management:** Context API
 - **Internationalization:** i18next (English & French)
 - **Analytics:** Google Analytics + Cookie Consent Banner
-- **Hosting:** Render (Frontend) + Heroku (Backend)
+- **Hosting:** Vercel (Frontend) + Heroku (Backend)
 - **Domain:** Custom domain via GoDaddy
 
 ---

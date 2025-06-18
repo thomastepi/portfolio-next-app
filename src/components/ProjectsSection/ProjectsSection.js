@@ -1,7 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import FullScreenSection from "../FullScreenSection/FullScreenSection";
-import { Box, Heading, useColorMode } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  useColorMode,
+  Button,
+  textDecoration,
+} from "@chakra-ui/react";
+import Link from "next/link";
 import Card from "../Card/Card";
 import TitleWrapper from "../layout/TitleWrapper/TitleWrapper";
 import { useT } from "@/app/i18n/client";
@@ -30,7 +37,7 @@ const ProjectsSection = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <FullScreenSection w="90%" spacing={8} my="6rem">
+    <FullScreenSection w="90%" spacing={8} mt="6rem">
       <TitleWrapper my="5rem">
         <Heading id="projects-section">{t("projects.heading")}</Heading>
       </TitleWrapper>
@@ -73,6 +80,21 @@ const ProjectsSection = () => {
             />
           </MotionBox>
         ))}
+        <Box textAlign="left" w="100%">
+          <Button
+            title="View More Projects on GitHub"
+            as={Link}
+            href="https://github.com/thomastepi?tab=repositories"
+            target="_blank"
+            colorScheme="teal"
+            mt={8}
+            variant="outline"
+            borderRadius={0}
+            _hover={{ textDecoration: "none" }}
+          >
+            {t("projects.MoreProjectsBtn")}
+          </Button>
+        </Box>
       </MotionBox>
     </FullScreenSection>
   );
