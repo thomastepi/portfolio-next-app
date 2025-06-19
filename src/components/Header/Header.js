@@ -1,14 +1,7 @@
 "use client";
-import React, { useEffect, useCallback, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  Box,
-  HStack,
-  Divider,
-  useColorMode,
-  Button,
-  background,
-} from "@chakra-ui/react";
+import { Box, HStack, Divider, useColorMode, Button } from "@chakra-ui/react";
 import DrawerPanel from "../Drawer/Drawer";
 import ToggleColorMode from "../ToggleColorMode/ToggleColorMode";
 import { useT } from "@/app/i18n/client";
