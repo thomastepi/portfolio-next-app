@@ -93,5 +93,5 @@ src/
 
 Have feedback?
 
-📧 [Email](mailto:contact@thomastepi.com)  
+📧 [Message Me](https://thomastepi.com/#contactme-section)  
 💼 [LinkedIn](https://www.linkedin.com/in/thomastepi)

@@ -1,7 +1,14 @@
 "use client";
 import React, { useEffect, useCallback, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Box, HStack, Divider, useColorMode } from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  Divider,
+  useColorMode,
+  Button,
+  background,
+} from "@chakra-ui/react";
 import DrawerPanel from "../Drawer/Drawer";
 import ToggleColorMode from "../ToggleColorMode/ToggleColorMode";
 import { useT } from "@/app/i18n/client";
@@ -32,31 +39,6 @@ const Header = () => {
     i18n.changeLanguage(newLang);
     router.push(newPath);
   };
-
-  const handleClick = (anchor) => () => {
-    const id = `${anchor}-section`;
-    if (pathname !== "/") {
-      router.push(`/#${id}`);
-    } else {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    }
-  };
-
-  const handleGoHome = useCallback(() => {
-    if (pathname === `/${lang}`) {
-      if (typeof window !== "undefined" && window.scrollY > 0) {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    } else {
-      router.push(`/${lang}`);
-    }
-  }, [pathname, router, lang]);
 
   if (!hasMounted) return null;
 
@@ -99,26 +81,20 @@ const Header = () => {
           </nav>
           <nav>
             <HStack spacing={8}>
-              <a style={{ cursor: "pointer" }} onClick={handleGoHome}>
+              <a style={{ cursor: "pointer" }} href="/">
                 {t("header.home")}
               </a>
               {!isMobile && (
                 <>
-                  <a
-                    style={{ cursor: "pointer" }}
-                    onClick={handleClick("projects")}
-                  >
+                  <a style={{ cursor: "pointer" }} href="#projects-section">
                     {t("header.projects")}
                   </a>
-                  <a
-                    style={{ cursor: "pointer" }}
-                    onClick={handleClick("about-me")}
-                  >
+                  <a style={{ cursor: "pointer" }} href="#about-me-section">
                     {t("header.aboutMe")}
                   </a>
                   <a
                     style={{ cursor: "pointer", textAlign: "center" }}
-                    onClick={handleClick("contactme")}
+                    href="#contactme-section"
                   >
                     {t("header.contactMe")}
                   </a>
@@ -139,8 +115,9 @@ const Header = () => {
                 orientation="vertical"
               />
 
-              <a
-                style={{ cursor: "pointer" }}
+              <Button
+                variant="ghost"
+                _hover={{ textDecoration: "underline", background: "none" }}
                 onClick={() => handleLanguageChange()}
               >
                 {lang === "en"
@@ -150,7 +127,7 @@ const Header = () => {
                   : isMobile
                   ? "EN"
                   : "English"}{" "}
-              </a>
+              </Button>
               <ToggleColorMode />
             </HStack>
           </nav>
