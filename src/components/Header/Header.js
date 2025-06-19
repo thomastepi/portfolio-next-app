@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Box, HStack, Divider, useColorMode, Button } from "@chakra-ui/react";
+import Link from "next/link";
 import DrawerPanel from "../Drawer/Drawer";
 import ToggleColorMode from "../ToggleColorMode/ToggleColorMode";
 import { useT } from "@/app/i18n/client";
@@ -74,9 +75,9 @@ const Header = () => {
           </nav>
           <nav>
             <HStack spacing={8}>
-              <a style={{ cursor: "pointer" }} href="/">
+              <Link style={{ cursor: "pointer" }} href="/">
                 {t("header.home")}
-              </a>
+              </Link>
               {!isMobile && (
                 <>
                   <a style={{ cursor: "pointer" }} href="#projects-section">
