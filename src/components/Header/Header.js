@@ -80,26 +80,26 @@ const Header = () => {
               </Link>
               {!isMobile && (
                 <>
-                  <a style={{ cursor: "pointer" }} href="#projects-section">
+                  <Link style={{ cursor: "pointer" }} href="/#projects-section">
                     {t("header.projects")}
-                  </a>
-                  <a style={{ cursor: "pointer" }} href="#about-me-section">
+                  </Link>
+                  <Link style={{ cursor: "pointer" }} href="/#about-me-section">
                     {t("header.aboutMe")}
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     style={{ cursor: "pointer", textAlign: "center" }}
-                    href="#contactme-section"
+                    href="/#contactme-section"
                   >
                     {t("header.contactMe")}
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     style={{ cursor: "pointer" }}
                     href="https://drive.google.com/file/d/1qq4EXVJoe9Jh-GD1WIhVFCFt8yl909d3/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     {t("header.resume")}
-                  </a>
+                  </Link>
                 </>
               )}
 
