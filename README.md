@@ -67,11 +67,11 @@ src/
 │
 ├── assets/ # Static assets (images, icons, etc.)
 ├── components/ # Reusable UI components
-├── config/ # App-level configuration (e.g., i18n, analytics)
+├── config/ # App-level configuration (e.g., analytics)
 ├── context/ # React Context providers
-├── data/ # Static JSON/JS data (projects, metadata, etc.)
+├── data/ # Static JSON/JS data (projects, etc.)
 ├── hooks/ # Custom React hooks
-├── scenes/ # Page-level UI sections (optional: consider renaming to 'sections/')
+├── scenes/ # Page-level UI sections
 ├── utils/ # Utility/helper functions
 ├── middleware.js # Next.js middleware (i18n routing, redirects, etc.)
 └── theme.js # Chakra UI theme configuration
@@ -94,5 +94,4 @@ src/
 Have feedback?
 
 📧 [Email](mailto:contact@thomastepi.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/thomastepi)  
-💻 [GitHub](https://github.com/thomastepi)
+💼 [LinkedIn](https://www.linkedin.com/in/thomastepi)
