@@ -1,0 +1,29 @@
+name: Ping IndexNow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send IndexNow Ping
+        run: |
+          curl -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "www.thomastepi.com",
+              "key": "f2cf1e3c906b422388d184e799ab6ec7",
+              "keyLocation": "https://thomastepi.com/f2cf1e3c906b422388d184e799ab6ec7.txt",
+              "urlList": [
+                "https://thomastepi.com/",
+                "https://thomastepi.com/privacy-policy",
+                "https://resumecraft.thomastepi.com/",
+                "https://sawyercamp.thomastepi.com/",
+                "https://annette.thomastepi.com/",
+                "https://boomart.thomastepi.com/"
+              ]
+            }'
