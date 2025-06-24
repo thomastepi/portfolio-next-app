@@ -75,19 +75,9 @@ const PrivacyPolicyPage = () => {
             </ListItem>
           ))}
         </UnorderedList>
-        <Text as={Markdown} mb={4}>
+        <Text mb={4}>
           {t("privacyPolicy.informationCollected.trackingParams")}
         </Text>
-        <UnorderedList mb={4}>
-          {t("privacyPolicy.informationCollected.trackingParamsList", {
-            returnObjects: true,
-          }).map((item, index) => (
-            <ListItem key={index}>
-              <Markdown>{item}</Markdown>
-            </ListItem>
-          ))}
-        </UnorderedList>
-        <Text mb={4}>{t("privacyPolicy.informationCollected.usage")}</Text>
         <Text as={Markdown} mb={4}>
           {t("privacyPolicy.informationCollected.identifiableInfo")}
         </Text>
@@ -98,8 +88,11 @@ const PrivacyPolicyPage = () => {
           {t("privacyPolicy.cookies.title")}
         </Heading>
         <Text mb={4}>{t("privacyPolicy.cookies.description")} </Text>
+        <Text as={Markdown} mb={4}>
+          {t("privacyPolicy.cookies.essential")}
+        </Text>
         <UnorderedList mb={4}>
-          {t("privacyPolicy.cookies.list", {
+          {t("privacyPolicy.cookies.essentialList", {
             returnObjects: true,
           }).map((item, index) => (
             <ListItem key={index}>
@@ -107,7 +100,33 @@ const PrivacyPolicyPage = () => {
             </ListItem>
           ))}
         </UnorderedList>
-        <Text mb={4}>{t("privacyPolicy.cookies.disableNotice")} </Text>
+        <Text as={Markdown} mb={4}>
+          {t("privacyPolicy.cookies.optional")}
+        </Text>
+        <UnorderedList mb={4}>
+          {t("privacyPolicy.cookies.optionalList", {
+            returnObjects: true,
+          }).map((item, index) => (
+            <ListItem key={index}>
+              <Markdown>{item}</Markdown>
+            </ListItem>
+          ))}
+        </UnorderedList>
+        <Text as={Markdown} mb={4}>
+          {t("privacyPolicy.cookies.localStorage")}
+        </Text>
+        <UnorderedList mb={4}>
+          {t("privacyPolicy.cookies.localStorageList", {
+            returnObjects: true,
+          }).map((item, index) => (
+            <ListItem key={index}>
+              <Markdown>{item}</Markdown>
+            </ListItem>
+          ))}
+        </UnorderedList>
+        <Text as={Markdown} mb={4} ml={6}>
+          {t("privacyPolicy.cookies.impliedConsent")}
+        </Text>
         <Text as={Markdown} mb={4}>
           {t("privacyPolicy.cookies.retention")}
         </Text>
@@ -167,6 +186,14 @@ const PrivacyPolicyPage = () => {
         >
           {t("privacyPolicy.yourChoices.optOutLink")}
         </Link>
+        <Text my={4}>
+          {t("privacyPolicy.yourChoices.requestDeletion")}{" "}
+          <span>
+            <Link color="teal.400" href="mailto:contact@thomastepi.com">
+              contact@thomastepi.com
+            </Link>
+          </span>
+        </Text>
 
         <Divider my={4} />
 
@@ -182,9 +209,6 @@ const PrivacyPolicyPage = () => {
             </ListItem>
           ))}
         </UnorderedList>
-        <Text as={Markdown} mb={4}>
-          {t("privacyPolicy.dataRetention.text")}
-        </Text>
 
         <Divider my={4} />
 
@@ -206,7 +230,7 @@ const PrivacyPolicyPage = () => {
           {t("privacyPolicy.contact.title")}
         </Heading>
         <Text mb={4}>{t("privacyPolicy.contact.description")}</Text>
-        <Link href="mailto:email@thomastepi.com" color="teal.400">
+        <Link href="mailto:contact@thomastepi.com" color="teal.400">
           {t("privacyPolicy.contact.email")}
         </Link>
 

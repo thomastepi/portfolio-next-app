@@ -4,7 +4,7 @@ import {
   initializeAnalytics,
   updateAnalyticsConsent,
 } from "@/config/analytics";
-import CookieConsentComponent from "@/components//CookieConsentComponent/CookieConsentComponent";
+import CookieConsentComponent from "@/components/CookieConsentComponent/CookieConsentComponent";
 
 export function AnalyticsManager() {
   const [analyticsEnabled, setAnalyticsEnabled] = useState(false);

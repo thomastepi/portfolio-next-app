@@ -1,20 +1,21 @@
-'use client';
+"use client";
 import { useState, useEffect } from "react";
 import CookieConsent, { Cookies } from "react-cookie-consent";
 import { updateAnalyticsConsent } from "../../config/analytics";
 import { useT } from "@/app/i18n/client";
 import { Button, useDisclosure, useColorMode } from "@chakra-ui/react";
 import PreferenceModal from "./PreferenceModal/PreferenceModal";
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from "next/navigation";
 import styles from "./CookieConsentComponent.module.css";
 
 const CookieConsentComponent = ({ setAnalyticsEnabled }) => {
   const [consentVisible, setConsentVisible] = useState("hidden");
   const router = useRouter();
-  const { t } = useT('translation');
+  const { t } = useT("translation");
   const { colorMode } = useColorMode();
   const isDarkMode = colorMode === "dark";
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const pathname = usePathname();
 
   function handleAccept() {
     setAnalyticsEnabled(true);
@@ -48,6 +49,7 @@ const CookieConsentComponent = ({ setAnalyticsEnabled }) => {
     setConsentVisible("show");
 
     const handleUserInteraction = () => {
+      if (!/^\/(en|fr)$/.test(pathname)) return; // ensure interaction only on home page
       setAnalyticsEnabled(true);
       updateAnalyticsConsent(true);
       Cookies.set("CookieConsent", true, { expires: 90 });
@@ -70,7 +72,7 @@ const CookieConsentComponent = ({ setAnalyticsEnabled }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [consentVisible]);
+  }, [consentVisible, pathname]);
 
   return (
     <>
