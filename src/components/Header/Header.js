@@ -1,14 +1,21 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Box, HStack, Divider, useColorMode, Button } from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  Divider,
+  useColorMode,
+  Button,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import Link from "next/link";
 import DrawerPanel from "../Drawer/Drawer";
 import ToggleColorMode from "../ToggleColorMode/ToggleColorMode";
 import { useT } from "@/app/i18n/client";
 import { usePathname, useRouter } from "next/navigation";
 import socials from "../../data/socials";
-import useIsMobile from "@/hooks/useIsMobile";
+//import useIsMobile from "@/hooks/useIsMobile";
 
 const Header = () => {
   const [hasMounted, setHasMounted] = useState(false);
@@ -17,7 +24,7 @@ const Header = () => {
     setHasMounted(true);
   }, []);
 
-  const isMobile = useIsMobile();
+  const isMobile = useBreakpointValue({ base: true, md: false });
 
   const { colorMode } = useColorMode();
   const { i18n, t } = useT("translation");
@@ -40,7 +47,7 @@ const Header = () => {
     <Box
       position="sticky"
       top="0"
-      zIndex="sticky"
+      zIndex="1"
       boxShadow="md"
       backgroundColor={colorMode === "light" ? "gray.200" : "gray.900"}
     >
@@ -53,23 +60,25 @@ const Header = () => {
         >
           <nav>
             <HStack spacing={8}>
-              {isMobile && <DrawerPanel />}
-              {socials.map(
-                (social) =>
-                  !isMobile &&
-                  social.name !== "WhatsApp" && (
-                    <a
-                      key={social.url}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Visit my ${social.name} profile`}
-                    >
-                      {!isMobile && (
-                        <FontAwesomeIcon icon={social.icon} size="2x" />
-                      )}
-                    </a>
-                  )
+              {isMobile ? (
+                <DrawerPanel />
+              ) : (
+                socials.map(
+                  (social) =>
+                    social.name !== "WhatsApp" && (
+                      <a
+                        key={social.url}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Visit my ${social.name} profile`}
+                      >
+                        {!isMobile && (
+                          <FontAwesomeIcon icon={social.icon} size="2x" />
+                        )}
+                      </a>
+                    )
+                )
               )}
             </HStack>
           </nav>
@@ -91,6 +100,12 @@ const Header = () => {
                     href="/#contactme-section"
                   >
                     {t("header.contactMe")}
+                  </Link>
+                  <Link
+                    style={{ cursor: "pointer", textAlign: "center" }}
+                    href="/#articles-section"
+                  >
+                    {t("header.blog")}
                   </Link>
                   <Link
                     style={{ cursor: "pointer" }}

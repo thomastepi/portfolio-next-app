@@ -1,13 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import FullScreenSection from "../FullScreenSection/FullScreenSection";
-import {
-  Box,
-  Heading,
-  useColorMode,
-  Button,
-  textDecoration,
-} from "@chakra-ui/react";
+import { Box, Heading, useColorMode, Button } from "@chakra-ui/react";
 import Link from "next/link";
 import Card from "../Card/Card";
 import TitleWrapper from "../layout/TitleWrapper/TitleWrapper";

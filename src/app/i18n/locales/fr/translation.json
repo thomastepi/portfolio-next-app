@@ -9,6 +9,7 @@
     "projects": "Projets",
     "aboutMe": "À propos",
     "contactMe": "Contact",
+    "blog": "Blogues",
     "resume": "CV"
   },
 
@@ -111,6 +112,20 @@
     "isExpanded": "Afficher moins",
     "isCollapsed": "Afficher plus",
     "techStack": "Technologies"
+  },
+
+  "articles": {
+    "heading": "Articles en vedette",
+    "cra_migration": {
+      "title": "Migration de CRA vers Next.js App Router",
+      "date": "23 juin 2025",
+      "description": "Comment j'ai migré mon portfolio de CRA vers Next.js, et les problèmes que j'ai rencontrés."
+    },
+    "resume_ai": {
+      "title": "Créer des CV plus intelligents avec l’IA et le NLP",
+      "date": "19 mars 2025",
+      "description": "Un aperçu de la façon dont j’ai conçu ResumeCraft pour automatiser la rédaction de CV avec OpenAI."
+    }
   },
 
   "error": {

@@ -6,6 +6,7 @@ import {
   ContactMeSection,
   AboutMe,
   Alert,
+  HighlightedArticles
 } from "@/components";
 
 function HomePage() {
@@ -13,6 +14,7 @@ function HomePage() {
     <>
       <LandingSection />
       <ProjectsSection />
+      <HighlightedArticles />
       <AboutMe />
       <ContactMeSection />
       <Alert />

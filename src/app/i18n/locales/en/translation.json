@@ -8,6 +8,7 @@
     "projects": "Projects",
     "aboutMe": "About",
     "contactMe": "Contact",
+    "blog": "Blogs",
     "resume": "Resume"
   },
 
@@ -111,6 +112,20 @@
     "isExpanded": "Show less",
     "isCollapsed": "Read more",
     "techStack": "Tech Stack Used"
+  },
+
+  "articles": {
+    "heading": "Highlighted Articles",
+    "cra_migration": {
+      "title": "Migrating from CRA to Next.js App Router",
+      "date": "June 22, 2025",
+      "description": "How I transitioned my portfolio from CRA to Next.js, and the issues I faced."
+    },
+    "resume_ai": {
+      "title": "Building Smarter Resumes with AI and NLP",
+      "date": "March 19, 2025",
+      "description": "An inside look at how I designed ResumeCraft to automate resume writing using OpenAI."
+    }
   },
 
   "error": {

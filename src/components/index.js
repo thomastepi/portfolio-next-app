@@ -7,6 +7,7 @@ import ProjectsSection from "./ProjectsSection/ProjectsSection";
 import AboutMe from "./AboutMe/AboutMe";
 import TechStackSection from "./TechStackSection/TechStackSection";
 import CookieConsentComponent from "./CookieConsentComponent/CookieConsentComponent";
+import HighlightedArticles from "./HighlightedArticles/HighlightedArticles";
 
 export {
   Alert,
@@ -18,4 +19,5 @@ export {
   AboutMe,
   TechStackSection,
   CookieConsentComponent,
+  HighlightedArticles,
 };

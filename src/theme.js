@@ -3,8 +3,8 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   config: {
-    useSystemColorMode: false,
     initialColorMode: "light",
+    useSystemColorMode: false,
   },
   colors: {
     lightModeBg: "#f7f7f7",
@@ -13,38 +13,59 @@ const theme = extendTheme({
   },
   styles: {
     global: (props) => ({
+      ":root": {
+        "--chakra-colors-bg":
+          props.colorMode === "light" ? "#f7f7f7" : "#1a202c",
+        "--chakra-colors-text":
+          props.colorMode === "light" ? "#1a1a1a" : "#ededed",
+      },
+      html: {
+        width: "100%",
+        height: "100%",
+        scrollBehavior: "smooth",
+        colorScheme: props.colorMode,
+      },
       body: {
+        minHeight: "100%",
         bg: props.colorMode === "light" ? "lightModeBg" : "darkModeBg",
         color: props.colorMode === "light" ? "gray.800" : "whiteAlpha.900",
-        transition: "background-color 0.8s ease-in-out, color 0.8s ease-in-out",
-        margin: 0,
         fontFamily:
           '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+        overflowX: "clip",
         WebkitFontSmoothing: "antialiased",
         MozOsxFontSmoothing: "grayscale",
+        transition: "background-color 0.3s ease, color 0.3s ease",
       },
-      input: {
-        borderRadius: "0!important",
-        border: "none!important",
+      "*": {
+        boxSizing: "border-box",
+        padding: 0,
+        margin: 0,
       },
-      textarea: {
-        borderRadius: "0!important",
-        border: "none!important",
-      },
-      select: {
-        borderRadius: "0!important",
-        border: "none!important",
-      },
-      button: {
-        //border: "none!important",
-        borderRadius: "0!important",
-      },
-      "a:hover": {
-        textDecoration: "underline",
+      a: {
+        color: "inherit",
+        textDecoration: "none",
+        _hover: {
+          textDecoration: "underline",
+        },
       },
       code: {
         fontFamily:
           'source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace',
+      },
+      input: {
+        borderRadius: "0 !important",
+        border: "none !important",
+      },
+      textarea: {
+        borderRadius: "0 !important",
+        border: "none !important",
+      },
+      select: {
+        borderRadius: "0 !important",
+        border: "none !important",
+      },
+      button: {
+        borderRadius: "0 !important",
       },
     }),
   },
