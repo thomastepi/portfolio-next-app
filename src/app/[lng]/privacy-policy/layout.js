@@ -3,7 +3,9 @@ import { getT } from "@/app/i18n";
 
 export async function generateMetadata({ params }) {
   const { lng } = await params;
-  const { t } = await getT("translation", { keyPrefix: "privacyPolicy.metadata" });
+  const { t } = await getT("translation", {
+    keyPrefix: "privacyPolicy.metadata",
+  });
 
   return {
     title: t("title"),
@@ -11,7 +13,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: `https://www.thomastepi.com/${lng}/privacy-policy`,
+      url: `https://thomastepi.com/${lng}/privacy-policy`,
       siteName: "Thomas Tepi Portfolio",
       type: "website",
     },

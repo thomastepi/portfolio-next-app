@@ -45,6 +45,7 @@ const Header = () => {
 
   return (
     <Box
+      as="header"
       position="sticky"
       top="0"
       zIndex="1"
@@ -58,32 +59,31 @@ const Header = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <nav>
-            <HStack spacing={8}>
-              {isMobile ? (
-                <DrawerPanel />
-              ) : (
-                socials.map(
-                  (social) =>
-                    social.name !== "WhatsApp" && (
-                      <a
-                        key={social.url}
-                        href={social.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Visit my ${social.name} profile`}
-                      >
-                        {!isMobile && (
-                          <FontAwesomeIcon icon={social.icon} size="2x" />
-                        )}
-                      </a>
-                    )
-                )
-              )}
-            </HStack>
-          </nav>
-          <nav>
-            <HStack spacing={8}>
+          <HStack as="nav" aria-label="Social Media Links" spacing={8}>
+            {isMobile ? (
+              <DrawerPanel />
+            ) : (
+              socials.map(
+                (social) =>
+                  social.name !== "WhatsApp" && (
+                    <a
+                      key={social.url}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Visit my ${social.name} profile`}
+                    >
+                      {!isMobile && (
+                        <FontAwesomeIcon icon={social.icon} size="2x" />
+                      )}
+                    </a>
+                  )
+              )
+            )}
+          </HStack>
+
+          <HStack spacing={8}>
+            <HStack as="nav" aria-label="Main Navigation" spacing={8}>
               <Link style={{ cursor: "pointer" }} href="/">
                 {t("header.home")}
               </Link>
@@ -117,29 +117,30 @@ const Header = () => {
                   </Link>
                 </>
               )}
-
-              <Divider
-                borderColor={colorMode === "light" ? "gray.500" : "gray.600"}
-                h={"30px"}
-                orientation="vertical"
-              />
-
-              <Button
-                variant="ghost"
-                _hover={{ textDecoration: "underline", background: "none" }}
-                onClick={() => handleLanguageChange()}
-              >
-                {lang === "en"
-                  ? isMobile
-                    ? "FR"
-                    : "Français"
-                  : isMobile
-                  ? "EN"
-                  : "English"}{" "}
-              </Button>
-              <ToggleColorMode />
             </HStack>
-          </nav>
+
+            <Divider
+              borderColor={colorMode === "light" ? "gray.500" : "gray.600"}
+              h={"30px"}
+              orientation="vertical"
+            />
+
+            <Button
+              aria-label="Change Language"
+              variant="ghost"
+              _hover={{ textDecoration: "underline", background: "none" }}
+              onClick={() => handleLanguageChange()}
+            >
+              {lang === "en"
+                ? isMobile
+                  ? "FR"
+                  : "Français"
+                : isMobile
+                ? "EN"
+                : "English"}{" "}
+            </Button>
+            <ToggleColorMode />
+          </HStack>
         </HStack>
       </Box>
     </Box>

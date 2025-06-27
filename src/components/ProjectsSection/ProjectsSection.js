@@ -31,7 +31,7 @@ const ProjectsSection = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <FullScreenSection w="90%" spacing={8} mt="6rem">
+    <FullScreenSection as="section" w="90%" spacing={8} mt="6rem">
       <TitleWrapper my="5rem">
         <Heading id="projects-section">{t("projects.heading")}</Heading>
       </TitleWrapper>

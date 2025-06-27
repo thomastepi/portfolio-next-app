@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import {
   Box,
@@ -21,8 +21,8 @@ const MotionHeading = motion(Heading);
 const MotionText = motion(Text);
 const MotionImage = motion(Image);
 
-const AboutMe =  () => {
-  const { t } =  useT("translation");
+const AboutMe = () => {
+  const { t } = useT("translation");
 
   const item = {
     hidden: { opacity: 0, y: 20 },
@@ -30,7 +30,7 @@ const AboutMe =  () => {
   };
 
   return (
-    <FullScreenSection w="90%" my="6rem">
+    <FullScreenSection as="section" w="90%" my="6rem">
       <TitleWrapper my="6rem">
         <MotionHeading
           id="about-me-section"

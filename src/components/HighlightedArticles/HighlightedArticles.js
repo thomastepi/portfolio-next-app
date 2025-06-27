@@ -38,7 +38,7 @@ const HighlightedArticles = () => {
   const cardBg = useColorModeValue("gray.200", "gray.700");
 
   return (
-    <FullScreenSection w="90%" spacing={8} mt="6rem">
+    <FullScreenSection as="section" w="90%" spacing={8} mt="6rem">
       <TitleWrapper my="5rem">
         <Heading id="articles-section">{t("articles.heading")}</Heading>
       </TitleWrapper>

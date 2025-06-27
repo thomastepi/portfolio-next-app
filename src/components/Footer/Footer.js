@@ -20,9 +20,11 @@ const Footer = () => {
   const { t, i18n } = useT("translation");
   const year = useMemo(() => new Date().getFullYear(), []);
   return (
-    <Box backgroundColor={colorMode === "light" ? "gray.200" : "gray.900"}>
+    <Box
+      as="footer"
+      backgroundColor={colorMode === "light" ? "gray.200" : "gray.900"}
+    >
       <Stack
-        as="footer"
         margin="0 auto"
         px={12}
         justifyContent="center"
@@ -31,7 +33,13 @@ const Footer = () => {
         py={4}
         flexDir="column"
       >
-        <Stack flexDir={"row"} mb={2} spacing={5}>
+        <Stack
+          as="nav"
+          aria-label="Social Media Links"
+          flexDir={"row"}
+          mb={2}
+          spacing={5}
+        >
           {socials.map((social) => (
             <a
               key={social.url}

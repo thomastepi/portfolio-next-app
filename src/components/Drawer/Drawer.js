@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useRef } from "react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faFilePdf as regularFilePdf } from "@fortawesome/free-regular-svg-icons";
@@ -44,7 +44,7 @@ const DrawerPanel = () => {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <nav>
+                <nav aria-label="Social Media Links and Resume">
                   <VStack spacing={7} align="left">
                     {socials.map((social) => (
                       <a

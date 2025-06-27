@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useEffect } from "react";
 import { useFormik } from "formik";
 import {
@@ -34,7 +34,7 @@ const ContactMeSection = () => {
   const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
   const [submittedFirstName, setSubmittedFirstName] = React.useState("");
-  const { t, i18n } = useT('translation');
+  const { t, i18n } = useT("translation");
 
   const language = i18n.language;
 
@@ -109,7 +109,7 @@ const ContactMeSection = () => {
   }, [response, submittedFirstName]);
 
   return (
-    <FullScreenSection w="90%" my="6rem" spacing={8}>
+    <FullScreenSection as="section" w="90%" my="6rem" spacing={8}>
       <TitleWrapper my="4rem">
         <MotionHeading
           textAlign={"center"}

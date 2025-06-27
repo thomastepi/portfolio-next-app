@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import {
   Avatar,
@@ -34,7 +34,7 @@ const LandingSection = () => {
   };
 
   return (
-    <FullScreenSection w="90%">
+    <FullScreenSection as="section" w="90%">
       <Center py="55px">
         <MotionHeading
           size={useBreakpointValue({ base: "2xl", md: "4xl" })}
