@@ -17,13 +17,13 @@ jobs:
             -d '{
               "host": "www.thomastepi.com",
               "key": "f2cf1e3c906b422388d184e799ab6ec7",
-              "keyLocation": "https://thomastepi.com/f2cf1e3c906b422388d184e799ab6ec7.txt",
+              "keyLocation": "https://www.thomastepi.com/f2cf1e3c906b422388d184e799ab6ec7.txt",
               "urlList": [
-                "https://thomastepi.com/",
-                "https://thomastepi.com/privacy-policy",
+                "https://www.thomastepi.com/",
+                "https://www.thomastepi.com/privacy-policy",
                 "https://resumecraft.thomastepi.com/",
                 "https://sawyercamp.thomastepi.com/",
                 "https://annette.thomastepi.com/",
-                "https://boomart.thomastepi.com/"
+                "https://bookmart.thomastepi.com/"
               ]
             }'

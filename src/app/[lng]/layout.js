@@ -16,7 +16,7 @@ export async function generateMetadata() {
   return {
     title: t("title"),
     description: t("description"),
-    metadataBase: new URL("https://thomastepi.com"),
+    metadataBase: new URL("https://www.thomastepi.com"),
     keywords: [
       "Thomas Tepi",
       "web developer",
@@ -26,13 +26,13 @@ export async function generateMetadata() {
       "full stack developer",
       "projects",
     ],
-    authors: [{ name: "Thomas Tepi", url: "https://thomastepi.com" }],
+    authors: [{ name: "Thomas Tepi", url: "https://www.thomastepi.com" }],
     robots: "index, follow",
     openGraph: {
       title: "Thomas Tepi - Web Developer Portfolio",
       description:
         "Showcasing the web development projects and skills of Thomas Tepi, specializing in React.js and Node.js.",
-      url: "https://thomastepi.com",
+      url: "https://www.thomastepi.com",
       type: "website",
       images: [
         {
@@ -42,6 +42,15 @@ export async function generateMetadata() {
           alt: "Thomas Tepi Portfolio",
         },
       ],
+    },
+    alternates: {
+      canonical: "https://www.thomastepi.com",
+      languages: Object.fromEntries(
+        languages.map((lng) => [
+          lng,
+          `https://www.thomastepi.com/${lng}`,
+        ])
+      ),
     },
   };
 }

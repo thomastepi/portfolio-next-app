@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               name: "Thomas Tepi",
               jobTitle: "Web Developer",
-              url: "https://thomastepi.com",
+              url: "https://www.thomastepi.com",
               sameAs: [
                 "https://github.com/thomastepi",
                 "https://linkedin.com/in/thomastepi",
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
               worksFor: {
                 "@type": "Organization",
                 name: "Thomas Tepi Portfolio",
-                url: "https://thomastepi.com",
+                url: "https://www.thomastepi.com",
               },
               hasPart: [
                 {
