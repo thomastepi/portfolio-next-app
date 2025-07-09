@@ -21,7 +21,7 @@
   },
 
   "alert": {
-    "successHeader": "Tout va bien!",
+    "successHeader": "Message envoyé!",
     "errorHeader": "Oups!"
   },
 
@@ -46,7 +46,7 @@
       "send": "Envoyer"
     },
     "alerts": {
-      "success": "Merci pour votre soumission {{name}}, je vous répondrai sous peu!",
+      "success": "{{name}}, j'ai bien reçu votre message et je vous contacterai bientôt. Un courriel de confirmation est en route vers votre boîte de réception.",
       "error": "Quelque chose s'est mal passé, veuillez réessayer plus tard!"
     },
     "validation": {

@@ -20,7 +20,7 @@
   },
 
   "alert": {
-    "successHeader": "All good!",
+    "successHeader": "Message sent!",
     "errorHeader": "Oops!"
   },
 
@@ -45,7 +45,7 @@
       "send": "Send"
     },
     "alerts": {
-      "success": "Thanks for your submission {{name}}, I will get back to you shortly!",
+      "success": "{{name}}, I've received your submission and will be in touch soon. A confirmation email is on its way to your inbox.",
       "error": "Something went wrong, please try again later!"
     },
     "validation": {
