@@ -24,6 +24,12 @@ export function middleware(req) {
   )
     return NextResponse.next();
 
+  // Exclude specific paths from language detection
+  const excludedPaths = ["/links"];
+  if (excludedPaths.some((path) => req.nextUrl.pathname.startsWith(path))) {
+    return NextResponse.next();
+  }
+
   let lng;
   // Try to get language from cookie
   if (req.cookies.has(cookieName))
