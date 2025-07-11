@@ -22,7 +22,7 @@ import FullScreenSection from "../FullScreenSection/FullScreenSection";
 import { useT } from "@/app/i18n/client";
 import useSubmit from "@/hooks/useSubmit";
 import { useAlertContext } from "@/context/alertContext";
-// import { Link } from "react-router-dom";
+import s from "./ContactMeSection.module.css";
 
 const MotionBox = motion(Box);
 const MotionHeading = motion(Heading);
@@ -150,7 +150,7 @@ const ContactMeSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <FormLabel htmlFor="name">
-                <span className="required-asterisk">* </span>
+                <span className={s["required-asterisk"]}>* </span>
                 {t("contactMe.labels.name")}
               </FormLabel>
               <Input
@@ -172,7 +172,7 @@ const ContactMeSection = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <FormLabel htmlFor="email">
-                <span className="required-asterisk">* </span>
+                <span className={s["required-asterisk"]}>* </span>
                 {t("contactMe.labels.email")}
               </FormLabel>
               <Input
@@ -228,7 +228,7 @@ const ContactMeSection = () => {
               transition={{ duration: 0.5, delay: 0.8 }}
             >
               <FormLabel htmlFor="comment">
-                <span className="required-asterisk">* </span>
+                <span className={s["required-asterisk"]}>* </span>
                 {t("contactMe.labels.message")}
               </FormLabel>
               <Textarea
