@@ -41,6 +41,8 @@ const Header = () => {
     router.push(newPath);
   };
 
+  // this is to prevent quick flash of incorrect media query values
+  // caused by the use of useBreakpointValue hook
   if (!hasMounted) return null;
 
   return (
