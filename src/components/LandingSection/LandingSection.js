@@ -10,14 +10,8 @@ import {
   Text,
   Button,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import { useT } from "@/app/i18n/client";
 import FullScreenSection from "../FullScreenSection/FullScreenSection";
-
-const MotionHeading = motion(Heading);
-const MotionAvatar = motion(Avatar);
-const MotionText = motion(Text);
-const MotionButton = motion(Button);
 
 const LandingSection = () => {
   const { t } = useT();
@@ -36,63 +30,48 @@ const LandingSection = () => {
   return (
     <FullScreenSection as="section" w="90%">
       <Center py="55px">
-        <MotionHeading
+        <Heading
           size={useBreakpointValue({ base: "2xl", md: "4xl" })}
           align="center"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
           mb="4"
         >
           {t("landing.greeting")}
-        </MotionHeading>
+        </Heading>
       </Center>
       <VStack spacing={6} px="10px">
-        <MotionAvatar
+        <Avatar
           size="2xl"
           name="Thomas"
           src="https://ik.imagekit.io/thormars/profile_photos/profile.jpg"
           borderRadius="full"
           shadow="xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5, delay: 0.5 }}
         />
-        <MotionText
+        <Text
           fontSize={useBreakpointValue({ base: "lg", md: "xl" })}
           fontWeight="bold"
           color={useColorMode().colorMode === "light" ? "gray.700" : "gray.300"}
           textAlign="center"
           maxW="700px"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
         >
           {t("landing.title")} 🌱
-        </MotionText>
-        <MotionText
+        </Text>
+        <Text
           fontSize={useBreakpointValue({ base: "lg", md: "xl" })}
           color={useColorMode().colorMode === "light" ? "gray.600" : "gray.400"}
           textAlign="center"
           maxW="600px"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 1 }}
         >
           {t("landing.subTitle")}{" "}
-        </MotionText>
+        </Text>
 
-        <MotionButton
+        <Button
           mt={4}
           colorScheme="teal"
           size="lg"
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.5 }}
           onClick={handleClick("contactme")}
         >
           {t("landing.btnText")}
-        </MotionButton>
+        </Button>
       </VStack>
     </FullScreenSection>
   );

@@ -24,11 +24,7 @@ import useSubmit from "@/hooks/useSubmit";
 import { useAlertContext } from "@/context/alertContext";
 import s from "./ContactMeSection.module.css";
 
-const MotionBox = motion(Box);
 const MotionHeading = motion(Heading);
-const MotionFormControl = motion(FormControl);
-const MotionButton = motion(Button);
-// const MotionSpan = motion.span;
 
 const ContactMeSection = () => {
   const { isLoading, response, submit } = useSubmit();
@@ -132,23 +128,10 @@ const ContactMeSection = () => {
       >
         {t("contactMe.intro")}
       </Text>
-      <MotionBox
-        p="30px"
-        w={{ base: "100%", md: "80%", lg: "60%" }}
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8 }}
-      >
+      <Box p="30px" w={{ base: "100%", md: "80%", lg: "60%" }}>
         <form onSubmit={formik.handleSubmit}>
           <VStack spacing={5}>
-            <MotionFormControl
-              isInvalid={formik.touched.name && formik.errors.name}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
+            <FormControl isInvalid={formik.touched.name && formik.errors.name}>
               <FormLabel htmlFor="name">
                 <span className={s["required-asterisk"]}>* </span>
                 {t("contactMe.labels.name")}
@@ -163,13 +146,9 @@ const ContactMeSection = () => {
                 _focus={{ borderColor: focusBorderColor }}
               />
               <FormErrorMessage>{formik.errors.name}</FormErrorMessage>
-            </MotionFormControl>
-            <MotionFormControl
+            </FormControl>
+            <FormControl
               isInvalid={formik.touched.email && formik.errors.email}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
             >
               <FormLabel htmlFor="email">
                 <span className={s["required-asterisk"]}>* </span>
@@ -186,13 +165,8 @@ const ContactMeSection = () => {
                 _focus={{ borderColor: focusBorderColor }}
               />
               <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
-            </MotionFormControl>
-            <MotionFormControl
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
+            </FormControl>
+            <FormControl>
               <FormLabel htmlFor="type">
                 {t("contactMe.labels.type")}{" "}
                 <span style={{ fontStyle: "italic", fontWeight: "normal" }}>
@@ -219,13 +193,9 @@ const ContactMeSection = () => {
                   {t("contactMe.placeholders.other")}
                 </option>
               </Select>
-            </MotionFormControl>
-            <MotionFormControl
+            </FormControl>
+            <FormControl
               isInvalid={formik.touched.comment && formik.errors.comment}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
             >
               <FormLabel htmlFor="comment">
                 <span className={s["required-asterisk"]}>* </span>
@@ -242,46 +212,19 @@ const ContactMeSection = () => {
                 _focus={{ borderColor: focusBorderColor }}
               />
               <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
-            </MotionFormControl>
-            {/* <MotionSpan
-              style={{
-                fontStyle: "italic",
-                fontSize: "0.8rem",
-                textAlign: "center",
-              }}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, delay: 0.9 }}
-            >
-              {t("contactMe.privacyDisclaimer")}{" "}
-              <Button
-                as={Link}
-                colorScheme="teal"
-                variant="link"
-                fontSize="0.8rem"
-                to="/privacy-policy"
-              >
-                {t("privacyPolicy.title")}
-              </Button>
-              .
-            </MotionSpan> */}
-            <MotionButton
+            </FormControl>
+            <Button
               type="submit"
               width="full"
               colorScheme="teal"
               isLoading={isLoading}
               color={textColor}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, delay: 1 }}
             >
               {t("contactMe.buttons.send")}
-            </MotionButton>
+            </Button>
           </VStack>
         </form>
-      </MotionBox>
+      </Box>
     </FullScreenSection>
   );
 };

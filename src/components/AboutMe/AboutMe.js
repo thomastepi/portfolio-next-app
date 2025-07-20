@@ -19,7 +19,6 @@ import { useT } from "@/app/i18n/client";
 
 const MotionHeading = motion(Heading);
 const MotionText = motion(Text);
-const MotionImage = motion(Image);
 
 const AboutMe = () => {
   const { t } = useT("translation");
@@ -61,7 +60,7 @@ const AboutMe = () => {
           alignItems="stretch"
         >
           <GridItem>
-            <MotionImage
+            <Image
               src="https://ik.imagekit.io/thormars/portfolio/selfie.jpg"
               alt="Thomas Tepi"
               borderRadius="5px"
@@ -70,10 +69,6 @@ const AboutMe = () => {
               maxH="500px"
               objectFit="cover"
               boxShadow="lg"
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 1.5 }}
             />
           </GridItem>
 
