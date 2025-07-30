@@ -19,6 +19,8 @@ const LandingSection = () => {
   const [isMounted, setIsMounted] = useState(false);
   const { t } = useT();
 
+  // Ensure all hooks are called before the conditional render
+  // to avoid "Rules of Hook" error
   const headingSize = useBreakpointValue({ base: "2xl", md: "4xl" });
   const textFontSize = useBreakpointValue({ base: "lg", md: "xl" });
   const titleColor =

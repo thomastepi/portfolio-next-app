@@ -1,6 +1,7 @@
 import techStack from "./techStack";
 const projects = [
   {
+    id: 1,
     title: "projects.resumeBuilder.title",
     description: "projects.resumeBuilder.description",
     imageSrc: "https://ik.imagekit.io/thormars/portfolio/craft.png",
@@ -9,6 +10,7 @@ const projects = [
     stack: techStack["Resume Craft"],
   },
   {
+    id: 2,
     title: "projects.sawyerCamp.title",
     description: "projects.sawyerCamp.description",
     imageSrc: "https://ik.imagekit.io/thormars/portfolio/sawyer.png",
@@ -17,6 +19,7 @@ const projects = [
     stack: techStack["Sawyer Camp"],
   },
   {
+    id: 3,
     title: "projects.beautySpa.title",
     description: "projects.beautySpa.description",
     imageSrc: "https://ik.imagekit.io/thormars/portfolio/salon.png",
@@ -25,6 +28,7 @@ const projects = [
     stack: techStack["Annette"],
   },
   {
+    id: 4,
     title: "projects.bookMart.title",
     description: "projects.bookMart.description",
     imageSrc: "https://ik.imagekit.io/thormars/portfolio/bookmart.png",

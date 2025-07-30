@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import FullScreenSection from "../FullScreenSection/FullScreenSection";
 import { Box, Heading, useColorMode, Button } from "@chakra-ui/react";
 import Link from "next/link";
@@ -25,7 +25,6 @@ const cardVariants = {
 };
 
 const ProjectsSection = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
   const { colorMode } = useColorMode();
   const { t } = useT("translation");
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -62,14 +61,13 @@ const ProjectsSection = () => {
             variants={cardVariants}
           >
             <Card
+              id={project.id}
               title={t(project.title)}
               description={t(project.description)}
               imageSrc={project.imageSrc}
               link={project.link}
               github={project.github}
               techStack={project.stack}
-              isExpanded={isExpanded}
-              setIsExpanded={setIsExpanded}
               colorMode={colorMode}
             />
           </MotionBox>

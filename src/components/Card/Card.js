@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   Heading,
   Image,
@@ -24,10 +24,9 @@ const Card = ({
   link,
   github,
   techStack,
-  isExpanded,
-  setIsExpanded,
   colorMode,
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   const { t } = useT("translation");
 
   const truncatedDescription =
