@@ -103,6 +103,10 @@
     "beautySpa": {
       "title": "Annette's Beauty & SPA",
       "description": "Transformed Annette's online presence with a user-friendly website. Clients can explore a curated gallery of styles and services, effortlessly book appointments, and discover Annette's offerings. Pamper loved ones with secure gift card purchases (powered by Stripe). This comprehensive platform enhances the overall customer experience."
+    },
+    "guidefox": {
+      "title": "Guidefox - User Onboarding Tool",
+      "description": "Guidefox is an open-source, self-hosted onboarding platform for creating tours, hints, helper links, banners, and popups that drive adoption and improve feature discovery. Designed for privacy and full customization, it gives teams complete control over the user experience without vendor lock-in. The platform features a permission-based admin dashboard where invited admins and members can create, customize, and manage all onboarding guides. From defining step-by-step product tours to configuring real-time banners and embedding contextual helper links, the dashboard streamlines the process of deploying onboarding experiences across an application. I contributed to the development of the admin dashboard, building the logic for creating and managing guides, customizing their appearance, and integrating backend functionality."
     }
   },
 

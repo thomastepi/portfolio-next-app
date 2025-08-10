@@ -103,6 +103,10 @@
     "beautySpa": {
       "title": "Annette's Beauty & SPA",
       "description": "Amélioration de la présence en ligne d'Annette avec un site web convivial. Les clients peuvent explorer une galerie de styles, réserver des rendez-vous et découvrir les services proposés. Achetez des cartes-cadeaux en toute sécurité grâce à Stripe. Cette plateforme complète améliore l'expérience globale des clients."
+    },
+    "guidefox": {
+      "title": "Guidefox - Outil d’Onboarding Utilisateur",
+      "description": "Guidefox est une plateforme d’onboarding open source et auto-hébergée permettant de créer des visites guidées, des indices contextuels, des liens d’aide, des bannières et des popups pour favoriser l’adoption et améliorer la découverte des fonctionnalités. Conçue pour garantir la confidentialité et une personnalisation complète, elle offre aux équipes un contrôle total sur l’expérience utilisateur, sans dépendance à un fournisseur. La plateforme dispose d’un tableau de bord administrateur basé sur les permissions, où les administrateurs et les membres invités peuvent créer, personnaliser et gérer tous les guides d’onboarding. De la définition de visites guidées étape par étape à la configuration de bannières en temps réel et à l’intégration de liens d’aide contextuels, le tableau de bord simplifie le déploiement d’expériences d’onboarding dans une application. J’ai contribué au développement du tableau de bord administrateur, en créant la logique permettant d’ajouter, de gérer et de dupliquer des guides, de personnaliser leur apparence et d’intégrer les fonctionnalités backend."
     }
   },
 

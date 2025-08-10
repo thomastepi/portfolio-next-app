@@ -3,6 +3,13 @@ const techStack = {
   "Sawyer Camp": ["React.js", "Redux", "Node.js", "Paypal API", "Chakra UI"],
   Annette: ["React.js", "Redux", "Stripe API", "REST API", "MongoDB"],
   BookMart: ["React.js", "Node.js", "JWT", "Tailwind", "Daisy UI"],
+  Guidefox: [
+    "React.js",
+    "Material UI",
+    "Express.js",
+    "PostgreSQL",
+    "Docker",
+  ],
 };
 
 export default techStack;
