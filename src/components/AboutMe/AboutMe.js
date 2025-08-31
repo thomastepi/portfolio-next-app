@@ -6,8 +6,6 @@ import {
   Heading,
   Text,
   Image,
-  Link,
-  Button,
   Grid,
   GridItem,
 } from "@chakra-ui/react";
@@ -75,17 +73,7 @@ const AboutMe = () => {
           <GridItem>
             <VStack spacing={4} align="flex-start" h="100%">
               <MotionText textAlign="justify" lineHeight="1.8" variants={item}>
-                {t("aboutMe.paragraph1")}{" "}
-                <Button
-                  as={Link}
-                  href="https://guidefox.io"
-                  variant="link"
-                  isExternal
-                  colorScheme="teal"
-                  fontStyle={"italic"}
-                >
-                  Guidefox
-                </Button>
+                {t("aboutMe.paragraph1")}
               </MotionText>
               <MotionText textAlign="justify" lineHeight="1.8" variants={item}>
                 {t("aboutMe.paragraph2")}
