@@ -1,14 +1,22 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import {
   Heading,
+  Box,
   Image,
   Text,
   VStack,
   Link,
   HStack,
   Button,
+  useDisclosure,
+  Tag,
+  List,
+  ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
+import { CheckCircleIcon } from "@chakra-ui/icons";
+import ModalComponent from "../ModalComponent/ModalComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -20,17 +28,18 @@ const MotionVStack = motion(VStack);
 const Card = ({
   title,
   description,
+  longDescription,
+  features,
+  contributions,
+  meta,
+  tech,
   imageSrc,
   link,
   github,
-  techStack,
   colorMode,
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useT("translation");
-
-  const truncatedDescription =
-    description.length > 100 ? `${description.slice(0, 100)}...` : description;
 
   return (
     <MotionVStack
@@ -60,22 +69,17 @@ const Card = ({
         <Heading as="h3" size="md">
           {title}
         </Heading>
-        <Text>{isExpanded ? description : truncatedDescription}</Text>
+        <Text noOfLines={4}>{description}</Text>
         {description.length > 100 && (
-          <Button
-            size="sm"
-            variant="link"
-            colorScheme="teal"
-            onClick={() => setIsExpanded(!isExpanded)}
-          >
-            {isExpanded ? t("card.isExpanded") : t("card.isCollapsed")}
+          <Button size="sm" variant="link" colorScheme="teal" onClick={onOpen}>
+            {t("card.LearnMore")}
           </Button>
         )}
 
-        {techStack && techStack.length > 0 && (
+        {tech && tech.length > 0 && (
           <VStack align="flex-start" spacing={1}>
             <HStack flexWrap="wrap" spacing={2}>
-              {techStack.map((tech, index) => (
+              {tech.map((tech, index) => (
                 <Text
                   key={index}
                   fontSize="sm"
@@ -124,6 +128,98 @@ const Card = ({
           )}
         </HStack>
       </VStack>
+      <ModalComponent
+        isOpen={isOpen}
+        onClose={onClose}
+        title={title}
+        body={
+          <VStack align="start" spacing={4}>
+            <Image src={imageSrc} alt={title} borderRadius="md" />
+            <Text whiteSpace="pre-wrap">{longDescription}</Text>
+            {features && features.length > 0 && (
+              <Box w="100%">
+                <Text fontWeight="bold" mb={2}>
+                  {t("card.modal.features")}
+                </Text>
+                <List spacing={2}>
+                  {features.map((f, i) => (
+                    <ListItem key={i}>
+                      <ListIcon as={CheckCircleIcon} color="teal.500" />
+                      {f}
+                    </ListItem>
+                  ))}
+                </List>
+              </Box>
+            )}
+
+            {contributions && contributions.length > 0 && (
+              <Box w="100%">
+                <Text fontWeight="bold" mb={2}>
+                  {t("card.modal.contributions")}
+                </Text>
+                <List spacing={2}>
+                  {contributions.map((c, i) => (
+                    <ListItem key={i}>
+                      <ListIcon as={CheckCircleIcon} color="purple.500" />
+                      {c}
+                    </ListItem>
+                  ))}
+                </List>
+              </Box>
+            )}
+
+            {tech && tech.length > 0 && (
+              <Box w="100%">
+                <Text fontWeight="bold" mb={2}>
+                  {t("card.modal.techStack")}
+                </Text>
+                <HStack wrap="wrap" spacing={2}>
+                  {tech.map((t, i) => (
+                    <Tag key={i} size="md" colorScheme="gray" variant="subtle">
+                      {t}
+                    </Tag>
+                  ))}
+                </HStack>
+              </Box>
+            )}
+
+            {meta && (
+              <Box w="100%">
+                <Text fontWeight="bold" mb={2}>
+                  {t("card.modal.meta")}
+                </Text>
+                <List spacing={1}>
+                  <ListItem>
+                    {t("card.modal.year")}: {meta.year}
+                  </ListItem>
+                  <ListItem>
+                    {t("card.modal.status")}: {meta.status}
+                  </ListItem>
+                </List>
+              </Box>
+            )}
+          </VStack>
+        }
+        footer={
+          <HStack gap={4} py={2}>
+            {github && (
+              <Link href={github} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} size="lg" />{" "}
+                {t("card.githubTooltip")}
+              </Link>
+            )}
+            {link && (
+              <Link href={link} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGlobe} size="lg" />{" "}
+                {t("card.websiteTooltip")}
+              </Link>
+            )}
+          </HStack>
+        }
+        zIndex="2000"
+        isCentered
+        size="3xl"
+      />
     </MotionVStack>
   );
 };

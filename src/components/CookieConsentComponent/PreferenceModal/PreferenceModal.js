@@ -1,21 +1,8 @@
-'use client';
+"use client";
 import React, { useState } from "react";
-import {
-  Button,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  Text,
-  Switch,
-  FormControl,
-  FormLabel,
-  VStack,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Button, useColorMode } from "@chakra-ui/react";
+import ModalComponent from "../../ModalComponent/ModalComponent";
+import MBody from "./MBody";
 import { useT } from "@/app/i18n/client";
 
 const PreferenceModal = ({
@@ -27,7 +14,7 @@ const PreferenceModal = ({
   setConsentVisible,
 }) => {
   const [analyticsConsent, setAnalyticsConsent] = useState(true);
-  const { t } = useT('translation');
+  const { t } = useT("translation");
   const { colorMode } = useColorMode();
   const isDarkMode = colorMode === "dark";
 
@@ -43,60 +30,30 @@ const PreferenceModal = ({
   };
 
   return (
-    <Modal zIndex="2000" isOpen={isOpen} onClose={onClose} isCentered>
-      <ModalOverlay />
-      <ModalContent>
-        <ModalHeader>{t("preferencesModal.title")}</ModalHeader>
-        <ModalCloseButton />
-        <ModalBody>
-          <VStack align="start" spacing={4}>
-            <div>
-              <FormControl display="flex" alignItems="center" isDisabled>
-                <FormLabel htmlFor="essential-switch" mb="0">
-                  {t("preferencesModal.essentialLabel")}
-                </FormLabel>
-                <Switch
-                  id="essential-switch"
-                  colorScheme="teal"
-                  isChecked
-                  isReadOnly
-                />
-              </FormControl>
-              <Text fontSize="sm" color={isDarkMode ? "gray.300" : "gray.600"}>
-                {t("preferencesModal.essentialDescription")}
-              </Text>
-            </div>
-
-            <div>
-              <FormControl display="flex" alignItems="center">
-                <FormLabel htmlFor="analytics-switch" mb="0">
-                  {t("preferencesModal.analyticsLabel")}
-                </FormLabel>
-                <Switch
-                  id="analytics-switch"
-                  isChecked={analyticsConsent}
-                  colorScheme="teal"
-                  onChange={(e) => setAnalyticsConsent(e.target.checked)}
-                />
-              </FormControl>
-              <Text fontSize="sm" color={isDarkMode ? "gray.300" : "gray.600"}>
-                {t("preferencesModal.analyticsDescription")}
-              </Text>
-            </div>
-          </VStack>
-        </ModalBody>
-
-        <ModalFooter>
-          <Button
-            variant="solid"
-            colorScheme="teal"
-            onClick={handleSavePreferences}
-          >
-            {t("preferencesModal.saveButton")}
-          </Button>
-        </ModalFooter>
-      </ModalContent>
-    </Modal>
+    <ModalComponent
+      isOpen={isOpen}
+      onClose={onClose}
+      title={t("preferencesModal.title")}
+      body={
+        <MBody
+          setAnalyticsConsent={setAnalyticsConsent}
+          analyticsConsent={analyticsConsent}
+          isDarkMode={isDarkMode}
+          t={t}
+        />
+      }
+      footer={
+        <Button
+          variant="solid"
+          colorScheme="teal"
+          onClick={handleSavePreferences}
+        >
+          {t("preferencesModal.saveButton")}
+        </Button>
+      }
+      zIndex="2000"
+      isCentered
+    />
   );
 };
 

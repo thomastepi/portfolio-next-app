@@ -64,6 +64,11 @@ const ProjectsSection = () => {
               id={project.id}
               title={t(project.title)}
               description={t(project.description)}
+              longDescription={t(project.longDescription)}
+              features={t(project.features, { returnObjects: true })}
+              contributions={t(project.contributions, { returnObjects: true })}
+              meta={t(project.meta, { returnObjects: true })}
+              tech={t(project.tech, { returnObjects: true })}
               imageSrc={project.imageSrc}
               link={project.link}
               github={project.github}

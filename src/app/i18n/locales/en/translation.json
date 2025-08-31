@@ -88,34 +88,144 @@
   "projects": {
     "heading": "My Work",
     "MoreProjectsBtn": "More Projects",
+
     "sawyerCamp": {
       "title": "Sawyer-Camp Farmers CIG",
-      "description": "Developed and launched a website for Sawyer Camp Farmers Common Initiative Group, empowering local farmers in Cameroon by showcasing their products and sustainable farming practices. Implemented user-friendly design and seamless navigation to enhance user experience and engagement."
+      "description": "Built a modern website for Sawyer Camp Farmers in Cameroon to showcase sustainable farming practices, highlight local products, and improve visibility for partnerships, donors, and community growth.",
+      "longDescription": "A modern, mobile-first site that highlights sustainable farming practices, community news, and products. The platform improves visibility for local farmers and creates a trustworthy digital presence for partnerships and donations.",
+      "features": [
+        "Membership registration and sign-in flow for community engagement",
+        "Online donations powered by PayPal for secure and fast contributions",
+        "Blog/Stories section for community updates",
+        "Contact & inquiry forms with validation",
+        "SEO metadata and social preview images"
+      ],
+      "contributions": [
+        "Planned information architecture and UX flow",
+        "Built responsive UI and accessibility improvements (WCAG-friendly colors, keyboard nav)",
+        "Integrated CMS-like content model for easy updates",
+        "Set up deployment, DNS, and CDN caching",
+        "Built a PayPal donation flow that connects the website with the backend."
+      ],
+      "tech": ["React/Next.js", "Node.js", "Chakra UI", "Image CDN"],
+      "links": {
+        "github": "https://github.com/thomastepi/sawyercamp",
+        "demo": "https://sawyercamp.thomastepi.com"
+      },
+      "meta": { "year": "2025", "status": "Live" }
     },
+
     "resumeBuilder": {
       "title": "AI Resume Builder",
-      "description": "An innovative AI-powered resume builder, provides a secure platform for users to log in, update their profiles, and create professional resumes. With the option to choose from existing templates or generate a personalized one using advanced AI algorithms, ResumeCraft ensures that resumes are tailored to each user's unique profile."
+      "description": "Created ResumeCraft, an AI-powered resume builder that lets users securely manage profiles, choose templates, and generate tailored, ATS-friendly resumes using OpenAI to highlight individual strengths.",
+      "longDescription": "ResumeCraft lets users create ATS-friendly resumes by combining structured profile data with AI prompts. Users can pick a layout, tone, and language, then export or iterate quickly.",
+      "features": [
+        "Account auth and secure profile management",
+        "AI-assisted content generation with tunable tone/layout",
+        "Template selection and live preview",
+        "PDF export, multi-language support"
+      ],
+      "contributions": [
+        "Designed prompt pipeline and server routes for OpenAI calls",
+        "Built profile editor and validation logic",
+        "Implemented state management and template rendering",
+        "Added basic analytics for feature usage"
+      ],
+      "tech": ["React", "Express", "MongoDB", "OpenAI API", "Ant Design"],
+      "links": {
+        "github": "https://github.com/thomastepi/resumecraft",
+        "demo": "https://resumecraft.thomastepi.com"
+      },
+      "meta": { "year": "2024", "status": "Live" }
     },
+
     "bookMart": {
       "title": "BookMart",
-      "description": "A secure and user-friendly book management application that allows users to log in securely and perform essential CRUD (Create, Read, Update, Delete) operations on their book inventory. With an intuitive interface, users can easily add new books, update existing entries, and remove items they no longer need."
+      "description": "Developed BookMart, a secure web app for managing book collections with login, search, and full CRUD operations. Users can easily add, update, or remove entries in an intuitive and responsive UI.",
+      "longDescription": "BookMart is a CRUD web app focused on speed and clarity for managing a personal or small-shop book catalog with search and filters.",
+      "features": [
+        "Auth-protected dashboard",
+        "Create/Read/Update/Delete books with cover images",
+        "Search by title/author and tag filters",
+        "Form validation and optimistic UI updates"
+      ],
+      "contributions": [
+        "Database schema and API endpoints for inventory",
+        "Client-side forms and validation",
+        "Pagination and query filtering",
+        "Dockerized dev environment"
+      ],
+      "tech": ["React", "Node/Express", "MongoDB", "Docker"],
+      "links": {
+        "github": "https://github.com/thomastepi/bookmart",
+        "demo": "https://bookmart.thomastepi.com"
+      },
+      "meta": { "year": "2024", "status": "Live demo" }
     },
+
     "beautySpa": {
       "title": "Annette's Beauty & SPA",
-      "description": "Transformed Annette's online presence with a user-friendly website. Clients can explore a curated gallery of styles and services, effortlessly book appointments, and discover Annette's offerings. Pamper loved ones with secure gift card purchases (powered by Stripe). This comprehensive platform enhances the overall customer experience."
+      "description": "Delivered a customer-friendly site for Annette’s Beauty & SPA with a service gallery, appointment booking, and Stripe-powered gift cards, helping clients explore, schedule, and purchase with ease.",
+      "longDescription": "A service-oriented site with booking, service catalog, and payments, tailored for a local salon to increase conversions and repeat visits.",
+      "features": [
+        "Services & pricing pages with rich media",
+        "Appointment booking flow",
+        "Stripe-powered gift cards and payments",
+        "Gallery and testimonials"
+      ],
+      "contributions": [
+        "Implemented booking UX and form logic",
+        "Integrated Stripe Checkout and webhooks",
+        "Search-engine metadata and sitemap",
+        "Deployed with CDN caching and image optimization"
+      ],
+      "tech": ["React", "Express", "Stripe", "Chakra UI", "Vercel"],
+      "links": {
+        "github": "https://github.com/thomastepi/annettes-beauty-spa",
+        "demo": "https://annette.thomastepi.com"
+      },
+      "meta": { "year": "2024", "status": "Live" }
     },
+
     "guidefox": {
       "title": "Guidefox - User Onboarding Tool",
-      "description": "Guidefox is an open-source, self-hosted onboarding platform for creating tours, hints, helper links, banners, and popups that drive adoption and improve feature discovery. Designed for privacy and full customization, it gives teams complete control over the user experience without vendor lock-in. The platform features a permission-based admin dashboard where invited admins and members can create, customize, and manage all onboarding guides. From defining step-by-step product tours to configuring real-time banners and embedding contextual helper links, the dashboard streamlines the process of deploying onboarding experiences across an application. I contributed to the development of the admin dashboard, building the logic for creating and managing guides, customizing their appearance, and integrating backend functionality."
+      "description": "Contributed to Guidefox, an open-source onboarding tool for tours, hints, banners, and helper links. Built admin dashboard features, customization options, and backend integrations for flexibility.",
+      "longDescription": "Guidefox is a self-hosted alternative to commercial onboarding suites. Teams can design tours, banners, hints, and helper links, then deploy them with a lightweight JS agent without exposing user data to third-party SaaS.",
+      "features": [
+        "Permission-based admin dashboard (roles: admin/member)",
+        "Create and target tours, hints, banners, popups, helper links",
+        "Appearance customization and preview",
+        "Versioned publishing with enable/disable and scheduling",
+        "Lightweight JS agent for client-side injection"
+      ],
+      "contributions": [
+        "Built admin dashboard flows for creating/managing guides",
+        "Implemented appearance customization (theming, sizes, positions)",
+        "Integrated backend APIs and data models",
+        "Improved accessibility and cross-browser compatibility"
+      ],
+      "tech": ["React", "Postgres", "Sequelize", "Docker", "MUI"],
+      "links": {
+        "github": "https://github.com/thomastepi/guidefox",
+        "demo": "https://guidefox.thomastepi.com"
+      },
+      "meta": { "year": "2025", "status": "Open source" }
     }
   },
 
   "card": {
     "githubTooltip": "GitHub",
     "websiteTooltip": "Website",
-    "isExpanded": "Show less",
-    "isCollapsed": "Read more",
-    "techStack": "Tech Stack Used"
+    "LearnMore": "Learn more",
+    "techStack": "Tech Stack Used",
+    "modal": {
+      "features": "Features",
+      "contributions": "My Contributions",
+      "techStack": "Tech Stack",
+      "meta": "Project Info",
+      "year": "Year",
+      "status": "Status"
+    }
   },
 
   "articles": {
