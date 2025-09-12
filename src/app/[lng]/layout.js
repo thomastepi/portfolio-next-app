@@ -1,5 +1,6 @@
 import React from "react";
 import "@/app/globals.css";
+import { cookies } from "next/headers";
 import { AnalyticsManager } from "@/components/AnalyticsManager/AnalyticsManager";
 import { Providers } from "@/components/Providers/Providers";
 import { languages } from "@/app/i18n/settings";
@@ -46,18 +47,17 @@ export async function generateMetadata() {
     alternates: {
       canonical: "https://www.thomastepi.com",
       languages: Object.fromEntries(
-        languages.map((lng) => [
-          lng,
-          `https://www.thomastepi.com/${lng}`,
-        ])
+        languages.map((lng) => [lng, `https://www.thomastepi.com/${lng}`])
       ),
     },
   };
 }
 
-export default function MainLayout({ children }) {
+export default async function MainLayout({ children }) {
+  const cookieStore = await cookies();
+  const cookieHeader = cookieStore.toString();
   return (
-    <Providers>
+    <Providers cookies={cookieHeader}>
       <Layout>{children}</Layout>
       <AnalyticsManager />
     </Providers>
