@@ -1,0 +1,16 @@
+# Docker
+.dockerignore
+Dockerfile
+
+# Git
+.git
+.gitignore
+
+# Dependencies
+node_modules
+
+# Next.js build output
+.next
+
+# Optional
+README.md
