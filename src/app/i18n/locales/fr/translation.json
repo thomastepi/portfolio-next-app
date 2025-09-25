@@ -65,9 +65,11 @@
       "maxComment": "Le message ne peut pas dépasser 1000 caractères.",
       "invalidCharacters": "Le message contient des caractères non valides.",
       "serverError": "Erreur interne du serveur. Veuillez réessayer plus tard.",
-      "networkError": "Erreur réseau. Veuillez vérifier votre connexion Internet."
+      "networkError": "Erreur réseau. Veuillez vérifier votre connexion Internet.",
+      "timeoutError": "La requête a expiré. Veuillez réessayer plus tard."
     },
-    "privacyDisclaimer": "En soumettant ce formulaire, vous acceptez que vos informations fournies soient stockées en toute sécurité et utilisées uniquement pour répondre à votre demande, comme indiqué dans ma"
+    "captchaFailed": "reCAPTCHA a échoué. Veuillez réessayer.",
+    "recaptchaDisclaimer": "Ce formulaire est protégé par reCAPTCHA et les <privacy>Règles de confidentialité</privacy> et <tos>Conditions d’utilisation</tos> de Google s’appliquent."
   },
 
   "aboutMe": {
@@ -287,7 +289,19 @@
         "Sources de trafic (liens de référence, moteurs de recherche, visites directes)"
       ],
       "trackingParams": "Si vous cliquez sur des liens du site principal vers un sous-domaine, des paramètres de suivi peuvent être ajoutés à l’URL. Ces paramètres ne sont ni lus ni traités par les sous-domaines.",
-      "identifiableInfo": "**Aucune information personnellement identifiable (PII) n’est collectée ni stockée**. Votre adresse IP est anonymisée et les données sont conservées pour une durée limitée."
+      "identifiableInfo": "**Aucune information personnellement identifiable (PII) n’est collectée ni stockée**. Votre adresse IP est anonymisée et les données sont conservées pour une durée limitée.",
+      "recaptcha": {
+        "title": "**Google reCAPTCHA (Site principal & Application Resume Builder)**",
+        "description": "Le site principal (`www.thomastepi.com`) via son formulaire de contact ainsi que l’application Resume Builder (`resumecraft.thomastepi.com`) via ses formulaires d’authentification (connexion / création de compte) utilisent **Google reCAPTCHA v2 Invisible** pour se protéger contre le spam et les abus.",
+        "subtext": "Lorsque reCAPTCHA est déclenché, il peut collecter automatiquement des informations telles que:",
+        "list": [
+          "Détails sur l’appareil et le navigateur",
+          "Interactions de l’utilisateur avec le site (ex. : mouvements de souris, clics, frappes au clavier)",
+          "URL de référence et adresse IP"
+        ],
+        "note": "Ces données sont envoyées directement à Google et utilisées uniquement à des fins de vérification de sécurité.",
+        "disclaimer": "Ces formulaires sont protégés par reCAPTCHA et la <privacy>Politique de confidentialité</privacy> et les <tos>Conditions d’utilisation</tos> de Google s’appliquent."
+      }
     },
     "scope": {
       "title": "Portée",
@@ -302,24 +316,22 @@
       "text": "Chaque sous-domaine peut offrir des fonctionnalités différentes, mais les principes de traitement des données restent les mêmes."
     },
     "cookies": {
-      "title": "Cookies et préférences",
-      "description": "Ce site utilise une combinaison de cookies essentiels et de stockage local pour améliorer votre expérience.",
-      "essential": "**Cookies essentiels (toujours actifs):**",
+      "title": "Cookies et Préférences",
+      "description": "Ce site utilise une combinaison de cookies essentiels et optionnels pour améliorer votre expérience.",
+      "essential": "**Cookies essentiels (toujours actifs) :**",
       "essentialList": [
-        "*Préférence linguistique:* Enregistre la langue que vous avez choisie (ex. français ou anglais) via un cookie afin d'afficher le contenu approprié lors de vos prochaines visites.",
-        "*Consentement aux cookies:* Enregistre si vous avez accepté ou refusé les cookies d’analyse afin d’éviter de vous redemander à chaque visite."
+        "*Préférence de langue:* Enregistre la langue que vous avez sélectionnée (par ex. anglais ou français) à l’aide d’un cookie afin que le contenu correct s’affiche sur toutes les pages et lors de vos visites.",
+        "*Choix de consentement aux cookies:* Enregistre si vous avez accepté ou refusé les cookies analytiques afin que vous ne soyez pas sollicité de manière répétée.",
+        "*Préférence de thème:* Enregistre votre sélection de mode clair ou sombre dans un cookie afin que votre thème choisi soit appliqué de manière cohérente sur toutes les pages et visites. Ces informations ne sont pas partagées ni envoyées à un serveur.",
+        "*Cookies de sécurité reCAPTCHA:* Définis par Google reCAPTCHA pour distinguer les humains des robots et protéger les formulaires contre les abus. Ces cookies sont essentiels au bon fonctionnement des formulaires de contact et d’authentification."
       ],
-      "impliedConsent": "⚠️ *Consentement implicite:* Si vous continuez à utiliser la page d'accueil sans interagir avec la bannière de consentement et que vous faites défiler la page au-delà d’un certain point, cela est considéré comme un consentement total à l'utilisation de tous les cookies, y compris ceux facultatifs comme Google Analytics. Cela permet au site de fournir une expérience cohérente et de collecter des données de trafic anonymisées lorsque cela s'applique.",
-      "optional": "**Cookies facultatifs (nécessitent un consentement actif):**",
+      "impliedConsent": "⚠️ *Consentement implicite :* Si vous continuez à utiliser la page d’accueil sans interagir avec la bannière de cookies et que vous faites défiler au-delà d’un certain point, cela est considéré comme un consentement complet au stockage de tous les cookies, y compris ceux optionnels comme Google Analytics. Cela permet au site de fournir une expérience cohérente et de collecter, le cas échéant, des données de trafic anonymisées.",
+      "optional": "**Cookies optionnels (requièrent un consentement actif) :**",
       "optionalList": [
-        "*Cookies Google Analytics:* Utilisés uniquement sur le site principal pour collecter des données d’utilisation anonymisées."
+        "*Cookies Google Analytics :* Utilisés uniquement sur le site principal pour suivre des données d’utilisation anonymisées."
       ],
-      "localStorage": "**Stockage local (préférences non liées au suivi):**",
-      "localStorageList": [
-        "*Préférence de thème:* Enregistre votre choix entre le mode clair et le mode sombre localement sur votre appareil. Ces données ne sont pas envoyées à un serveur."
-      ],
-      "disableNotice": "Vous pouvez désactiver les cookies dans les paramètres de votre navigateur, mais cela peut affecter votre expérience sur le site.",
-      "retention": "Vos préférences en matière de cookies sont conservées pendant **90 jours**. Passé ce délai, une nouvelle confirmation vous sera demandée."
+      "disableNotice": "Vous pouvez désactiver les cookies via les paramètres de votre navigateur, mais cela peut affecter l’expérience utilisateur.",
+      "retention": "Vos paramètres de cookies sont enregistrés pendant **90 jours**. Après cette période, il vous sera demandé de confirmer à nouveau vos préférences."
     },
     "contactForm": {
       "title": "Formulaires de contact et comptes utilisateurs",
@@ -375,6 +387,6 @@
       "description": "Pour en savoir plus sur la manière dont Google Analytics collecte et traite les données, consultez :",
       "privacyLink": "Politique de confidentialité de Google"
     },
-    "lastUpdated": "Dernière mise à jour: 23 juin 2025"
+    "lastUpdated": "Dernière mise à jour: 25 septembre 2025"
   }
 }

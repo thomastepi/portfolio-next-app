@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useFormik } from "formik";
 import {
   Box,
@@ -19,7 +19,9 @@ import TitleWrapper from "../layout/TitleWrapper/TitleWrapper";
 import { motion } from "framer-motion";
 import * as Yup from "yup";
 import FullScreenSection from "../FullScreenSection/FullScreenSection";
+import GoogleReCaptcha from "../GoogleReCaptcha/GoogleReCaptcha";
 import { useT } from "@/app/i18n/client";
+import { Trans } from "react-i18next";
 import useSubmit from "@/hooks/useSubmit";
 import { useAlertContext } from "@/context/alertContext";
 import s from "./ContactMeSection.module.css";
@@ -29,7 +31,8 @@ const MotionHeading = motion(Heading);
 const ContactMeSection = () => {
   const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
-  const [submittedFirstName, setSubmittedFirstName] = React.useState("");
+  const [submittedFirstName, setSubmittedFirstName] = useState("");
+  const recaptchaRef = useRef(null);
   const { t, i18n } = useT("translation");
 
   const language = i18n.language;
@@ -43,15 +46,31 @@ const ContactMeSection = () => {
   const formik = useFormik({
     initialValues: { name: "", email: "", type: "", comment: "" },
     onSubmit: async (values) => {
-      const sanitizedValues = {
-        ...values,
-        name: values.name.trim(),
-        email: values.email.trim(),
-        comment: values.comment.trim(),
-      };
+      try {
+        const captchaToken = await recaptchaRef.current?.execute();
+        if (!captchaToken) {
+          message.error(t("contactMe.captchaFailed"));
+          return;
+        }
 
-      await submit({ ...sanitizedValues, language });
-      setSubmittedFirstName(sanitizedValues.name);
+        const sanitizedValues = {
+          ...values,
+          name: values.name.trim(),
+          email: values.email.trim(),
+          comment: values.comment.trim(),
+        };
+
+        await submit({
+          ...sanitizedValues,
+          language,
+          captchaToken,
+        });
+        setSubmittedFirstName(sanitizedValues.name);
+      } catch (error) {
+        console.error("error:", error);
+      } finally {
+        recaptchaRef.current?.reset();
+      }
     },
     validationSchema: Yup.object({
       name: Yup.string()
@@ -222,6 +241,28 @@ const ContactMeSection = () => {
             >
               {t("contactMe.buttons.send")}
             </Button>
+            <div className={s["recaptcha-notice"]}>
+              <Trans
+                i18nKey="contactMe.recaptchaDisclaimer"
+                components={{
+                  privacy: (
+                    <a
+                      href="https://policies.google.com/privacy"
+                      target="_blank"
+                      rel="noreferrer"
+                    />
+                  ),
+                  tos: (
+                    <a
+                      href="https://policies.google.com/terms"
+                      target="_blank"
+                      rel="noreferrer"
+                    />
+                  ),
+                }}
+              />
+            </div>
+            <GoogleReCaptcha ref={recaptchaRef} />
           </VStack>
         </form>
       </Box>

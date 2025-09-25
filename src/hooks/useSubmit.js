@@ -27,6 +27,9 @@ const useSubmit = () => {
       if (error.response) {
         if (error.response.status === 400 && error.response.data) {
           let errorObj = error.response.data;
+          // handle input validation errors from backend
+          // English only. No i18n for now.
+          // Todo: fix error structure before passing to setResponse()
           errorMessage = Object.entries(errorObj)
             .map(
               ([key, value]) =>
@@ -38,8 +41,9 @@ const useSubmit = () => {
         }
       } else if (error.request) {
         errorMessage = t("contactMe.validation.networkError");
+      } else if (error.message.includes("timeout")) {
+        errorMessage = t("contactMe.validation.timeoutError");
       }
-
       setResponse({
         type: "error",
         message: errorMessage,

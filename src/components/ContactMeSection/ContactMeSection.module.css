@@ -1,3 +1,20 @@
 .required-asterisk {
   color: var(--chakra-colors-red-500);
 }
+
+.recaptcha-notice {
+  width: 100%;
+  font-size: 0.875rem;
+  color: var(--chakra-colors-gray-500);
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -0.5rem;
+  line-height: 1.4;
+}
+
+.recaptcha-notice a {
+  color: var(--chakra-colors-blue-500);
+  text-decoration: underline;
+}

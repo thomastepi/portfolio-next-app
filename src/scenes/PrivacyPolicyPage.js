@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import Markdown from "react-markdown";
 import { useT } from "@/app/i18n/client";
+import { Trans } from "react-i18next";
 
 const PrivacyPolicyPage = () => {
   const { t } = useT("translation");
@@ -82,6 +83,51 @@ const PrivacyPolicyPage = () => {
           {t("privacyPolicy.informationCollected.identifiableInfo")}
         </Text>
 
+        {/* <Divider my={4} /> */}
+
+        <Text as={Markdown} mb={4}>
+          {t("privacyPolicy.informationCollected.recaptcha.title")}
+        </Text>
+        <Text as={Markdown} mb={4}>
+          {t("privacyPolicy.informationCollected.recaptcha.description")}
+        </Text>
+        <Text as={Markdown} mb={4}>
+          {t("privacyPolicy.informationCollected.recaptcha.subtext")}
+        </Text>
+        <UnorderedList mb={4}>
+          {t("privacyPolicy.informationCollected.recaptcha.list", {
+            returnObjects: true,
+          }).map((item, index) => (
+            <ListItem key={index}>
+              <Markdown>{item}</Markdown>
+            </ListItem>
+          ))}
+        </UnorderedList>
+        <Text mb={4}>
+          {t("privacyPolicy.informationCollected.recaptcha.note")}
+        </Text>
+        <Text mb={4}>
+          <Trans
+            i18nKey="privacyPolicy.informationCollected.recaptcha.disclaimer"
+            components={{
+              privacy: (
+                <Link
+                  href="https://policies.google.com/privacy"
+                  isExternal
+                  color="teal.400"
+                />
+              ),
+              tos: (
+                <Link
+                  href="https://policies.google.com/terms"
+                  isExternal
+                  color="teal.400"
+                />
+              ),
+            }}
+          />
+        </Text>
+
         <Divider my={4} />
 
         <Heading as="h2" size="md" mb={4}>
@@ -105,18 +151,6 @@ const PrivacyPolicyPage = () => {
         </Text>
         <UnorderedList mb={4}>
           {t("privacyPolicy.cookies.optionalList", {
-            returnObjects: true,
-          }).map((item, index) => (
-            <ListItem key={index}>
-              <Markdown>{item}</Markdown>
-            </ListItem>
-          ))}
-        </UnorderedList>
-        <Text as={Markdown} mb={4}>
-          {t("privacyPolicy.cookies.localStorage")}
-        </Text>
-        <UnorderedList mb={4}>
-          {t("privacyPolicy.cookies.localStorageList", {
             returnObjects: true,
           }).map((item, index) => (
             <ListItem key={index}>

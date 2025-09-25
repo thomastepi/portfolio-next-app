@@ -67,7 +67,8 @@
       "networkError": "Network error. Please check your internet connection.",
       "timeoutError": "Request timed out. Please try again later."
     },
-    "privacyDisclaimer": "By submitting this form, you agree that your provided information will be stored securely and used solely for responding to your inquiry, as outlined in my"
+    "captchaFailed": "reCAPTCHA failed. Please try again.",
+    "recaptchaDisclaimer": "This form is protected by reCAPTCHA and the Google <privacy>Privacy Policy</privacy> and <tos>Terms of Service</tos> apply."
   },
 
   "aboutMe": {
@@ -289,9 +290,20 @@
         "Traffic Sources (referral links, search engines, direct visits)"
       ],
       "trackingParams": "If you click links from the main site to a subdomain, tracking parameters may be added to the URL. These are not read or processed by the subdomains.",
-      "identifiableInfo": "**No personally identifiable information (PII) is collected or stored**. Your IP address is anonymized, and data is retained for a limited period."
+      "identifiableInfo": "**No personally identifiable information (PII) is collected or stored**. Your IP address is anonymized, and data is retained for a limited period.",
+      "recaptcha": {
+        "title": "**Google reCAPTCHA (Portfolio Site & Resume Builder App)**",
+        "description": "The main portfolio site (`www.thomastepi.com`) contact form and the Resume Builder App (`resumecraft.thomastepi.com`) authentication forms (sign in / create account) use **Google reCAPTCHA v2 Invisible** to protect against spam and abuse.",
+        "subtext": "When reCAPTCHA is triggered, it may automatically collect information such as:",
+        "list": [
+          "Device and browser details",
+          "User interactions with the site (e.g., mouse movements, clicks, keystrokes)",
+          "Referrer URL and IP address"
+        ],
+        "note": "This data is sent directly to Google and used solely for security verification.",
+        "disclaimer": "These forms are protected by reCAPTCHA and the Google <privacy>Privacy Policy</privacy> and <tos>Terms of Service</tos> apply."
+      }
     },
-
     "scope": {
       "title": "Scope",
       "subtitle": "This policy applies to the following domains and projects:",
@@ -307,20 +319,19 @@
 
     "cookies": {
       "title": "Cookies and Preferences",
-      "description": "This site uses a combination of essential cookies and local storage to enhance your experience.",
+      "description": "This site uses a combination of essential and optional cookies to enhance your experience.",
       "essential": "**Essential Cookies (Always Active):**",
       "essentialList": [
         "*Language Preference:* Stores the language you've selected (e.g English or French) using a cookie so the correct content is shown across pages and visits.",
-        "*Cookie Consent Choice:* Saves whether you’ve accepted or rejected analytics cookies so you’re not repeatedly prompted."
+        "*Cookie Consent Choice:* Saves whether you’ve accepted or rejected analytics cookies so you’re not repeatedly prompted.",
+        "*Theme Preference:* Stores your dark or light mode selection in a cookie so your chosen theme is applied consistently across pages and visits. This information is not shared or sent to any server.",
+        "*reCAPTCHA Security Cookies:* Set by Google reCAPTCHA to distinguish between humans and bots and to protect forms from abuse. These cookies are essential for the proper functioning of contact and authentication forms."
       ],
       "impliedConsent": "⚠️ *Implied Consent:* If you continue using the homepage without interacting with the cookie banner and scroll beyond a certain point, this is treated as full consent to store all cookies, including optional ones like Google Analytics. This allows the site to provide a consistent experience and collect anonymized traffic data where applicable.",
+
       "optional": "**Optional Cookies (Require Active Consent):**",
       "optionalList": [
         "*Google Analytics Cookies:* Used only on the main portfolio site to track anonymized usage data."
-      ],
-      "localStorage": "**Local Storage (Non-Tracking Preferences):**",
-      "localStorageList": [
-        "*Theme Preference:* Stores your dark or light mode selection locally. This information is not shared or sent to any server."
       ],
       "disableNotice": "You can disable cookies via your browser settings, though this may affect the user experience.",
       "retention": "Your cookie settings are saved for **90 days**. After that, you’ll be prompted to confirm your preferences again."
@@ -379,6 +390,6 @@
       "description": "For more details about how Google Analytics collects and processes data, refer to:",
       "privacyLink": "Google’s Privacy Policy"
     },
-    "lastUpdated": "Last Updated: June 23, 2025"
+    "lastUpdated": "Last Updated: September 25, 2025"
   }
 }

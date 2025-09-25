@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import CookieConsent, { Cookies } from "react-cookie-consent";
-import { updateAnalyticsConsent } from "../../config/analytics";
+import { updateAnalyticsConsent } from "../../services/analytics";
 import { useT } from "@/app/i18n/client";
 import { Button, useDisclosure, useColorMode } from "@chakra-ui/react";
 import PreferenceModal from "./PreferenceModal/PreferenceModal";
