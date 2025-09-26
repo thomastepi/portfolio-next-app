@@ -14,7 +14,8 @@ import { useT } from "@/app/i18n/client";
 import { Trans } from "react-i18next";
 
 const PrivacyPolicyPage = () => {
-  const { t } = useT("translation");
+  const { t, i18n } = useT("translation");
+  const lang = i18n.language;
   return (
     <>
       <Box maxW="800px" mx="auto" p={6}>
@@ -112,14 +113,14 @@ const PrivacyPolicyPage = () => {
             components={{
               privacy: (
                 <Link
-                  href="https://policies.google.com/privacy"
+                  href={`https://policies.google.com/privacy?hl=${lang}`}
                   isExternal
                   color="teal.400"
                 />
               ),
               tos: (
                 <Link
-                  href="https://policies.google.com/terms"
+                  href={`https://policies.google.com/terms?hl=${lang}`}
                   isExternal
                   color="teal.400"
                 />
@@ -214,7 +215,7 @@ const PrivacyPolicyPage = () => {
         </Heading>
         <Text mb={4}>{t("privacyPolicy.yourChoices.description")}</Text>
         <Link
-          href="https://tools.google.com/dlpage/gaoptout"
+          href={`https://tools.google.com/dlpage/gaoptout?hl=${lang}`}
           color="teal.400"
           isExternal
         >
@@ -275,7 +276,7 @@ const PrivacyPolicyPage = () => {
         </Heading>
         <Text mb={4}>{t("privacyPolicy.additionalInfo.description")}</Text>
         <Link
-          href="https://policies.google.com/privacy"
+          href={`https://policies.google.com/privacy?hl=${lang}`}
           color="teal.400"
           isExternal
         >

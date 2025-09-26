@@ -64,12 +64,23 @@ const Footer = () => {
             as={Link}
             size="sm"
             variant="link"
-            color={colorMode === "light" ? "gray.700" : "gray.500"}
+            color="teal"
             href={`/${i18n.resolvedLanguage}/privacy-policy`}
           >
-            {t("privacyPolicy.title")}
+            {t("footer.privacyPolicyBtnText")}
           </Button>
         </Stack>
+        <Button
+          as={Link}
+          size="sm"
+          variant="link"
+          color="teal"
+          href={"https://github.com/thomastepi/portfolio-next-app"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("footer.sourceCodeBtnText")}
+        </Button>
       </Stack>
     </Box>
   );

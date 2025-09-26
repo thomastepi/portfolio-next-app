@@ -42,7 +42,6 @@ const theme = extendTheme({
         margin: 0,
       },
       a: {
-        color: "inherit",
         textDecoration: "none",
         _hover: {
           textDecoration: "underline",

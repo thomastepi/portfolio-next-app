@@ -13,6 +13,7 @@ import {
   Textarea,
   Text,
   VStack,
+  Link,
   useColorModeValue,
 } from "@chakra-ui/react";
 import TitleWrapper from "../layout/TitleWrapper/TitleWrapper";
@@ -42,6 +43,7 @@ const ContactMeSection = () => {
   const focusBorderColor = useColorModeValue("blue.500", "blue.300");
 
   const textColor = useColorModeValue("white", "gray.900");
+  const disclaimerColor = useColorModeValue("gray.600", "gray.400");
 
   const formik = useFormik({
     initialValues: { name: "", email: "", type: "", comment: "" },
@@ -241,27 +243,27 @@ const ContactMeSection = () => {
             >
               {t("contactMe.buttons.send")}
             </Button>
-            <div className={s["recaptcha-notice"]}>
+            <Box className={s["recaptcha-notice"]} color={disclaimerColor}>
               <Trans
                 i18nKey="contactMe.recaptchaDisclaimer"
                 components={{
                   privacy: (
-                    <a
-                      href="https://policies.google.com/privacy"
-                      target="_blank"
-                      rel="noreferrer"
+                    <Link
+                      href={`https://policies.google.com/privacy?hl=${language}`}
+                      isExternal
+                      color="teal.400"
                     />
                   ),
                   tos: (
-                    <a
-                      href="https://policies.google.com/terms"
-                      target="_blank"
-                      rel="noreferrer"
+                    <Link
+                      href={`https://policies.google.com/terms?hl=${language}`}
+                      isExternal
+                      color="teal.400"
                     />
                   ),
                 }}
               />
-            </div>
+            </Box>
             <GoogleReCaptcha ref={recaptchaRef} />
           </VStack>
         </form>

@@ -391,5 +391,10 @@
       "privacyLink": "Google’s Privacy Policy"
     },
     "lastUpdated": "Last Updated: September 25, 2025"
+  },
+
+  "footer": {
+    "sourceCodeBtnText": "View Source Code on GitHub",
+    "privacyPolicyBtnText": "Privacy Policy"
   }
 }

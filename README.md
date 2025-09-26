@@ -10,26 +10,35 @@ Welcome to my **personal portfolio website**, designed to showcase:
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
 🔗 [Visit My Portfolio](https://www.thomastepi.com)
 
 ---
 
-## ⚙️ Tech Stack
+## About This Repo
+
+**This repository contains only the frontend code** (Next.js + React).  
+The backend for this portfolio and all my projects (including the **contact form email handler**) is located here:  
+[express-portfolio-api](https://github.com/thomastepi/express-portfolio-api)
+
+---
+
+## Tech Stack
 
 - **Framework:** React.js, Next.js (App Router)
 - **Styling/UI:** Chakra UI, Framer Motion
 - **Forms & Validation:** Formik + Yup
 - **State Management:** Context API
 - **Internationalization:** i18next (English & French)
+- **Security:** Google reCAPTCHA v2 Invisible (Contact Form)
 - **Analytics:** Google Analytics + Cookie Consent Banner
 - **Hosting:** Vercel (Frontend) + Heroku (Backend)
 - **Domain:** Custom domain via GoDaddy
 
 ---
 
-## ✨ Features
+## Features
 
 - **Modern & Responsive Design** (mobile-first, desktop-ready)
 - **Dark Mode / Light Mode Toggle**
@@ -43,15 +52,14 @@ Welcome to my **personal portfolio website**, designed to showcase:
 
 ---
 
-## 📁 Folder Structure Overview
+## Folder Structure Overview
 
 This project uses the **Next.js App Router** (no `pages/` directory):
 ```
 public/
 │
-├── robots.txt # SEO: Crawling instructions
-└── sitemap.xml # SEO: Sitemap for search engines
-
+├── robots.txt
+└── sitemap.xml
 src/
 │
 ├── app/ # Next.js App Router directory
@@ -79,17 +87,15 @@ src/
 
 ---
 
-## 🛣️ Roadmap
+## Roadmap
 
-- [ ] Add blog section using dynamic routes
-- [ ] Implement project category filtering
 - [ ] Enhance accessibility
 - [ ] Improve SEO Lighthouse score
 - [ ] Integrate newsletter form (Mailchimp)
 
 ---
 
-## 📫 Contact
+## Contact
 
 Have feedback?
 

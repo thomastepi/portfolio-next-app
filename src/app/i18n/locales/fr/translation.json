@@ -388,5 +388,10 @@
       "privacyLink": "Politique de confidentialité de Google"
     },
     "lastUpdated": "Dernière mise à jour: 25 septembre 2025"
+  },
+
+  "footer": {
+    "sourceCodeBtnText": "Voir le code source sur GitHub",
+    "privacyPolicyBtnText": "Politique de confidentialité"
   }
 }
