@@ -43,7 +43,7 @@ const ContactMeSection = () => {
   const focusBorderColor = useColorModeValue("blue.500", "blue.300");
 
   const textColor = useColorModeValue("white", "gray.900");
-  const disclaimerColor = useColorModeValue("gray.600", "gray.400");
+  const disclaimerColor = useColorModeValue("gray.500", "gray.400");
 
   const formik = useFormik({
     initialValues: { name: "", email: "", type: "", comment: "" },
