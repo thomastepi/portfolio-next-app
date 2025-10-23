@@ -11,7 +11,7 @@ const projects = [
     tech: "projects.guidefox.tech",
     imageSrc:
       "https://ik.imagekit.io/thormars/portfolio/guidefox-dashboard.png",
-    link: "https://guidefox.io/",
+    link: "https://guidefox.thomastepi.com/demo-login",
     github:
       "https://github.com/bluewave-labs/bluewave-onboarding/commits?author=thomastepi",
     stack: techStack["Guidefox"],
