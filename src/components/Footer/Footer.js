@@ -13,6 +13,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import socials from "../../data/socials";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const Footer = () => {
   const { colorMode } = useColorMode();
@@ -70,6 +71,7 @@ const Footer = () => {
             {t("footer.privacyPolicyBtnText")}
           </Button>
         </Stack>
+
         <Button
           as={Link}
           size="sm"
@@ -80,6 +82,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           {t("footer.sourceCodeBtnText")}
+          <ExternalLinkIcon mx="1" />
         </Button>
       </Stack>
     </Box>

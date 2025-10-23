@@ -69,7 +69,7 @@
       "timeoutError": "La requête a expiré. Veuillez réessayer plus tard."
     },
     "captchaFailed": "reCAPTCHA a échoué. Veuillez réessayer.",
-    "recaptchaDisclaimer": "Ce formulaire est protégé par reCAPTCHA et les <privacy>Règles de confidentialité</privacy> et <tos>Conditions d’utilisation</tos> de Google s’appliquent."
+    "recaptchaDisclaimer": "Protégé par reCAPTCHA. <privacy>Règles de confidentialité<ExternalLinkIcon /></privacy> | <tos>Conditions d’utilisation<ExternalLinkIcon /></tos>"
   },
 
   "aboutMe": {

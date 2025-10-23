@@ -16,6 +16,7 @@ import {
   Link,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import TitleWrapper from "../layout/TitleWrapper/TitleWrapper";
 import { motion } from "framer-motion";
 import * as Yup from "yup";
@@ -260,6 +261,9 @@ const ContactMeSection = () => {
                       isExternal
                       color="teal.400"
                     />
+                  ),
+                  ExternalLinkIcon: (
+                    <ExternalLinkIcon ml="1" />
                   ),
                 }}
               />

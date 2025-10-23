@@ -68,7 +68,7 @@
       "timeoutError": "Request timed out. Please try again later."
     },
     "captchaFailed": "reCAPTCHA failed. Please try again.",
-    "recaptchaDisclaimer": "This form is protected by reCAPTCHA and the Google <privacy>Privacy Policy</privacy> and <tos>Terms of Service</tos> apply."
+    "recaptchaDisclaimer": "Protected by reCAPTCHA. <privacy>Privacy Policy<ExternalLinkIcon /></privacy> | <tos>Terms of Service<ExternalLinkIcon /></tos>"
   },
 
   "aboutMe": {

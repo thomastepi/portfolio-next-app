@@ -3,11 +3,11 @@
 }
 
 .recaptcha-notice {
-  width: 100%;
+  width: 90%;
   font-size: 0.875rem;
   /* color: var(--chakra-colors-whiteAlpha-700); */
   text-align: center;
-  max-width: 400px;
+  /* max-width: 400px; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -0.5rem;
