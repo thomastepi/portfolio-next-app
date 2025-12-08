@@ -23,9 +23,9 @@ function HomePage() {
       <ScrollAnimatedBox>
         <AboutMe />
       </ScrollAnimatedBox>
-      <ScrollAnimatedBox>
+      <>
         <ContactMeSection />
-      </ScrollAnimatedBox>
+      </>
       <Alert />
     </>
   );
