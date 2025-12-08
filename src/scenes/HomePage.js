@@ -6,17 +6,26 @@ import {
   ContactMeSection,
   AboutMe,
   Alert,
-  HighlightedArticles
+  HighlightedArticles,
+  ScrollAnimatedBox
 } from "@/components";
 
 function HomePage() {
   return (
     <>
       <LandingSection />
-      <ProjectsSection />
-      <HighlightedArticles />
-      <AboutMe />
-      <ContactMeSection />
+      <ScrollAnimatedBox>
+        <ProjectsSection />
+      </ScrollAnimatedBox>
+      <ScrollAnimatedBox>
+        <HighlightedArticles />
+      </ScrollAnimatedBox>
+      <ScrollAnimatedBox>
+        <AboutMe />
+      </ScrollAnimatedBox>
+      <ScrollAnimatedBox>
+        <ContactMeSection />
+      </ScrollAnimatedBox>
       <Alert />
     </>
   );

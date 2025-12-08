@@ -250,8 +250,8 @@
   },
 
   "consent": {
-    "message": "J'utilise des cookies pour analyser le trafic et améliorer votre expérience de navigation.",
-    "span": "En cliquant sur 'Autoriser' ou en continuant à utiliser ce site, vous acceptez l'utilisation des cookies.",
+    "message": "Ce site utilise des cookies de Google pour améliorer votre expérience.",
+    "span": "En continuant à naviguer ou en cliquant sur « Autoriser », vous consentez à leur utilisation.",
     "policyButtonText": "En savoir plus",
     "acceptBtn": "Autoriser",
     "preferenceBtn": "Modifier les préférences",

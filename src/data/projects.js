@@ -25,7 +25,8 @@ const projects = [
     contributions: "projects.resumeBuilder.contributions",
     meta: "projects.resumeBuilder.meta",
     tech: "projects.resumeBuilder.tech",
-    imageSrc: "https://ik.imagekit.io/thormars/portfolio/craft.png",
+    imageSrc:
+      "https://ik.imagekit.io/thormars/ResumeCraft/resumeCraft-thumbnail.png",
     link: "https://resumecraft.thomastepi.com/",
     github: "https://github.com/thomastepi/resume-craft.git",
     stack: techStack["Resume Craft"],
@@ -39,7 +40,8 @@ const projects = [
     contributions: "projects.sawyerCamp.contributions",
     meta: "projects.sawyerCamp.meta",
     tech: "projects.sawyerCamp.tech",
-    imageSrc: "https://ik.imagekit.io/thormars/Sawyer-Camp/sawyer_c.png",
+    imageSrc:
+      "https://ik.imagekit.io/thormars/Sawyer-Camp/sawyer-camp-thumbnail.png?updatedAt=1765162049754",
     link: "https://sawyercamp.thomastepi.com/",
     github: "https://github.com/thomastepi/sawyer-camp",
     stack: techStack["Sawyer Camp"],

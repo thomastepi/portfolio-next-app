@@ -130,6 +130,7 @@ const Header = () => {
             <Button
               aria-label="Change Language"
               variant="ghost"
+              size="sm"
               _hover={{ textDecoration: "underline", background: "none" }}
               onClick={() => handleLanguageChange()}
             >

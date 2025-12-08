@@ -51,24 +51,57 @@ const theme = extendTheme({
         fontFamily:
           'source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace',
       },
-      input: {
-        borderRadius: "0 !important",
-        border: "none !important",
-      },
-      textarea: {
-        borderRadius: "0 !important",
-        border: "none !important",
-      },
-      select: {
-        borderRadius: "0 !important",
-        border: "none !important",
-      },
-      button: {
-        borderRadius: "0 !important",
-      },
     }),
   },
   components: {
+    Button: {
+      baseStyle: {
+        borderRadius: 0,
+      },
+    },
+    Input: {
+      variants: {
+        outline: (props) => ({
+          field: {
+            borderRadius: 0,
+            border: "1px solid",
+            borderColor: props.colorMode === 'light' ? 'gray.300' : 'whiteAlpha.300',
+            _focusVisible: {
+              borderColor: "blue.500",
+              boxShadow: `0 0 0 1px blue.500`,
+            },
+          },
+        }),
+      },
+    },
+    Textarea: {
+      variants: {
+        outline: (props) => ({
+          borderRadius: 0,
+          border: "1px solid",
+          borderColor: props.colorMode === 'light' ? 'gray.300' : 'whiteAlpha.300',
+          _focusVisible: {
+            borderColor: "blue.500",
+            boxShadow: `0 0 0 1px blue.500`,
+          },
+        }),
+      },
+    },
+    Select: {
+      variants: {
+        outline: (props) => ({
+          field: {
+            borderRadius: 0,
+            border: "1px solid",
+            borderColor: props.colorMode === 'light' ? 'gray.300' : 'whiteAlpha.300',
+            _focusVisible: {
+              borderColor: "blue.500",
+              boxShadow: `0 0 0 1px blue.500`,
+            },
+          },
+        }),
+      },
+    },
     Modal: {
       baseStyle: (props) => ({
         dialog: {

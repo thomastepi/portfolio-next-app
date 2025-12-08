@@ -1,3 +1,4 @@
+import ScrollAnimatedBox from "./ScrollAnimatedBox/ScrollAnimatedBox";
 import Alert from "./Alert/Alert";
 import ContactMeSection from "./ContactMeSection/ContactMeSection";
 import Footer from "./Footer/Footer";
@@ -10,6 +11,7 @@ import CookieConsentComponent from "./CookieConsentComponent/CookieConsentCompon
 import HighlightedArticles from "./HighlightedArticles/HighlightedArticles";
 
 export {
+  ScrollAnimatedBox,
   Alert,
   ContactMeSection,
   Footer,
