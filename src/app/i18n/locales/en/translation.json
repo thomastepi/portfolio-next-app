@@ -89,48 +89,61 @@
   "projects": {
     "heading": "My Work",
     "MoreProjectsBtn": "More Projects",
-
     "sawyerCamp": {
-      "title": "Sawyer-Camp Farmers CIG",
-      "description": "Built a modern website for Sawyer Camp Farmers in Cameroon to showcase sustainable farming practices, highlight local products, and improve visibility for partnerships, donors, and community growth.",
-      "longDescription": "A modern, mobile-first site that highlights sustainable farming practices, community news, and products. The platform improves visibility for local farmers and creates a trustworthy digital presence for partnerships and donations.",
+      "title": "Sawyer Camp Farmers CIG",
+      "description": "Developed a modern web platform for Sawyer Camp Farmers CIG in Cameroon, featuring an AI Lab with intelligent decision-support tools to empower local farmers and promote sustainable agriculture.",
+      "longDescription": "A modern, mobile-first platform focused on sustainable agriculture and farmer empowerment. The site includes an AI Lab with smart tools such as the AI Crop Planner for crop planning and the Farm Doctor for plant disease identification, while also showcasing community initiatives, local products, and partnership opportunities.",
       "features": [
-        "Membership registration and sign-in flow for community engagement",
-        "Online donations powered by PayPal for secure and fast contributions",
-        "Blog/Stories section for community updates",
-        "Contact & inquiry forms with validation",
-        "SEO metadata and social preview images"
+        "Member registration and authentication to support community engagement",
+        "AI Lab with intelligent agricultural tools (AI Crop Planner and Farm Doctor)",
+        "AI Crop Planner: crop planning recommendations based on region, season, and growing conditions",
+        "Farm Doctor: plant disease diagnosis using images and descriptive input",
+        "Blog and news section for sharing community initiatives",
+        "Secure online donations via PayPal with multi-currency support",
+        "Validated contact and inquiry forms",
+        "SEO optimization with metadata and social sharing images"
       ],
       "contributions": [
-        "Planned information architecture and UX flow",
-        "Built responsive UI and accessibility improvements (WCAG-friendly colors, keyboard nav)",
-        "Integrated CMS-like content model for easy updates",
-        "Set up deployment, DNS, and CDN caching",
-        "Built a PayPal donation flow that connects the website with the backend."
+        "Designed information architecture and end-to-end user flows",
+        "Built a responsive, accessible, mobile-first interface (WCAG-compliant, keyboard navigation)",
+        "Designed and integrated AI-powered agricultural tools for planning and diagnostics",
+        "Implemented a CMS-style content model for easy updates",
+        "Configured deployment, DNS, and CDN caching",
+        "Integrated PayPal donation flows connecting frontend and backend services"
       ],
-      "tech": ["React/Next.js", "Node.js", "Chakra UI", "Image CDN"],
+      "tech": [
+        "Next.js",
+        "React",
+        "Node.js",
+        "Chakra UI",
+        "OpenAI API",
+        "Image CDN"
+      ],
       "links": {
-        "github": "https://github.com/thomastepi/sawyercamp",
+        "github": "https://github.com/thomastepi/sawyer-camp-next-app",
         "demo": "https://sawyercamp.thomastepi.com"
       },
       "meta": { "year": "2025", "status": "Live" }
     },
 
     "resumeBuilder": {
-      "title": "AI Resume Builder",
-      "description": "Created ResumeCraft, an AI-powered resume builder that lets users securely manage profiles, choose templates, and generate tailored, ATS-friendly resumes using OpenAI to highlight individual strengths.",
-      "longDescription": "ResumeCraft lets users create ATS-friendly resumes by combining structured profile data with AI prompts. Users can pick a layout, tone, and language, then export or iterate quickly.",
+      "title": "AI Resume Builder & Analyzer",
+      "description": "Built ResumeCraft, an AI-powered platform that helps users generate ATS-friendly resumes, analyze existing PDFs against target job descriptions, and track job applications in one place.",
+      "longDescription": "ResumeCraft is an end-to-end resume optimization platform. Users can build resumes from structured profile data, analyze existing PDF resumes against specific job descriptions, receive section-by-section feedback with missing keywords, and manage their job applications through an integrated tracker.",
       "features": [
-        "Account auth and secure profile management",
-        "AI-assisted content generation with tunable tone/layout",
-        "Template selection and live preview",
-        "PDF export, multi-language support"
+        "Secure account authentication and profile management",
+        "AI resume builder with customizable templates and live preview",
+        "Resume analyzer: PDF upload with job description matching",
+        "Section-by-section feedback with missing ATS keywords",
+        "Job application tracker to manage application status and notes",
+        "PDF export and multi-language support"
       ],
       "contributions": [
-        "Designed prompt pipeline and server routes for OpenAI calls",
-        "Built profile editor and validation logic",
-        "Implemented state management and template rendering",
-        "Added basic analytics for feature usage"
+        "Designed and implemented AI prompts for resume generation and analysis",
+        "Built PDF resume parsing and job description comparison logic",
+        "Implemented section-level feedback and keyword gap analysis",
+        "Developed job application tracking feature with persistent storage",
+        "Managed backend APIs, state management, and template rendering"
       ],
       "tech": ["React", "Express", "MongoDB", "OpenAI API", "Ant Design"],
       "links": {

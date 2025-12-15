@@ -92,47 +92,61 @@
     "MoreProjectsBtn": "Autres projets",
     "sawyerCamp": {
       "title": "Sawyer-Camp Farmers CIG",
-      "description": "Création d’un site moderne pour Sawyer Camp Farmers au Cameroun afin de mettre en valeur les pratiques agricoles durables, présenter les produits locaux et renforcer la visibilité auprès des partenaires, donateurs et de la communauté.",
-      "longDescription": "Un site moderne et mobile-first qui présente les pratiques agricoles durables, les actualités de la communauté et les produits. La plateforme améliore la visibilité des agriculteurs locaux et crée une présence digitale crédible pour attirer partenariats et dons.",
+      "description": "Développement d’une plateforme web moderne pour Sawyer Camp Farmers CIG au Cameroun, intégrant un AI Lab avec des outils d’aide à la décision agricole pour soutenir les agriculteurs locaux et promouvoir des pratiques durables.",
+      "longDescription": "Plateforme web moderne et mobile-first dédiée à l’agriculture durable et au renforcement des capacités des agriculteurs. Le site intègre un AI Lab offrant des outils intelligents tels que l’AI Crop Planner pour la planification culturale et le Farm Doctor pour l’identification des maladies des cultures, tout en mettant en valeur les initiatives communautaires, les produits locaux et les opportunités de partenariat.",
       "features": [
-        "Inscription et connexion des membres pour favoriser l’engagement communautaire",
-        "Dons en ligne sécurisés grâce à l’intégration PayPal multi-devises",
+        "Espace membres avec inscription et connexion pour renforcer l’engagement communautaire",
+        "AI Lab avec outils agricoles intelligents (AI Crop Planner et Farm Doctor)",
+        "AI Crop Planner : recommandations basées sur la région, la saison et les conditions culturales",
+        "Farm Doctor : diagnostic des maladies des cultures à partir d’images et de descriptions",
         "Blog et actualités pour partager les initiatives de la communauté",
+        "Dons en ligne sécurisés via PayPal avec prise en charge multi-devises",
         "Formulaires de contact et de demande avec validation",
-        "Métadonnées SEO et images sociales pour améliorer la visibilité"
+        "Optimisation SEO avec métadonnées et images sociales"
       ],
       "contributions": [
-        "Conception de l’architecture d’information et du parcours utilisateur",
-        "Développement d’une interface réactive et accessible (couleurs conformes WCAG, navigation clavier)",
-        "Mise en place d’un modèle de contenu type CMS pour faciliter les mises à jour",
-        "Configuration du déploiement, DNS et mise en cache CDN",
-        "Implémentation du flux de dons PayPal reliant le frontend au backend pour des paiements sécurisés"
+        "Conception de l’architecture d’information et des parcours utilisateurs",
+        "Développement d’une interface réactive, accessible et adaptée au mobile (WCAG, navigation clavier)",
+        "Conception et intégration des outils IA agricoles (planification culturale et diagnostic)",
+        "Mise en place d’un modèle de contenu de type CMS pour faciliter les mises à jour",
+        "Configuration du déploiement, du DNS et de la mise en cache via CDN",
+        "Implémentation du flux de dons PayPal reliant le frontend et le backend pour des paiements sécurisés"
       ],
-      "tech": ["React/Next.js", "Node.js", "Chakra UI", "Image CDN"],
+      "tech": [
+        "Next.js",
+        "Node.js",
+        "React",
+        "Chakra UI",
+        "OpenAI API",
+        "Image CDN"
+      ],
       "links": {
-        "github": "https://github.com/thomastepi/sawyercamp",
+        "github": "https://github.com/thomastepi/sawyer-camp-next-app",
         "demo": "https://sawyercamp.thomastepi.com"
       },
       "meta": { "year": "2025", "status": "En ligne" }
     },
 
     "resumeBuilder": {
-      "title": "Générateur de CV IA",
-      "description": "Création de ResumeCraft, un générateur de CV intelligent permettant aux utilisateurs de gérer leur profil en toute sécurité, de choisir des modèles et de générer des CV personnalisés et compatibles ATS grâce à OpenAI.",
-      "longDescription": "ResumeCraft permet de créer des CV compatibles ATS en combinant les données de profil structurées avec des prompts IA. L’utilisateur peut choisir une mise en page, un ton et une langue, puis exporter ou affiner rapidement son CV.",
+      "title": "Créateur et Analyseur de CV IA",
+      "description": "Développé ResumeCraft, une plateforme propulsée par l’IA qui permet de créer des CV compatibles ATS, d’analyser des CV existants en PDF selon une offre d’emploi ciblée et de suivre les candidatures au même endroit.",
+      "longDescription": "ResumeCraft est une plateforme complète d’optimisation de CV. Les utilisateurs peuvent créer des CV à partir de données de profil structurées, analyser des CV PDF existants en les comparant à des descriptions de poste spécifiques, recevoir des retours détaillés par section avec les mots-clés manquants, et gérer leurs candidatures grâce à un outil de suivi intégré.",
       "features": [
-        "Authentification et gestion sécurisée des profils",
-        "Génération de contenu assistée par IA avec choix du ton et de la mise en page",
-        "Sélection de modèles et aperçu en direct",
-        "Export en PDF et support multilingue"
+        "Authentification sécurisée et gestion des profils utilisateurs",
+        "Création de CV assistée par IA avec modèles personnalisables et aperçu en temps réel",
+        "Analyse de CV : importation de PDF et comparaison avec une offre d’emploi",
+        "Commentaires détaillés par section avec analyse des mots-clés ATS manquants",
+        "Suivi des candidatures avec gestion des statuts et des notes",
+        "Exportation PDF et prise en charge multilingue"
       ],
       "contributions": [
-        "Conception du pipeline de prompts et des routes serveur pour les appels OpenAI",
-        "Développement de l’éditeur de profil et des règles de validation",
-        "Mise en place de la gestion d’état et du rendu des modèles",
-        "Ajout d’analyses basiques pour suivre l’utilisation des fonctionnalités"
+        "Conception et implémentation des prompts IA pour la génération et l’analyse de CV",
+        "Développement de la logique d’analyse de CV PDF et de comparaison avec les descriptions de poste",
+        "Mise en place des retours par section et de l’analyse des écarts de mots-clés",
+        "Développement de la fonctionnalité de suivi des candidatures avec persistance des données",
+        "Gestion des API backend, de l’état applicatif et du rendu des modèles"
       ],
-      "tech": ["React", "Express", "MongoDB", "OpenAI API", "Ant Design"],
+      "tech": ["React", "Express", "MongoDB", "API OpenAI", "Ant Design"],
       "links": {
         "github": "https://github.com/thomastepi/resumecraft",
         "demo": "https://resumecraft.thomastepi.com"
