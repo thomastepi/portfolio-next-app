@@ -42,8 +42,8 @@ const projects = [
     tech: "projects.sawyerCamp.tech",
     imageSrc:
       "https://ik.imagekit.io/thormars/Sawyer-Camp/sawyer-camp-thumbnail.png?updatedAt=1765162049754",
-    link: "https://sawyercamp.thomastepi.com/",
-    github: "https://github.com/thomastepi/sawyer-camp",
+    link: "https://sawyercampfarmers.org/",
+    github: "https://github.com/thomastepi/sawyer-camp-next-app",
     stack: techStack["Sawyer Camp"],
   },
   {
