@@ -65,11 +65,6 @@ export default function RootLayout({ children }) {
                 },
                 {
                   "@type": "WebSite",
-                  name: "Sawyer Camp Farmers CIG",
-                  url: "https://sawyercamp.thomastepi.com",
-                },
-                {
-                  "@type": "WebSite",
                   name: "Annette's Beauty & Salon",
                   url: "https://annette.thomastepi.com",
                 },

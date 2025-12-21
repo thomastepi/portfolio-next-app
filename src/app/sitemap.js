@@ -19,9 +19,7 @@ export default function sitemap() {
   // Subdomain projects
   const projectUrls = [
     { url: "https://resumecraft.thomastepi.com/", priority: 0.8 },
-    { url: "https://sawyercamp.thomastepi.com/", priority: 0.8 },
     { url: "https://annette.thomastepi.com/", priority: 0.8 },
-    { url: "https://bookmart.thomastepi.com/", priority: 0.8 },
     { url: "https://guidefox.thomastepi.com/", priority: 0.8 },
   ].map((proj) => ({
     ...proj,
