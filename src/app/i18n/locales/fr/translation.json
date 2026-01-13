@@ -27,6 +27,7 @@
 
   "contactMe": {
     "heading": "Envoyez-moi un message",
+    "socialLabel": "Retrouvez-moi aussi ici :",
     "intro": "Une question, une idée de projet ou simplement envie de dire bonjour? Je serais ravi d’échanger avec vous. Remplissez le formulaire et je vous répondrai dans les plus brefs délais.",
     "required": "*",
     "optional": "(Facultatif)",

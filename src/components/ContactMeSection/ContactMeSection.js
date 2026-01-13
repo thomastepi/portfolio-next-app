@@ -15,8 +15,12 @@ import {
   VStack,
   Link,
   useColorModeValue,
+  Wrap,
+  WrapItem,
+  Tooltip,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TitleWrapper from "../layout/TitleWrapper/TitleWrapper";
 import { motion } from "framer-motion";
 import * as Yup from "yup";
@@ -26,6 +30,7 @@ import { useT } from "@/app/i18n/client";
 import { Trans } from "react-i18next";
 import useSubmit from "@/hooks/useSubmit";
 import { useAlertContext } from "@/context/alertContext";
+import socials from "../../data/socials";
 import s from "./ContactMeSection.module.css";
 
 const MotionHeading = motion(Heading);
@@ -45,6 +50,8 @@ const ContactMeSection = () => {
 
   const textColor = useColorModeValue("white", "gray.900");
   const disclaimerColor = useColorModeValue("gray.500", "gray.400");
+  const iconColor = useColorModeValue("gray.700", "gray.300");
+  const socialLabelColor = useColorModeValue("gray.600", "gray.400");
 
   const formik = useFormik({
     initialValues: { name: "", email: "", type: "", comment: "" },
@@ -150,6 +157,40 @@ const ContactMeSection = () => {
       >
         {t("contactMe.intro")}
       </Text>
+      <VStack spacing={2} my={2} align="center">
+        <Text
+          fontSize="sm"
+          color={socialLabelColor}
+          textAlign="center"
+        >
+          {t("contactMe.socialLabel")}
+        </Text>
+        <Wrap spacing={4} justify="center">
+          {socials.map((social) => (
+            <WrapItem key={social.name}>
+              <Tooltip
+                label={social.name}
+                aria-label={`${social.name} tooltip`}
+                placement="bottom"
+                hasArrow
+                openDelay={500}
+              >
+                <Link
+                  href={social.url}
+                  isExternal
+                  aria-label={social.ariaLabel}
+                  color={iconColor}
+                  opacity={0.85}
+                  transition="opacity 0.2s ease"
+                  _hover={{ opacity: 1 }}
+                >
+                  <FontAwesomeIcon icon={social.icon} size="lg" />
+                </Link>
+              </Tooltip>
+            </WrapItem>
+          ))}
+        </Wrap>
+      </VStack>
       <Box p="30px" w={{ base: "100%", md: "80%", lg: "60%" }}>
         <form onSubmit={formik.handleSubmit}>
           <VStack spacing={5}>
