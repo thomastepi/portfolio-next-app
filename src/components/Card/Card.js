@@ -32,10 +32,11 @@ const Card = ({
   features,
   contributions,
   meta,
-  tech,
+  // tech,
   imageSrc,
   link,
   github,
+  techStack,
   colorMode,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -76,10 +77,10 @@ const Card = ({
           </Button>
         )}
 
-        {tech && tech.length > 0 && (
+        {techStack && techStack.length > 0 && (
           <VStack align="flex-start" spacing={1}>
             <HStack flexWrap="wrap" spacing={2}>
-              {tech.map((tech, index) => (
+              {techStack.map((tech, index) => (
                 <Text
                   key={index}
                   fontSize="sm"
@@ -168,13 +169,13 @@ const Card = ({
               </Box>
             )}
 
-            {tech && tech.length > 0 && (
+            {techStack && techStack.length > 0 && (
               <Box w="100%">
                 <Text fontWeight="bold" mb={2}>
                   {t("card.modal.techStack")}
                 </Text>
                 <HStack wrap="wrap" spacing={2}>
-                  {tech.map((t, i) => (
+                  {techStack.map((t, i) => (
                     <Tag key={i} size="md" colorScheme="gray" variant="subtle">
                       {t}
                     </Tag>

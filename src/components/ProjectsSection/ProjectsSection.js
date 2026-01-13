@@ -68,7 +68,7 @@ const ProjectsSection = () => {
               features={t(project.features, { returnObjects: true })}
               contributions={t(project.contributions, { returnObjects: true })}
               meta={t(project.meta, { returnObjects: true })}
-              tech={t(project.tech, { returnObjects: true })}
+              // tech={t(project.tech, { returnObjects: true })}
               imageSrc={project.imageSrc}
               link={project.link}
               github={project.github}

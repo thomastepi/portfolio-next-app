@@ -7,6 +7,7 @@ import {
   Divider,
   useColorMode,
   Button,
+  Tooltip,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import Link from "next/link";
@@ -68,17 +69,26 @@ const Header = () => {
               socials.map(
                 (social) =>
                   social.name !== "WhatsApp" && (
-                    <a
-                      key={social.url}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Visit my ${social.name} profile`}
+                    <Tooltip
+                      key={social.name}
+                      label={social.name}
+                      aria-label={`${social.name} tooltip`}
+                      placement="bottom"
+                      hasArrow
+                      openDelay={500}
                     >
-                      {!isMobile && (
-                        <FontAwesomeIcon icon={social.icon} size="2x" />
-                      )}
-                    </a>
+                      <a
+                        key={social.url}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={social.ariaLabel}
+                      >
+                        {!isMobile && (
+                          <FontAwesomeIcon icon={social.icon} size="2x" />
+                        )}
+                      </a>
+                    </Tooltip>
                   )
               )
             )}
