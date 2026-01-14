@@ -77,9 +77,6 @@ const PrivacyPolicyPage = () => {
             </ListItem>
           ))}
         </UnorderedList>
-        <Text mb={4}>
-          {t("privacyPolicy.informationCollected.trackingParams")}
-        </Text>
         <Text as={Markdown} mb={4}>
           {t("privacyPolicy.informationCollected.identifiableInfo")}
         </Text>
@@ -185,28 +182,6 @@ const PrivacyPolicyPage = () => {
           ))}
         </UnorderedList>
         <Text mb={4}>{t("privacyPolicy.contactForm.storage")}</Text>
-
-        <Divider my={4} />
-
-        <Heading as="h2" size="md" mb={4}>
-          {t("privacyPolicy.guestUsers.title")}
-        </Heading>
-        <Text as={Markdown} mb={4}>
-          {t("privacyPolicy.guestUsers.description")}
-        </Text>
-        <Text mb={4}>{t("privacyPolicy.guestUsers.subtext")}</Text>
-        <UnorderedList mb={4}>
-          {t("privacyPolicy.guestUsers.list", {
-            returnObjects: true,
-          }).map((item, index) => (
-            <ListItem as={Markdown} key={index}>
-              {item}
-            </ListItem>
-          ))}
-        </UnorderedList>
-        <Text as={Markdown} mb={4}>
-          {t("privacyPolicy.guestUsers.text")}
-        </Text>
 
         <Divider my={4} />
 

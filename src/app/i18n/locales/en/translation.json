@@ -281,112 +281,103 @@
     "saveButton": "Save Preferences"
   },
 
-  "privacyPolicy": {
-    "metadata": {
-      "title": "Privacy Policy | Thomas Tepi",
-      "description": "This Privacy Policy outlines how I collect, use, and protect your information when you visit my website and associated projects."
-    },
-    "title": "Privacy Policy",
-    "effectiveDate": "Effective Date: January 31, 2025",
-    "introduction": {
-      "title": "Introduction",
-      "text": "This Privacy Policy describes how this site and any associated subdomains under the `thomastepi.com` domain collect, use, and store data. By continuing to use `www.thomastepi.com` or any of its subdomains, you agree to the practices described below."
-    },
-    "informationCollected": {
-      "title": "What Data Is Collected",
-      "subtitle": "**Google Analytics (Main Portfolio Site Only)**",
-      "description": "Google Analytics is used on `www.thomastepi.com` to understand general site usage, but only after you give consent.",
-      "subtext": "Anonymized data collected may include:",
-      "list": [
-        "Device Information (browser type, operating system, device category)",
-        "Approximate geographic location (country, region, and city level **only**)",
-        "Website Interactions (pages visited, time spent, clicks, scrolling behavior)",
-        "Traffic Sources (referral links, search engines, direct visits)"
-      ],
-      "trackingParams": "If you click links from the main site to a subdomain, tracking parameters may be added to the URL. These are not read or processed by the subdomains.",
-      "identifiableInfo": "**No personally identifiable information (PII) is collected or stored**. Your IP address is anonymized, and data is retained for a limited period.",
-      "recaptcha": {
-        "title": "**Google reCAPTCHA (Portfolio Site & Resume Builder App)**",
-        "description": "The main portfolio site (`www.thomastepi.com`) contact form and the Resume Builder App (`resumecraft.thomastepi.com`) authentication forms (sign in / create account) use **Google reCAPTCHA v2 Invisible** to protect against spam and abuse.",
-        "subtext": "When reCAPTCHA is triggered, it may automatically collect information such as:",
+      "privacyPolicy": {
+      "metadata": {
+        "title": "Privacy Policy | Thomas Tepi",
+        "description": "This Privacy Policy outlines how I collect, use, and protect your information when you visit my website."
+      },
+      "title": "Privacy Policy",
+      "effectiveDate": "Effective Date: January 31, 2025",
+      "introduction": {
+        "title": "Introduction",
+        "text": "This Privacy Policy describes how this site (`www.thomastepi.com`) collects, uses, and stores data. By continuing to use this website, you agree to the practices described below."
+      },
+      "informationCollected": {
+        "title": "What Data Is Collected",
+        "subtitle": "**Google Analytics**",
+        "description": "Google Analytics is used on this website to understand general site usage, but only after you give consent.",
+        "subtext": "Anonymized data collected may include:",
         "list": [
-          "Device and browser details",
-          "User interactions with the site (e.g., mouse movements, clicks, keystrokes)",
-          "Referrer URL and IP address"
+          "Device Information (browser type, operating system, device category)",
+          "Approximate geographic location (country, region, and city level **only**)",
+          "Website Interactions (pages visited, time spent, clicks, scrolling behavior)",
+          "Traffic Sources (referral links, search engines, direct visits)"
         ],
-        "note": "This data is sent directly to Google and used solely for security verification.",
-        "disclaimer": "These forms are protected by reCAPTCHA and the Google <privacy>Privacy Policy</privacy> and <tos>Terms of Service</tos> apply."
-      }
-    },
-    "scope": {
-      "title": "Scope",
-      "subtitle": "This policy applies to the following domains and projects:",
-      "list": [
-        "**Main Portfolio Site:** `www.thomastepi.com`",
-        "**Resume Builder App:** `resumecraft.thomastepi.com`",
-        "**Sawyer Camp Farmers:** `sawyercamp.thomastepi.com`",
-        "**Annette's Beauty & SPA:** `annette.thomastepi.com`",
-        "**Book Mart:** `bookmart.thomastepi.com`"
-      ],
-      "text": "Each subdomain may provide different functionality, but the core data principles outlined here remain consistent."
-    },
-
-    "cookies": {
-      "title": "Cookies and Preferences",
-      "description": "This site uses a combination of essential and optional cookies to enhance your experience.",
-      "essential": "**Essential Cookies (Always Active):**",
-      "essentialList": [
-        "*Language Preference:* Stores the language you've selected (e.g English or French) using a cookie so the correct content is shown across pages and visits.",
-        "*Cookie Consent Choice:* Saves whether you’ve accepted or rejected analytics cookies so you’re not repeatedly prompted.",
-        "*Theme Preference:* Stores your dark or light mode selection in a cookie so your chosen theme is applied consistently across pages and visits. This information is not shared or sent to any server.",
-        "*reCAPTCHA Security Cookies:* Set by Google reCAPTCHA to distinguish between humans and bots and to protect forms from abuse. These cookies are essential for the proper functioning of contact and authentication forms."
-      ],
-      "impliedConsent": "⚠️ *Implied Consent:* If you continue using the homepage without interacting with the cookie banner and scroll beyond a certain point, this is treated as full consent to store all cookies, including optional ones like Google Analytics. This allows the site to provide a consistent experience and collect anonymized traffic data where applicable.",
-
-      "optional": "**Optional Cookies (Require Active Consent):**",
-      "optionalList": [
-        "*Google Analytics Cookies:* Used only on the main portfolio site to track anonymized usage data."
-      ],
-      "disableNotice": "You can disable cookies via your browser settings, though this may affect the user experience.",
-      "retention": "Your cookie settings are saved for **90 days**. After that, you’ll be prompted to confirm your preferences again."
-    },
-    "contactForm": {
-      "title": "Contact Forms and User Accounts",
-      "subtitle": "Some subdomains may include contact forms or account registration.",
-      "description": "When you submit a message or register, the following information may be collected:",
-      "list": [
-        "**Name** (for personalization)",
-        "**Email Address** (for contact or login purposes)",
-        "**Message or account details**"
-      ],
-      "storage": "This information is stored securely and used solely to respond to your request or provide account-related features.",
-      "retention": "Your message is retained for 6 months to ensure follow-ups can be processed. You may request deletion at any time."
-    },
-    "guestUsers": {
-      "title": "Guest Users",
-      "description": "Some projects (such as resumecraft.thomastepi.com) allow usage without an account.",
-      "subtext": "As a guest:",
-      "list": [
-        "You are **not required to register**.",
-        "No **personal data is stored** unless you manually enter it."
-      ],
-      "text": "If you later sign up, **only the data you provide** is stored."
-    },
-    "yourChoices": {
-      "title": "Your Privacy Options",
-      "description": "You can opt out of Google Analytics tracking by installing the official Google Analytics Opt-out Browser Add-on:",
-      "optOutLink": "Google Analytics Opt-out Add-on",
-      "requestDeletion": "To request deletion of your submitted data, please send an email to:"
-    },
-    "dataRetention": {
-      "title": "Data Retention",
-      "description": [
-        "**Google Analytics Data:** Retained for **14 months**.",
-        "**Contact Form Submissions:** Retained for **6 months** for follow-ups.",
-        "**User Accounts (if applicable):** Stored securely for as long as the account remains active"
-      ]
-    },
-    "dataSecurity": {
+        "trackingParams": "",
+        "identifiableInfo": "**No personally identifiable information (PII) is collected or stored**. Your IP address is anonymized, and data is retained for a limited period.",
+        "recaptcha": {
+          "title": "**Google reCAPTCHA**",
+          "description": "The contact form on this website uses **Google reCAPTCHA v2 Invisible** to protect against spam and abuse.",
+          "subtext": "When reCAPTCHA is triggered, it may automatically collect information such as:",
+          "list": [
+            "Device and browser details",
+            "User interactions with the site (e.g., mouse movements, clicks, keystrokes)",
+            "Referrer URL and IP address"
+          ],
+          "note": "This data is sent directly to Google and used solely for security verification.",
+          "disclaimer": "This form is protected by reCAPTCHA and the Google <privacy>Privacy Policy</privacy> and <tos>Terms of Service</tos> apply."
+        }
+      },
+      "scope": {
+        "title": "Scope",
+        "subtitle": "This policy applies to:",
+        "list": [
+          "`www.thomastepi.com`"
+        ],
+        "text": "Subdomains and other projects have their own privacy policies."
+      },
+  
+      "cookies": {
+        "title": "Cookies and Preferences",
+        "description": "This site uses a combination of essential and optional cookies to enhance your experience.",
+        "essential": "**Essential Cookies (Always Active):**",
+        "essentialList": [
+          "*Language Preference:* Stores the language you've selected (e.g English or French) using a cookie so the correct content is shown across pages and visits.",
+          "*Cookie Consent Choice:* Saves whether you’ve accepted or rejected analytics cookies so you’re not repeatedly prompted.",
+          "*Theme Preference:* Stores your dark or light mode selection in a cookie so your chosen theme is applied consistently across pages and visits. This information is not shared or sent to any server.",
+          "*reCAPTCHA Security Cookies:* Set by Google reCAPTCHA to distinguish between humans and bots and to protect forms from abuse. These cookies are essential for the proper functioning of the contact form."
+        ],
+        "impliedConsent": "⚠️ *Implied Consent:* If you continue using the homepage without interacting with the cookie banner and scroll beyond a certain point, this is treated as full consent to store all cookies, including optional ones like Google Analytics. This allows the site to provide a consistent experience and collect anonymized traffic data where applicable.",
+  
+        "optional": "**Optional Cookies (Require Active Consent):**",
+        "optionalList": [
+          "*Google Analytics Cookies:* Used to track anonymized usage data."
+        ],
+        "disableNotice": "You can disable cookies via your browser settings, though this may affect the user experience.",
+        "retention": "Your cookie settings are saved for **90 days**. After that, you’ll be prompted to confirm your preferences again."
+      },
+      "contactForm": {
+        "title": "Contact Form",
+        "subtitle": "This website includes a contact form.",
+        "description": "When you submit a message, the following information may be collected:",
+        "list": [
+          "**Name** (for personalization)",
+          "**Email Address** (for contact purposes)",
+          "**Message details**"
+        ],
+        "storage": "This information is stored securely and used solely to respond to your request.",
+        "retention": "Your message is retained for 6 months to ensure follow-ups can be processed. You may request deletion at any time."
+      },
+      "guestUsers": {
+        "title": "",
+        "description": "",
+        "subtext": "",
+        "list": [],
+        "text": ""
+      },
+      "yourChoices": {
+        "title": "Your Privacy Options",
+        "description": "You can opt out of Google Analytics tracking by installing the official Google Analytics Opt-out Browser Add-on:",
+        "optOutLink": "Google Analytics Opt-out Add-on",
+        "requestDeletion": "To request deletion of your submitted data, please send an email to:"
+      },
+      "dataRetention": {
+        "title": "Data Retention",
+        "description": [
+          "**Google Analytics Data:** Retained for **14 months**.",
+          "**Contact Form Submissions:** Retained for **6 months** for follow-ups."
+        ]
+      },    "dataSecurity": {
       "title": "Data Security",
       "description": "Reasonable security measures are in place to protect collected data from unauthorized access, alteration, or misuse. However, no online system is completely immune to risks."
     },

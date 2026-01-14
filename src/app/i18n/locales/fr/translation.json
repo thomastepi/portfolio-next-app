@@ -284,18 +284,18 @@
   "privacyPolicy": {
     "metadata": {
       "title": "Politique de confidentialité | Thomas Tepi",
-      "description": "Cette politique de confidentialité explique comment ce site collecte, utilise et protège vos informations lorsque vous visitez mon site Web et les projets associés."
+      "description": "Cette politique de confidentialité explique comment ce site collecte, utilise et protège vos informations lorsque vous visitez mon site Web."
     },
     "title": "Politique de confidentialité",
     "effectiveDate": "Date d’entrée en vigueur: 31 janvier 2025",
     "introduction": {
       "title": "Introduction",
-      "text": "Cette politique de confidentialité décrit comment ce site et les sous-domaines associés au domaine `thomastepi.com` collectent, utilisent et stockent des données. En continuant d’utiliser `www.thomastepi.com` ou l’un de ses sous-domaines, vous acceptez les pratiques décrites ci-dessous."
+      "text": "Cette politique de confidentialité décrit comment ce site (`www.thomastepi.com`) collecte, utilise et stocke des données. En continuant d’utiliser ce site web, vous acceptez les pratiques décrites ci-dessous."
     },
     "informationCollected": {
       "title": "Données collectées",
-      "subtitle": "**Google Analytics (Site principal uniquement)**",
-      "description": "Google Analytics est utilisé sur `www.thomastepi.com` pour comprendre l'utilisation générale du site, mais uniquement après votre consentement.",
+      "subtitle": "**Google Analytics**",
+      "description": "Google Analytics est utilisé sur ce site web pour comprendre l'utilisation générale du site, mais uniquement après votre consentement.",
       "subtext": "Les données anonymisées collectées peuvent inclure:",
       "list": [
         "Informations sur l’appareil (type de navigateur, système d’exploitation, catégorie d’appareil)",
@@ -303,11 +303,11 @@
         "Interactions avec le site (pages visitées, temps passé, clics, comportement de défilement)",
         "Sources de trafic (liens de référence, moteurs de recherche, visites directes)"
       ],
-      "trackingParams": "Si vous cliquez sur des liens du site principal vers un sous-domaine, des paramètres de suivi peuvent être ajoutés à l’URL. Ces paramètres ne sont ni lus ni traités par les sous-domaines.",
+      "trackingParams": "",
       "identifiableInfo": "**Aucune information personnellement identifiable (PII) n’est collectée ni stockée**. Votre adresse IP est anonymisée et les données sont conservées pour une durée limitée.",
       "recaptcha": {
-        "title": "**Google reCAPTCHA (Site principal & Application Resume Builder)**",
-        "description": "Le site principal (`www.thomastepi.com`) via son formulaire de contact ainsi que l’application Resume Builder (`resumecraft.thomastepi.com`) via ses formulaires d’authentification (connexion / création de compte) utilisent **Google reCAPTCHA v2 Invisible** pour se protéger contre le spam et les abus.",
+        "title": "**Google reCAPTCHA**",
+        "description": "Le formulaire de contact de ce site utilise **Google reCAPTCHA v2 Invisible** pour se protéger contre le spam et les abus.",
         "subtext": "Lorsque reCAPTCHA est déclenché, il peut collecter automatiquement des informations telles que:",
         "list": [
           "Détails sur l’appareil et le navigateur",
@@ -315,20 +315,16 @@
           "URL de référence et adresse IP"
         ],
         "note": "Ces données sont envoyées directement à Google et utilisées uniquement à des fins de vérification de sécurité.",
-        "disclaimer": "Ces formulaires sont protégés par reCAPTCHA et la <privacy>Politique de confidentialité</privacy> et les <tos>Conditions d’utilisation</tos> de Google s’appliquent."
+        "disclaimer": "Ce formulaire est protégé par reCAPTCHA et la <privacy>Politique de confidentialité</privacy> et les <tos>Conditions d’utilisation</tos> de Google s’appliquent."
       }
     },
     "scope": {
       "title": "Portée",
-      "subtitle": "Cette politique s’applique aux domaines et projets suivants:",
+      "subtitle": "Cette politique s’applique à:",
       "list": [
-        "**Site principal:** `www.thomastepi.com`",
-        "**Application de création de CV:** `resumecraft.thomastepi.com`",
-        "**Sawyer Camp Farmers:** `sawyercamp.thomastepi.com`",
-        "**Annette’s Beauty & SPA:** `annette.thomastepi.com`",
-        "**Book Mart:** `bookmart.thomastepi.com`"
+        "`www.thomastepi.com`"
       ],
-      "text": "Chaque sous-domaine peut offrir des fonctionnalités différentes, mais les principes de traitement des données restent les mêmes."
+      "text": "Les sous-domaines et autres projets ont leurs propres politiques de confidentialité."
     },
     "cookies": {
       "title": "Cookies et Préférences",
@@ -338,37 +334,34 @@
         "*Préférence de langue:* Enregistre la langue que vous avez sélectionnée (par ex. anglais ou français) à l’aide d’un cookie afin que le contenu correct s’affiche sur toutes les pages et lors de vos visites.",
         "*Choix de consentement aux cookies:* Enregistre si vous avez accepté ou refusé les cookies analytiques afin que vous ne soyez pas sollicité de manière répétée.",
         "*Préférence de thème:* Enregistre votre sélection de mode clair ou sombre dans un cookie afin que votre thème choisi soit appliqué de manière cohérente sur toutes les pages et visites. Ces informations ne sont pas partagées ni envoyées à un serveur.",
-        "*Cookies de sécurité reCAPTCHA:* Définis par Google reCAPTCHA pour distinguer les humains des robots et protéger les formulaires contre les abus. Ces cookies sont essentiels au bon fonctionnement des formulaires de contact et d’authentification."
+        "*Cookies de sécurité reCAPTCHA:* Définis par Google reCAPTCHA pour distinguer les humains des robots et protéger les formulaires contre les abus. Ces cookies sont essentiels au bon fonctionnement du formulaire de contact."
       ],
       "impliedConsent": "⚠️ *Consentement implicite :* Si vous continuez à utiliser la page d’accueil sans interagir avec la bannière de cookies et que vous faites défiler au-delà d’un certain point, cela est considéré comme un consentement complet au stockage de tous les cookies, y compris ceux optionnels comme Google Analytics. Cela permet au site de fournir une expérience cohérente et de collecter, le cas échéant, des données de trafic anonymisées.",
       "optional": "**Cookies optionnels (requièrent un consentement actif) :**",
       "optionalList": [
-        "*Cookies Google Analytics :* Utilisés uniquement sur le site principal pour suivre des données d’utilisation anonymisées."
+        "*Cookies Google Analytics :* Utilisés pour suivre des données d’utilisation anonymisées."
       ],
       "disableNotice": "Vous pouvez désactiver les cookies via les paramètres de votre navigateur, mais cela peut affecter l’expérience utilisateur.",
       "retention": "Vos paramètres de cookies sont enregistrés pendant **90 jours**. Après cette période, il vous sera demandé de confirmer à nouveau vos préférences."
     },
     "contactForm": {
-      "title": "Formulaires de contact et comptes utilisateurs",
-      "subtitle": "Certains sous-domaines peuvent inclure des formulaires de contact ou des inscriptions.",
-      "description": "Lorsque vous soumettez un message ou créez un compte, les informations suivantes peuvent être collectées :",
+      "title": "Formulaire de contact",
+      "subtitle": "Ce site web inclut un formulaire de contact.",
+      "description": "Lorsque vous soumettez un message, les informations suivantes peuvent être collectées :",
       "list": [
         "**Nom** (pour personnaliser les réponses)",
-        "**Adresse e-mail** (pour vous contacter ou vous connecter)",
-        "**Contenu du message ou détails du compte**"
+        "**Adresse e-mail** (pour vous contacter)",
+        "**Contenu du message**"
       ],
-      "storage": "Ces informations sont stockées de manière sécurisée et utilisées uniquement pour répondre à votre demande ou fournir des fonctionnalités liées au compte.",
+      "storage": "Ces informations sont stockées de manière sécurisée et utilisées uniquement pour répondre à votre demande.",
       "retention": "Votre message est conservé pendant 6 mois pour assurer un suivi. Vous pouvez demander sa suppression à tout moment."
     },
     "guestUsers": {
-      "title": "Utilisateurs invités",
-      "description": "Certains projets (comme resumecraft.thomastepi.com) peuvent être utilisés sans créer de compte.",
-      "subtext": "En tant qu'utilisateur invité:",
-      "list": [
-        "Vous **n’êtes pas obligé de vous inscrire**.",
-        "Aucune **donnée personnelle n’est stockée**, sauf si vous la saisissez manuellement."
-      ],
-      "text": "Si vous créez un compte ultérieurement, **seules les données que vous fournissez** seront enregistrées."
+      "title": "",
+      "description": "",
+      "subtext": "",
+      "list": [],
+      "text": ""
     },
     "yourChoices": {
       "title": "Vos options de confidentialité",
@@ -380,8 +373,7 @@
       "title": "Durée de conservation des données",
       "description": [
         "**Données Google Analytics:** Conservées pendant **14 mois**.",
-        "**Soumissions de formulaires de contact:** Conservées pendant **6 mois** pour permettre un suivi.",
-        "**Comptes utilisateurs (le cas échéant):** Conservés de manière sécurisée aussi longtemps que le compte est actif."
+        "**Soumissions de formulaires de contact:** Conservées pendant **6 mois** pour permettre un suivi."
       ]
     },
     "dataSecurity": {
