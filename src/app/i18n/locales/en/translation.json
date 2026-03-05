@@ -120,6 +120,7 @@
         "OpenAI API",
         "Image CDN"
       ],
+      "type": "Client Work",
       "links": {
         "github": "https://github.com/thomastepi/sawyer-camp-next-app",
         "demo": "https://sawyercamp.thomastepi.com"
@@ -147,6 +148,7 @@
         "Managed backend APIs, state management, and template rendering"
       ],
       "tech": ["React", "Express", "MongoDB", "OpenAI API", "Ant Design"],
+      "type": "Personal Project",
       "links": {
         "github": "https://github.com/thomastepi/resumecraft",
         "demo": "https://resumecraft.thomastepi.com"
@@ -171,6 +173,7 @@
         "Dockerized dev environment"
       ],
       "tech": ["React", "Node/Express", "MongoDB", "Docker"],
+      "type": "Personal Project",
       "links": {
         "github": "https://github.com/thomastepi/bookmart",
         "demo": "https://bookmart.thomastepi.com"
@@ -195,6 +198,7 @@
         "Deployed with CDN caching and image optimization"
       ],
       "tech": ["React", "Express", "Stripe", "Chakra UI", "Vercel"],
+      "type": "Personal Project",
       "links": {
         "github": "https://github.com/thomastepi/annettes-beauty-spa",
         "demo": "https://annette.thomastepi.com"
@@ -220,11 +224,85 @@
         "Improved accessibility and cross-browser compatibility"
       ],
       "tech": ["React", "Postgres", "Sequelize", "Docker", "MUI"],
+      "type": "Open Source",
       "links": {
         "github": "https://github.com/thomastepi/guidefox",
         "demo": "https://guidefox.thomastepi.com"
       },
       "meta": { "year": "2025", "status": "Open source" }
+    },
+    "mosesUdohPortfolio": {
+      "title": "Moses Udoh — Cinematographer Portfolio Website",
+      "description": "Designed and developed a cinematic portfolio website for a professional cinematographer, featuring dynamic project showcases, responsive design, and optimized performance using Next.js and modern frontend technologies.",
+      "longDescription": "Developed a production-ready portfolio platform for cinematographer Moses Udoh to showcase film projects, visual storytelling work, and professional services. The site was built with Next.js using modern frontend architecture to deliver fast performance, smooth animations, and responsive layouts. The platform enables easy content updates, optimized SEO for discoverability, and cloud deployment with a custom domain. The project involved full lifecycle development, including requirements gathering, UI design, frontend architecture, deployment, and performance optimization.",
+      "features": [
+        "Dynamic portfolio showcasing cinematic projects and visual media",
+        "Fully responsive design optimized for mobile, tablet, and desktop",
+        "SEO optimization for improved discoverability and search ranking",
+        "Cloud deployment with custom domain and production hosting",
+        "Smooth animations and transitions using Framer Motion",
+        "Performance-optimized Next.js architecture using server-side rendering"
+      ],
+      "contributions": [
+        "Led full development lifecycle from client discovery to production deployment",
+        "Designed scalable frontend architecture using Next.js App Router",
+        "Implemented responsive UI using Chakra UI and modern React patterns",
+        "Optimized performance using server rendering and efficient component design",
+        "Configured domain, hosting, and production deployment on Vercel",
+        "Collaborated with client to translate creative vision into functional digital platform"
+      ],
+      "tech": [
+        "Next.js",
+        "React",
+        "Chakra UI",
+        "Framer Motion",
+        "Vercel",
+        "TypeScript"
+      ],
+      "type": "Client Work",
+      "links": {
+        "github": "",
+        "demo": "https://www.mosesudoh.com"
+      },
+      "meta": { "year": "2025", "status": "Live" }
+    },
+    "sawyerCampDevlab": {
+      "title": "Sawyer Camp DevLab — Lean Studio + Client Portal Dashboard",
+      "description": "Founded Sawyer Camp DevLab and built a full client portal platform: an admin dashboard for managing organizations, projects, invites, assets, billing, and milestones, plus a client portal for tracking progress, requesting support, and handling payments.",
+      "longDescription": "Sawyer Camp DevLab is the lean development studio I founded to deliver modern, high-performance web platforms for clients. The studio’s flagship build is a full portal system that powers day-to-day operations: an admin dashboard to manage organizations, client invites, projects, milestones, assets, and billing workflows, alongside a client-facing portal where clients accept invitations, track project progress under their organization, initiate payments, ask billing questions, and request support. This platform is designed as reusable architecture for future client work—combining polished UI/UX, scalable role-based access, and cloud-native deployment.",
+      "features": [
+        "Admin dashboard for managing organizations, projects, invites, milestones, assets, and billing",
+        "Client portal for accepting invitations and tracking project progress by organization",
+        "Role-based access control separating admin vs client capabilities",
+        "Billing workflow: initiate payments, view billing status, and submit billing questions",
+        "Support workflow: clients can request help and follow up from a dedicated support area",
+        "Reusable studio architecture that can be adapted across multiple client projects",
+        "SEO-optimized and responsive UI using modern Next.js patterns",
+        "Cloud deployment with custom domain configuration and production hosting"
+      ],
+      "contributions": [
+        "Founded Sawyer Camp DevLab as a lean studio brand and built its internal operating platform",
+        "Designed and implemented the admin dashboard architecture for managing client operations end-to-end",
+        "Built the client portal experience: invitation acceptance, organization-scoped access, and progress tracking",
+        "Implemented role-based access control and secure invitation flows with expiring tokens",
+        "Structured billing and support flows to reduce back-and-forth and improve client experience",
+        "Established scalable Next.js App Router patterns, reusable UI components, and deployment workflows"
+      ],
+      "tech": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Chakra UI",
+        "Framer Motion",
+        "Vercel"
+      ],
+      "type": "Studio",
+      "links": {
+        "github": "",
+        "demo": "https://www.sawyercamp.com"
+      },
+      "meta": { "year": "2025", "status": "Active" }
     }
   },
 
@@ -281,103 +359,102 @@
     "saveButton": "Save Preferences"
   },
 
-      "privacyPolicy": {
-      "metadata": {
-        "title": "Privacy Policy | Thomas Tepi",
-        "description": "This Privacy Policy outlines how I collect, use, and protect your information when you visit my website."
-      },
-      "title": "Privacy Policy",
-      "effectiveDate": "Effective Date: January 31, 2025",
-      "introduction": {
-        "title": "Introduction",
-        "text": "This Privacy Policy describes how this site (`www.thomastepi.com`) collects, uses, and stores data. By continuing to use this website, you agree to the practices described below."
-      },
-      "informationCollected": {
-        "title": "What Data Is Collected",
-        "subtitle": "**Google Analytics**",
-        "description": "Google Analytics is used on this website to understand general site usage, but only after you give consent.",
-        "subtext": "Anonymized data collected may include:",
+  "privacyPolicy": {
+    "metadata": {
+      "title": "Privacy Policy | Thomas Tepi",
+      "description": "This Privacy Policy outlines how I collect, use, and protect your information when you visit my website."
+    },
+    "title": "Privacy Policy",
+    "effectiveDate": "Effective Date: January 31, 2025",
+    "introduction": {
+      "title": "Introduction",
+      "text": "This Privacy Policy describes how this site (`www.thomastepi.com`) collects, uses, and stores data. By continuing to use this website, you agree to the practices described below."
+    },
+    "informationCollected": {
+      "title": "What Data Is Collected",
+      "subtitle": "**Google Analytics**",
+      "description": "Google Analytics is used on this website to understand general site usage, but only after you give consent.",
+      "subtext": "Anonymized data collected may include:",
+      "list": [
+        "Device Information (browser type, operating system, device category)",
+        "Approximate geographic location (country, region, and city level **only**)",
+        "Website Interactions (pages visited, time spent, clicks, scrolling behavior)",
+        "Traffic Sources (referral links, search engines, direct visits)"
+      ],
+      "trackingParams": "",
+      "identifiableInfo": "**No personally identifiable information (PII) is collected or stored**. Your IP address is anonymized, and data is retained for a limited period.",
+      "recaptcha": {
+        "title": "**Google reCAPTCHA**",
+        "description": "The contact form on this website uses **Google reCAPTCHA v2 Invisible** to protect against spam and abuse.",
+        "subtext": "When reCAPTCHA is triggered, it may automatically collect information such as:",
         "list": [
-          "Device Information (browser type, operating system, device category)",
-          "Approximate geographic location (country, region, and city level **only**)",
-          "Website Interactions (pages visited, time spent, clicks, scrolling behavior)",
-          "Traffic Sources (referral links, search engines, direct visits)"
+          "Device and browser details",
+          "User interactions with the site (e.g., mouse movements, clicks, keystrokes)",
+          "Referrer URL and IP address"
         ],
-        "trackingParams": "",
-        "identifiableInfo": "**No personally identifiable information (PII) is collected or stored**. Your IP address is anonymized, and data is retained for a limited period.",
-        "recaptcha": {
-          "title": "**Google reCAPTCHA**",
-          "description": "The contact form on this website uses **Google reCAPTCHA v2 Invisible** to protect against spam and abuse.",
-          "subtext": "When reCAPTCHA is triggered, it may automatically collect information such as:",
-          "list": [
-            "Device and browser details",
-            "User interactions with the site (e.g., mouse movements, clicks, keystrokes)",
-            "Referrer URL and IP address"
-          ],
-          "note": "This data is sent directly to Google and used solely for security verification.",
-          "disclaimer": "This form is protected by reCAPTCHA and the Google <privacy>Privacy Policy</privacy> and <tos>Terms of Service</tos> apply."
-        }
-      },
-      "scope": {
-        "title": "Scope",
-        "subtitle": "This policy applies to:",
-        "list": [
-          "`www.thomastepi.com`"
-        ],
-        "text": "Subdomains and other projects have their own privacy policies."
-      },
-  
-      "cookies": {
-        "title": "Cookies and Preferences",
-        "description": "This site uses a combination of essential and optional cookies to enhance your experience.",
-        "essential": "**Essential Cookies (Always Active):**",
-        "essentialList": [
-          "*Language Preference:* Stores the language you've selected (e.g English or French) using a cookie so the correct content is shown across pages and visits.",
-          "*Cookie Consent Choice:* Saves whether you’ve accepted or rejected analytics cookies so you’re not repeatedly prompted.",
-          "*Theme Preference:* Stores your dark or light mode selection in a cookie so your chosen theme is applied consistently across pages and visits. This information is not shared or sent to any server.",
-          "*reCAPTCHA Security Cookies:* Set by Google reCAPTCHA to distinguish between humans and bots and to protect forms from abuse. These cookies are essential for the proper functioning of the contact form."
-        ],
-        "impliedConsent": "⚠️ *Implied Consent:* If you continue using the homepage without interacting with the cookie banner and scroll beyond a certain point, this is treated as full consent to store all cookies, including optional ones like Google Analytics. This allows the site to provide a consistent experience and collect anonymized traffic data where applicable.",
-  
-        "optional": "**Optional Cookies (Require Active Consent):**",
-        "optionalList": [
-          "*Google Analytics Cookies:* Used to track anonymized usage data."
-        ],
-        "disableNotice": "You can disable cookies via your browser settings, though this may affect the user experience.",
-        "retention": "Your cookie settings are saved for **90 days**. After that, you’ll be prompted to confirm your preferences again."
-      },
-      "contactForm": {
-        "title": "Contact Form",
-        "subtitle": "This website includes a contact form.",
-        "description": "When you submit a message, the following information may be collected:",
-        "list": [
-          "**Name** (for personalization)",
-          "**Email Address** (for contact purposes)",
-          "**Message details**"
-        ],
-        "storage": "This information is stored securely and used solely to respond to your request.",
-        "retention": "Your message is retained for 6 months to ensure follow-ups can be processed. You may request deletion at any time."
-      },
-      "guestUsers": {
-        "title": "",
-        "description": "",
-        "subtext": "",
-        "list": [],
-        "text": ""
-      },
-      "yourChoices": {
-        "title": "Your Privacy Options",
-        "description": "You can opt out of Google Analytics tracking by installing the official Google Analytics Opt-out Browser Add-on:",
-        "optOutLink": "Google Analytics Opt-out Add-on",
-        "requestDeletion": "To request deletion of your submitted data, please send an email to:"
-      },
-      "dataRetention": {
-        "title": "Data Retention",
-        "description": [
-          "**Google Analytics Data:** Retained for **14 months**.",
-          "**Contact Form Submissions:** Retained for **6 months** for follow-ups."
-        ]
-      },    "dataSecurity": {
+        "note": "This data is sent directly to Google and used solely for security verification.",
+        "disclaimer": "This form is protected by reCAPTCHA and the Google <privacy>Privacy Policy</privacy> and <tos>Terms of Service</tos> apply."
+      }
+    },
+    "scope": {
+      "title": "Scope",
+      "subtitle": "This policy applies to:",
+      "list": ["`www.thomastepi.com`"],
+      "text": "Subdomains and other projects have their own privacy policies."
+    },
+
+    "cookies": {
+      "title": "Cookies and Preferences",
+      "description": "This site uses a combination of essential and optional cookies to enhance your experience.",
+      "essential": "**Essential Cookies (Always Active):**",
+      "essentialList": [
+        "*Language Preference:* Stores the language you've selected (e.g English or French) using a cookie so the correct content is shown across pages and visits.",
+        "*Cookie Consent Choice:* Saves whether you’ve accepted or rejected analytics cookies so you’re not repeatedly prompted.",
+        "*Theme Preference:* Stores your dark or light mode selection in a cookie so your chosen theme is applied consistently across pages and visits. This information is not shared or sent to any server.",
+        "*reCAPTCHA Security Cookies:* Set by Google reCAPTCHA to distinguish between humans and bots and to protect forms from abuse. These cookies are essential for the proper functioning of the contact form."
+      ],
+      "impliedConsent": "⚠️ *Implied Consent:* If you continue using the homepage without interacting with the cookie banner and scroll beyond a certain point, this is treated as full consent to store all cookies, including optional ones like Google Analytics. This allows the site to provide a consistent experience and collect anonymized traffic data where applicable.",
+
+      "optional": "**Optional Cookies (Require Active Consent):**",
+      "optionalList": [
+        "*Google Analytics Cookies:* Used to track anonymized usage data."
+      ],
+      "disableNotice": "You can disable cookies via your browser settings, though this may affect the user experience.",
+      "retention": "Your cookie settings are saved for **90 days**. After that, you’ll be prompted to confirm your preferences again."
+    },
+    "contactForm": {
+      "title": "Contact Form",
+      "subtitle": "This website includes a contact form.",
+      "description": "When you submit a message, the following information may be collected:",
+      "list": [
+        "**Name** (for personalization)",
+        "**Email Address** (for contact purposes)",
+        "**Message details**"
+      ],
+      "storage": "This information is stored securely and used solely to respond to your request.",
+      "retention": "Your message is retained for 6 months to ensure follow-ups can be processed. You may request deletion at any time."
+    },
+    "guestUsers": {
+      "title": "",
+      "description": "",
+      "subtext": "",
+      "list": [],
+      "text": ""
+    },
+    "yourChoices": {
+      "title": "Your Privacy Options",
+      "description": "You can opt out of Google Analytics tracking by installing the official Google Analytics Opt-out Browser Add-on:",
+      "optOutLink": "Google Analytics Opt-out Add-on",
+      "requestDeletion": "To request deletion of your submitted data, please send an email to:"
+    },
+    "dataRetention": {
+      "title": "Data Retention",
+      "description": [
+        "**Google Analytics Data:** Retained for **14 months**.",
+        "**Contact Form Submissions:** Retained for **6 months** for follow-ups."
+      ]
+    },
+    "dataSecurity": {
       "title": "Data Security",
       "description": "Reasonable security measures are in place to protect collected data from unauthorized access, alteration, or misuse. However, no online system is completely immune to risks."
     },
