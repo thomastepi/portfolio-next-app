@@ -18,7 +18,7 @@ function ModalComponent({
   isCentered,
   motionPreset = "slideInBottom",
   scrollBehavior = "inside",
-  size,
+  size = "5xl",
 }) {
   return (
     <Modal

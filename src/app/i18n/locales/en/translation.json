@@ -90,6 +90,14 @@
   "projects": {
     "heading": "My Work",
     "MoreProjectsBtn": "More Projects",
+    "showMore": "Show More",
+    "showLess": "Show Less",
+    "types": {
+      "studio": "Studio",
+      "clientWork": "Client Work",
+      "openSource": "Open Source",
+      "personalProject": "Personal Projects"
+    },
     "sawyerCamp": {
       "title": "Sawyer Camp Farmers CIG",
       "description": "Developed a modern web platform for Sawyer Camp Farmers CIG in Cameroon, featuring an AI Lab with intelligent decision-support tools to empower local farmers and promote sustainable agriculture.",
@@ -208,20 +216,20 @@
 
     "guidefox": {
       "title": "Guidefox - User Onboarding Tool",
-      "description": "Contributed to Guidefox, an open-source onboarding tool for tours, hints, banners, and helper links. Built admin dashboard features, customization options, and backend integrations for flexibility.",
-      "longDescription": "Guidefox is a self-hosted alternative to commercial onboarding suites. Teams can design tours, banners, hints, and helper links, then deploy them with a lightweight JS agent without exposing user data to third-party SaaS.",
+      "description": "Contributed to Guidefox, an open-source user onboarding platform, and now run a self-hosted fork for my own projects. Built dashboard enhancements, customization workflows, and backend integrations to support flexible, in-app tours, hints, banners, popups, and helper links.",
+      "longDescription": "Guidefox is an open-source, self-hosted user onboarding platform I run and customize in my own stack. It combines a React admin dashboard, Node/Express + PostgreSQL backend, and an embeddable JavaScript agent to deliver contextual tours, popups, banners, hints, and helper links inside web apps. Teams can manage onboarding content, roles, and usage analytics while keeping onboarding data on infrastructure they control.",
       "features": [
         "Permission-based admin dashboard (roles: admin/member)",
         "Create and target tours, hints, banners, popups, helper links",
         "Appearance customization and preview",
-        "Versioned publishing with enable/disable and scheduling",
+        "Activation controls for guides with URL-based delivery",
         "Lightweight JS agent for client-side injection"
       ],
       "contributions": [
-        "Built admin dashboard flows for creating/managing guides",
-        "Implemented appearance customization (theming, sizes, positions)",
-        "Integrated backend APIs and data models",
-        "Improved accessibility and cross-browser compatibility"
+        "Built admin dashboard flows for creating and managing guides",
+        "Implemented guide appearance controls (colors, sizing, placement, repetition/activation)",
+        "Integrated frontend workflows with backend APIs and data models (guides, team roles, settings, analytics)",
+        "Hardened UX quality through validation, error handling, and multi-environment self-hosted deployment support"
       ],
       "tech": ["React", "Postgres", "Sequelize", "Docker", "MUI"],
       "type": "Open Source",
@@ -232,28 +240,28 @@
       "meta": { "year": "2025", "status": "Open source" }
     },
     "mosesUdohPortfolio": {
-      "title": "Moses Udoh — Cinematographer Portfolio Website",
-      "description": "Designed and developed a cinematic portfolio website for a professional cinematographer, featuring dynamic project showcases, responsive design, and optimized performance using Next.js and modern frontend technologies.",
-      "longDescription": "Developed a production-ready portfolio platform for cinematographer Moses Udoh to showcase film projects, visual storytelling work, and professional services. The site was built with Next.js using modern frontend architecture to deliver fast performance, smooth animations, and responsive layouts. The platform enables easy content updates, optimized SEO for discoverability, and cloud deployment with a custom domain. The project involved full lifecycle development, including requirements gathering, UI design, frontend architecture, deployment, and performance optimization.",
+      "title": "Moses Udoh - Cinematographer Portfolio Website",
+      "description": "Built a cinematic portfolio website for a professional cinematographer using Next.js 16, featuring responsive layouts, statically generated project detail pages, smooth Framer Motion interactions, and an integrated contact workflow with validated form handling and email delivery.",
+      "longDescription": "Built and shipped a custom portfolio platform for cinematographer Moses Udoh using Next.js 16, React 19, Chakra UI, and Framer Motion. Implemented data-driven content architecture for easy updates across projects, services, and brand copy, plus statically generated dynamic project pages for performance. Added a validated contact workflow using Formik/Yup on the client and Zod + Next.js Server Actions on the backend, integrated with Resend for automated client confirmations and admin notifications. Configured SEO foundations including canonical metadata, Open Graph/Twitter tags, robots rules, sitemap generation, and custom-domain readiness, with media delivery through ImageKit.",
       "features": [
-        "Dynamic portfolio showcasing cinematic projects and visual media",
-        "Fully responsive design optimized for mobile, tablet, and desktop",
-        "SEO optimization for improved discoverability and search ranking",
-        "Cloud deployment with custom domain and production hosting",
-        "Smooth animations and transitions using Framer Motion",
-        "Performance-optimized Next.js architecture using server-side rendering"
+        "Curated portfolio experience with detailed project pages generated from structured content data",
+        "Fully responsive UI tailored for mobile, tablet, and desktop",
+        "SEO-ready setup with canonical metadata, Open Graph/Twitter tags, robots, and sitemap generation",
+        "Contact pipeline with client/server validation and automated email notifications via Resend",
+        "Smooth page and section transitions with Framer Motion",
+        "Next.js 16 App Router architecture with static generation for project routes and optimized delivery"
       ],
       "contributions": [
         "Led full development lifecycle from client discovery to production deployment",
         "Designed scalable frontend architecture using Next.js App Router",
         "Implemented responsive UI using Chakra UI and modern React patterns",
         "Optimized performance using server rendering and efficient component design",
-        "Configured domain, hosting, and production deployment on Vercel",
+        "Configured domain, hosting, and production deployment",
         "Collaborated with client to translate creative vision into functional digital platform"
       ],
       "tech": [
         "Next.js",
-        "React",
+        "ImageKit",
         "Chakra UI",
         "Framer Motion",
         "Vercel",
@@ -267,18 +275,18 @@
       "meta": { "year": "2025", "status": "Live" }
     },
     "sawyerCampDevlab": {
-      "title": "Sawyer Camp DevLab — Lean Studio + Client Portal Dashboard",
-      "description": "Founded Sawyer Camp DevLab and built a full client portal platform: an admin dashboard for managing organizations, projects, invites, assets, billing, and milestones, plus a client portal for tracking progress, requesting support, and handling payments.",
-      "longDescription": "Sawyer Camp DevLab is the lean development studio I founded to deliver modern, high-performance web platforms for clients. The studio’s flagship build is a full portal system that powers day-to-day operations: an admin dashboard to manage organizations, client invites, projects, milestones, assets, and billing workflows, alongside a client-facing portal where clients accept invitations, track project progress under their organization, initiate payments, ask billing questions, and request support. This platform is designed as reusable architecture for future client work—combining polished UI/UX, scalable role-based access, and cloud-native deployment.",
+      "title": "Sawyer Camp DevLab - Lean Studio",
+      "description": "Founded Sawyer Camp DevLab and built a multi-tenant client operations platform end-to-end: an admin dashboard for organizations, invites, projects, milestones, assets, and billing workflows, plus a client portal for onboarding, real-time project visibility, support requests, and billing interactions.",
+      "longDescription": "Sawyer Camp DevLab is the lean development studio I founded to build modern, high-performance web platforms for service businesses. Its flagship product is a multi-tenant operations portal with role-based access: an admin dashboard for managing organizations, client invitations, projects, milestones, assets, and billing workflows, plus a client portal where users accept invites, track project progress, manage settings, submit support requests, and handle billing interactions. I designed the system as reusable architecture for future client implementations, with a focus on polished UX, secure access control, and cloud-ready deployment.",
       "features": [
-        "Admin dashboard for managing organizations, projects, invites, milestones, assets, and billing",
-        "Client portal for accepting invitations and tracking project progress by organization",
-        "Role-based access control separating admin vs client capabilities",
-        "Billing workflow: initiate payments, view billing status, and submit billing questions",
-        "Support workflow: clients can request help and follow up from a dedicated support area",
-        "Reusable studio architecture that can be adapted across multiple client projects",
-        "SEO-optimized and responsive UI using modern Next.js patterns",
-        "Cloud deployment with custom domain configuration and production hosting"
+        "Admin dashboard for managing organizations, projects, invitations, milestones, assets, and billing workflows",
+        "Client portal for invitation onboarding and project tracking within each organization",
+        "Role-based access control separating admin and client permissions",
+        "Billing workflows for payment initiation, invoice/status visibility, and billing inquiries",
+        "Dedicated support workspace for client requests and follow-up communication",
+        "Reusable multi-tenant architecture designed for adaptation across future client implementations",
+        "Responsive, production-grade UI built with modern Next.js and TypeScript patterns",
+        "Cloud-hosted deployment with environment-based configuration for staging and production"
       ],
       "contributions": [
         "Founded Sawyer Camp DevLab as a lean studio brand and built its internal operating platform",
@@ -290,11 +298,11 @@
       ],
       "tech": [
         "Next.js",
-        "React",
+        "NextAuth",
+        "Prisma",
+        "Docker",
         "TypeScript",
-        "Node.js",
         "Chakra UI",
-        "Framer Motion",
         "Vercel"
       ],
       "type": "Studio",

@@ -27,6 +27,7 @@ const MotionVStack = motion(VStack);
 
 const Card = ({
   title,
+  category,
   description,
   longDescription,
   features,
@@ -38,25 +39,28 @@ const Card = ({
   github,
   techStack,
   colorMode,
+  showContributions = false,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useT("translation");
 
   return (
     <MotionVStack
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.3 }}
+      whileHover={{ y: -8 }}
+      transition={{ duration: 0.25 }}
       spacing={4}
       alignItems="flex-start"
-      bg={colorMode === "light" ? "gray.200" : "gray.700"}
+      bg={colorMode === "light" ? "white" : "gray.800"}
       borderRadius="md"
-      boxShadow="md"
+      borderWidth="1px"
+      borderColor={colorMode === "light" ? "gray.200" : "whiteAlpha.200"}
+      boxShadow="sm"
       _hover={{
         boxShadow: "xl",
       }}
       overflow="hidden"
       w="100%"
-      maxW="md"
+      maxW="100%"
       minH="420px"
     >
       <Image
@@ -67,6 +71,13 @@ const Card = ({
         objectFit="cover"
       />
       <VStack padding="4" alignItems="flex-start" spacing={3}>
+        <Tag
+          size="sm"
+          colorScheme="teal"
+          variant={colorMode === "light" ? "subtle" : "solid"}
+        >
+          {category}
+        </Tag>
         <Heading as="h3" size="md">
           {title}
         </Heading>
@@ -153,7 +164,7 @@ const Card = ({
               </Box>
             )}
 
-            {contributions && contributions.length > 0 && (
+            {showContributions && contributions && contributions.length > 0 && (
               <Box w="100%">
                 <Text fontWeight="bold" mb={2}>
                   {t("card.modal.contributions")}
@@ -219,7 +230,7 @@ const Card = ({
         }
         zIndex="2000"
         isCentered
-        size="3xl"
+        size="5xl"
       />
     </MotionVStack>
   );

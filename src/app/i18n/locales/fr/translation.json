@@ -91,6 +91,14 @@
   "projects": {
     "heading": "Mes Projets",
     "MoreProjectsBtn": "Autres projets",
+    "showMore": "Afficher plus",
+    "showLess": "Afficher moins",
+    "types": {
+      "studio": "Studio",
+      "clientWork": "Projets Client",
+      "openSource": "Open Source",
+      "personalProject": "Projets Personnels"
+    },
     "sawyerCamp": {
       "title": "Sawyer-Camp Farmers CIG",
       "description": "Développement d’une plateforme web moderne pour Sawyer Camp Farmers CIG au Cameroun, intégrant un AI Lab avec des outils d’aide à la décision agricole pour soutenir les agriculteurs locaux et promouvoir des pratiques durables.",
@@ -208,21 +216,21 @@
     },
 
     "guidefox": {
-      "title": "Guidefox - Outil d’Onboarding Utilisateur",
-      "description": "Contribution à Guidefox, un outil open-source d’onboarding pour créer visites guidées, bulles d’aide, bannières et liens contextuels. Développement du tableau de bord, options de personnalisation et intégration backend.",
-      "longDescription": "Guidefox est une alternative auto-hébergée aux suites commerciales d’onboarding. Les équipes peuvent concevoir visites, bannières, bulles et liens contextuels, puis les déployer avec un agent JS léger, sans exposer de données à des tiers.",
+      "title": "Guidefox - Outil d’onboarding utilisateur",
+      "description": "Contribution à Guidefox, une plateforme open source d’onboarding utilisateur, et gestion d’un fork auto-hébergé pour mes propres projets. Développement d’améliorations du tableau de bord, de flux de personnalisation et d’intégrations backend pour supporter des tours guidés, indices, bannières, popups et liens d’aide intégrés aux applications.",
+      "longDescription": "Guidefox est une plateforme open source et auto-hébergée d’onboarding utilisateur que j’exécute et personnalise dans mon propre environnement technique. Elle combine un tableau de bord administrateur en React, un backend Node/Express avec PostgreSQL, ainsi qu’un agent JavaScript intégrable permettant d’afficher des tours guidés contextuels, des popups, des bannières, des indices et des liens d’aide directement dans les applications web. Les équipes peuvent gérer le contenu d’onboarding, les rôles utilisateurs et les données d’utilisation tout en conservant le contrôle de leurs données sur leur propre infrastructure.",
       "features": [
-        "Tableau de bord avec permissions basées sur les rôles (admin/membre)",
-        "Création et ciblage de visites, bulles, bannières, popups, liens contextuels",
+        "Tableau de bord administrateur avec gestion des permissions (rôles : admin / membre)",
+        "Création et ciblage de tours guidés, indices, bannières, popups et liens d’aide",
         "Personnalisation de l’apparence avec aperçu en temps réel",
-        "Publication versionnée avec activation/désactivation et planification",
-        "Agent JS léger pour injection côté client"
+        "Contrôles d’activation des guides avec diffusion basée sur l’URL",
+        "Agent JavaScript léger pour l’injection côté client"
       ],
       "contributions": [
-        "Développement des parcours du tableau de bord pour créer/gérer les guides",
-        "Implémentation des options de personnalisation (thèmes, tailles, positions)",
-        "Intégration des API backend et des modèles de données",
-        "Amélioration de l’accessibilité et de la compatibilité multi-navigateurs"
+        "Développement des flux du tableau de bord pour créer et gérer les guides d’onboarding",
+        "Implémentation des contrôles d’apparence des guides (couleurs, dimensions, positionnement, répétition et activation)",
+        "Intégration des workflows frontend avec les API backend et les modèles de données (guides, rôles d’équipe, paramètres, analytics)",
+        "Amélioration de la qualité UX grâce à la validation, la gestion des erreurs et la prise en charge du déploiement auto-hébergé dans plusieurs environnements"
       ],
       "tech": ["React", "Postgres", "Sequelize", "Docker", "MUI"],
       "type": "Open Source",
@@ -233,34 +241,34 @@
       "meta": { "year": "2025", "status": "Open source" }
     },
     "mosesUdohPortfolio": {
-      "title": "Moses Udoh — Site portfolio de cinéaste",
-      "description": "Conception et développement d’un site portfolio cinématographique pour un cinéaste professionnel, avec présentation dynamique des projets, design responsive et performances optimisées utilisant Next.js et des technologies frontend modernes.",
-      "longDescription": "Développement d’une plateforme portfolio prête pour la production pour le cinéaste Moses Udoh afin de présenter ses projets cinématographiques, ses réalisations en narration visuelle et ses services professionnels. Le site a été construit avec Next.js en utilisant une architecture frontend moderne afin d’offrir des performances rapides, des animations fluides et des mises en page responsives. La plateforme permet des mises à jour de contenu faciles, une optimisation SEO pour améliorer la visibilité et un déploiement cloud avec un domaine personnalisé. Le projet a couvert l’ensemble du cycle de développement, incluant l’analyse des besoins, la conception de l’interface utilisateur, l’architecture frontend, le déploiement et l’optimisation des performances.",
+      "title": "Moses Udoh - Site portfolio de cinématographie",
+      "description": "Développement d’un site portfolio cinématographique pour un directeur de la photographie professionnel avec Next.js 16, incluant des mises en page responsives, des pages de projets générées statiquement, des interactions fluides avec Framer Motion et un flux de contact intégré avec validation de formulaire et envoi d’emails.",
+      "longDescription": "Conception et mise en production d’une plateforme portfolio sur mesure pour le directeur de la photographie Moses Udoh en utilisant Next.js 16, React 19, Chakra UI et Framer Motion. Mise en place d’une architecture de contenu pilotée par les données afin de faciliter la gestion et les mises à jour des projets, services et contenus de marque, ainsi que la génération statique de pages dynamiques pour les projets afin d’optimiser les performances. Implémentation d’un flux de contact validé avec Formik/Yup côté client et Zod + Next.js Server Actions côté serveur, intégré avec Resend pour l’envoi automatique de confirmations aux clients et de notifications administrateur. Configuration des bases SEO incluant les métadonnées canoniques, les balises Open Graph et Twitter, les règles robots, la génération de sitemap et la préparation pour domaine personnalisé, avec diffusion des médias via ImageKit.",
       "features": [
-        "Portfolio dynamique présentant des projets cinématographiques et des médias visuels",
-        "Design entièrement responsive optimisé pour mobile, tablette et ordinateur",
-        "Optimisation SEO pour améliorer la visibilité et le référencement",
-        "Déploiement cloud avec domaine personnalisé et hébergement en production",
-        "Animations et transitions fluides utilisant Framer Motion",
-        "Architecture Next.js optimisée pour les performances avec rendu côté serveur"
+        "Expérience portfolio soignée avec pages de projets détaillées générées à partir de données structurées",
+        "Interface entièrement responsive optimisée pour mobile, tablette et desktop",
+        "Configuration SEO complète avec métadonnées canoniques, balises Open Graph/Twitter, robots et génération de sitemap",
+        "Flux de contact avec validation côté client et serveur et notifications email automatisées via Resend",
+        "Transitions fluides entre pages et sections avec Framer Motion",
+        "Architecture Next.js 16 App Router avec génération statique pour les routes de projets et diffusion optimisée"
       ],
       "contributions": [
-        "Gestion complète du cycle de développement, de la découverte client jusqu’au déploiement en production",
-        "Conception d’une architecture frontend évolutive utilisant Next.js App Router",
-        "Implémentation d’une interface utilisateur responsive avec Chakra UI et des patterns React modernes",
-        "Optimisation des performances grâce au rendu côté serveur et à une conception efficace des composants",
-        "Configuration du domaine, de l’hébergement et du déploiement en production sur Vercel",
-        "Collaboration avec le client afin de transformer sa vision créative en une plateforme numérique fonctionnelle"
+        "Pilotage complet du cycle de développement, de la découverte client au déploiement en production",
+        "Conception d’une architecture frontend scalable avec Next.js App Router",
+        "Implémentation d’une interface responsive avec Chakra UI et les patterns modernes de React",
+        "Optimisation des performances grâce au rendu serveur et à une conception efficace des composants",
+        "Configuration du domaine, de l’hébergement et du déploiement en production",
+        "Collaboration avec le client pour transformer sa vision créative en plateforme numérique fonctionnelle"
       ],
       "tech": [
         "Next.js",
-        "React",
+        "ImageKit",
         "Chakra UI",
         "Framer Motion",
         "Vercel",
         "TypeScript"
       ],
-      "type": "Projet Client",
+      "type": "Projet client",
       "links": {
         "github": "",
         "demo": "https://www.mosesudoh.com"
@@ -268,34 +276,34 @@
       "meta": { "year": "2025", "status": "En ligne" }
     },
     "sawyerCampDevlab": {
-      "title": "Sawyer Camp DevLab — Studio de développement + portail client",
-      "description": "J’ai fondé Sawyer Camp DevLab et développé une plateforme complète avec un tableau de bord admin pour gérer organisations, projets, invitations, actifs, facturation et jalons, ainsi qu’un portail client pour suivre l’avancement des projets, demander du support et gérer les paiements.",
-      "longDescription": "Sawyer Camp DevLab est le studio de développement lean que j’ai fondé pour créer des plateformes web modernes, rapides et évolutives pour des créateurs, entrepreneurs et organisations. La pièce maîtresse du projet est une plateforme complète de gestion client composée de deux parties : un tableau de bord administrateur permettant de gérer les organisations, les invitations clients, les projets, les jalons, les actifs et la facturation, ainsi qu’un portail client où les clients peuvent accepter leurs invitations, suivre l’avancement de leurs projets au sein de leur organisation, initier des paiements, poser des questions de facturation et demander du support. La plateforme a été conçue comme une architecture réutilisable pour les futurs projets du studio.",
+      "title": "Sawyer Camp DevLab - Studio Lean",
+      "description": "Fondateur de Sawyer Camp DevLab et concepteur d'une plateforme multi-tenant de gestion des opérations clients développée de bout en bout : un tableau de bord administrateur pour gérer organisations, invitations, projets, jalons, ressources et processus de facturation, ainsi qu’un portail client pour l’onboarding, la visibilité en temps réel des projets, les demandes de support et les interactions liées à la facturation.",
+      "longDescription": "Sawyer Camp DevLab est le studio de développement lean que j’ai fondé afin de concevoir des plateformes web modernes et performantes pour les entreprises de services. Son produit principal est un portail d’opérations multi-tenant avec contrôle d’accès basé sur les rôles : un tableau de bord administrateur permettant de gérer les organisations, les invitations clients, les projets, les jalons, les ressources et les flux de facturation, ainsi qu’un portail client où les utilisateurs peuvent accepter des invitations, suivre l’avancement des projets, gérer leurs paramètres, soumettre des demandes de support et interagir avec les processus de facturation. Le système a été conçu comme une architecture réutilisable pour de futurs projets clients, avec un accent sur une expérience utilisateur soignée, un contrôle d’accès sécurisé et un déploiement prêt pour le cloud.",
       "features": [
-        "Tableau de bord administrateur pour gérer organisations, projets, invitations, jalons, actifs et facturation",
-        "Portail client permettant d’accepter les invitations et suivre les projets par organisation",
-        "Contrôle d’accès basé sur les rôles (admin vs client)",
-        "Gestion de la facturation : initier des paiements, consulter l’état des factures et poser des questions",
-        "Section support permettant aux clients de soumettre des demandes d’aide",
-        "Architecture réutilisable pour les futurs projets du studio",
-        "Interface responsive et optimisée SEO avec les meilleures pratiques Next.js",
-        "Déploiement cloud avec domaine personnalisé et hébergement en production"
+        "Tableau de bord administrateur pour gérer les organisations, projets, invitations, jalons, ressources et processus de facturation",
+        "Portail client pour l’onboarding par invitation et le suivi des projets au sein de chaque organisation",
+        "Contrôle d’accès basé sur les rôles séparant les permissions administrateur et client",
+        "Flux de facturation pour l’initiation des paiements, la visibilité des factures et statuts, ainsi que les demandes liées à la facturation",
+        "Espace de support dédié pour les demandes clients et le suivi des communications",
+        "Architecture multi-tenant réutilisable conçue pour être adaptée à de futurs projets clients",
+        "Interface utilisateur responsive et prête pour la production, développée avec les standards modernes de Next.js et TypeScript",
+        "Déploiement cloud avec configuration basée sur l’environnement pour staging et production"
       ],
       "contributions": [
-        "Fondation de Sawyer Camp DevLab comme studio de développement orienté clients",
-        "Conception et développement du tableau de bord admin pour gérer les opérations clients",
-        "Création du portail client avec gestion des invitations et accès par organisation",
-        "Implémentation d’un système d’accès sécurisé basé sur les rôles et tokens d’invitation",
-        "Mise en place de flux de facturation et de support pour améliorer l’expérience client",
-        "Architecture frontend évolutive avec Next.js App Router et composants réutilisables"
+        "Fondation de Sawyer Camp DevLab en tant que studio lean et développement de sa plateforme interne d’opérations",
+        "Conception et implémentation de l’architecture du tableau de bord administrateur pour la gestion complète des opérations clients",
+        "Développement de l’expérience portail client : acceptation d’invitations, accès par organisation et suivi de l’avancement des projets",
+        "Implémentation d’un contrôle d’accès basé sur les rôles et de flux d’invitations sécurisés avec tokens expirables",
+        "Structuration des flux de facturation et de support afin de réduire les échanges inutiles et améliorer l’expérience client",
+        "Mise en place de patterns scalables avec Next.js App Router, composants UI réutilisables et workflows de déploiement"
       ],
       "tech": [
         "Next.js",
-        "React",
+        "NextAuth",
+        "Prisma",
+        "Docker",
         "TypeScript",
-        "Node.js",
         "Chakra UI",
-        "Framer Motion",
         "Vercel"
       ],
       "type": "Studio",
@@ -303,7 +311,7 @@
         "github": "",
         "demo": "https://www.sawyercamp.com"
       },
-      "meta": { "year": "2025", "status": "Active" }
+      "meta": { "year": "2025", "status": "Actif" }
     }
   },
 
