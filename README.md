@@ -33,7 +33,7 @@ The backend for this portfolio and all my projects (including the **contact form
 - **Internationalization:** i18next (English & French)
 - **Security:** Google reCAPTCHA v2 Invisible (Contact Form)
 - **Analytics:** Google Analytics + Cookie Consent Banner
-- **Hosting:** Vercel (Frontend) + Heroku (Backend)
+- **Hosting:** Vercel (Frontend) + Railway (Backend)
 - **Domain:** Custom domain via GoDaddy
 
 ---
@@ -84,14 +84,6 @@ src/
 ├── middleware.js # Next.js middleware (i18n routing, redirects, etc.)
 └── theme.js # Chakra UI theme configuration
 ```
-
----
-
-## Roadmap
-
-- [ ] Enhance accessibility
-- [ ] Improve SEO Lighthouse score
-- [ ] Integrate newsletter form (Mailchimp)
 
 ---
 
