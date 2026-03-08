@@ -51,6 +51,7 @@ const PreferenceModal = ({
           {t("preferencesModal.saveButton")}
         </Button>
       }
+      size="2xl"
       zIndex="2000"
       isCentered
     />

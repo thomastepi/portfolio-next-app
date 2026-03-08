@@ -102,6 +102,7 @@ const ProjectsSection = () => {
                   showContributions={project.showContributions}
                   meta={t(project.meta, { returnObjects: true })}
                   imageSrc={project.imageSrc}
+                  carousel={project.carousel}
                   link={project.link}
                   github={project.github}
                   techStack={project.stack}

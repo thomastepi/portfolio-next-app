@@ -21,6 +21,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "accept-language": "^3.0.20",
     "axios": "^1.6.7",
+    "embla-carousel-react": "^8.6.0",
     "formik": "^2.2.9",
     "framer-motion": "^7.10.3",
     "i18next": "^24.2.0",

@@ -23,6 +23,8 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { useT } from "@/app/i18n/client";
 
+import Carousel from "../Carousel/Carousel";
+
 const MotionVStack = motion(VStack);
 
 const Card = ({
@@ -35,6 +37,7 @@ const Card = ({
   meta,
   // tech,
   imageSrc,
+  carousel,
   link,
   github,
   techStack,
@@ -146,7 +149,11 @@ const Card = ({
         title={title}
         body={
           <VStack align="start" spacing={4}>
-            <Image src={imageSrc} alt={title} borderRadius="md" />
+            {carousel && carousel.length > 0 ? (
+              <Carousel carousel={carousel} />
+            ) : (
+              <Image src={imageSrc} alt={title} borderRadius="md" />
+            )}
             <Text whiteSpace="pre-wrap">{longDescription}</Text>
             {features && features.length > 0 && (
               <Box w="100%">
